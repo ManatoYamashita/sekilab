@@ -1,8 +1,8 @@
 <template>
     <div class="wrap">
         <div class="pro-left">
-            <h2>教授紹介</h2>
-            <h3>関良明</h3>
+            <h2 class="fup">教授紹介</h2>
+            <h3 class="fup">関良明</h3>
             <p>東京都市大学 副学長 / デザインデータ科学部長 / ダイバーシティ推進室長</p>
             <h3>学位称号</h3>
             <p>博士（情報科学 東北大学） 2001年5月10日<br>
@@ -10,7 +10,7 @@
             </p>
             <Button url="/seki-yoshiaki">もっと見る</Button>
         </div>
-        <div class="pro-right">
+        <div class="pro-right fup">
             <div class="card card0">
                 <nuxt-link to="/seki-yoshiaki">
                     <div class="border">
@@ -62,13 +62,13 @@
         margin-bottom: 2rem;
     }
     .border {
-        height: 100vh;
+        height: 100%;
         width: 100%;
         background: transparent;
         position: relative;
     }
     .card {
-        height: 100vh;
+        height: 379px;
         width: 100%;
         transition: background 0.8s;
         overflow: hidden;
@@ -133,7 +133,6 @@
             margin-bottom: 1rem;
         }
         .card {
-            height: 40vh;
             width: 75%;
             transition: background 0.8s;
             border-radius: 1rem;

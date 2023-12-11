@@ -3,9 +3,9 @@
         <header-component :title="data" />
         <div class="professor">
             <div class="prof-1">
-                <h2 id="name"><strong>関良明</strong>&nbsp;Yoshiaki Seki</h2>
+                <h2 class="fup" id="name"><strong>関良明</strong>&nbsp;Yoshiaki Seki</h2>
                 <div class="prof-flex">
-                    <div class="card card0 prof-flex-content">
+                    <div class="card card0 prof-flex-content fup">
                         <div class="border">
                             <h2 id="cardtitle">Yoshiaki Seki</h2>
                             <em>
@@ -16,7 +16,7 @@
                             </em>
                         </div>
                     </div>
-                    <div class="prof-flex-content message">
+                    <div class="prof-flex-content message fup">
                         <h3>「社会活動を効率的に推進する情報共有と情報資産を守るセキュリティを探求しよう」</h3>
                         <p>現在、人類はコンピュータネットワークをインフラとした大きな転機、すなわち、産業型社会からサイバー社会へ急激にシフトしています。
                             この転機において、情報セキュリティは、現実の社会の安全・安心の実現を目指し、人や社会との接点をより広く、深くしつつある過程にあり、これからさらに重要性が高まる領域です。
@@ -178,7 +178,6 @@ em {
         width: 100%;
     }
     .card {
-        height: 100%;
         width: 75%;
     }
     .card0 {

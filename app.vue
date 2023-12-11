@@ -21,6 +21,42 @@
       { property: 'og:type', content: 'website' }
     ]
   })
+  import { onMounted, onUnmounted, ref } from 'vue';
+
+  // 要素が画面内に入ったかをチェックする関数
+  const checkVisible = (elm) => {
+    const rect = elm.getBoundingClientRect();
+    const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+  };
+
+  // スクロールイベントリスナーを追加する関数
+  const addScrollListener = () => {
+    window.addEventListener('scroll', onScroll);
+  };
+
+  // スクロールイベントリスナーを削除する関数
+  const removeScrollListener = () => {
+    window.removeEventListener('scroll', onScroll);
+  };
+
+  // スクロールイベント時に実行される関数
+  const onScroll = () => {
+    const elements = document.querySelectorAll('.fup');
+    elements.forEach((element) => {
+      if (checkVisible(element)) {
+        element.classList.add('element-visible');
+      }
+    });
+  };
+
+  onMounted(() => {
+    addScrollListener();
+  });
+
+  onUnmounted(() => {
+    removeScrollListener();
+  });
 </script>
 
 <style lang="css">

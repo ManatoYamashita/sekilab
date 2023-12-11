@@ -1,7 +1,7 @@
 <template>
     <div class="main">
         <header-component :title="data" />
-        <div class="detail">
+        <div class="detail fup">
             <p>関研究室では様々な活動を行います。その年によって違いますが、一般的な一年のイベントとしては、</p>
             <ul>
                 <li>4月: 新３年生配属</li>
@@ -21,7 +21,7 @@
         <div id="past">
             <h2>過去の活動はこちら</h2>
             <button>
-            <a href="#" class="btn2"><span class="spn2">
+            <a href="#" class="btn2 fup"><span class="spn2">
                 <p>旧Webサイト（2014~2022）</p>
             </span></a>
             </button>

@@ -1,0 +1,16 @@
+# macの設定ファイル
+.DS_Store
+# Windowsの設定ファイル
+Thumbs.dbs
+# 依存関係ファイル
+node_modules/
+# ビルドファイル
+dist/
+# Nuxt3の設定ファイル
+.nuxt/
+.output
+# その他
+*.log
+.env
+# キャッシュファイル
+.cache/

@@ -3,41 +3,41 @@
         <header-component :title="data" />
         <div class="abouts">
             <div class="about-1">
-                <h2><strong>『安全につながる』</strong>情報共有を目指して</h2>
-                <p>コンピュータ・ネットワークの多様な発展、拡大とそれに伴う各種脅威の顕在化など、情報通信環境は変化し続けています。このような変革期において、
+                <h2 class="element-hidden"><strong>『安全につながる』</strong>情報共有を目指して</h2>
+                <p class="element-hidden">コンピュータ・ネットワークの多様な発展、拡大とそれに伴う各種脅威の顕在化など、情報通信環境は変化し続けています。このような変革期において、
                     社会活動の効率化を目指した情報共有サービスと、情報資産を守るための情報セキュリティは表裏一体関係にあります。私達関研究室は、
                     「情報共有サービス」と「情報セキュリティ」を密接に結びつけ、セキュリティを考慮した情報共有システムの構築を目指し日々研究に取り組んでいます。
                 </p>
-                <img class="about-image" src="@/assets/security_image.png" alt="information security">
+                <img class="about-image element-hidden" src="@/assets/security_image.png" alt="information security">
             </div>
-
+            
             <professor-component />
             
             <div class="about-2">
-                <h3>研究内容</h3>
+                <h3 class="element-hidden">研究内容</h3>
                 <article id="research">
                     <div class="res-card">
-                        <img src="@/assets/re-01.png" alt="alt" class="about2-image">
+                        <img src="@/assets/re-01.png" alt="alt" class="about2-image element-hidden">
                         <h4>知的協調作業支援技術</h4>
                         <p>共通の仕事や目的のために働く利用者のグループを支援し、共有作業環境インタフェースを提供するコンピュータベースのシステムを創造します。</p>
                     </div>
                     <div class="res-card">
-                        <img src="@/assets/re-02.png" alt="alt" class="about2-image">
+                        <img src="@/assets/re-02.png" alt="alt" class="about2-image element-hidden">
                         <h4>知識共有ネットワーク技術</h4>
                         <p>社会的ネットワークをインターネット上で構成するSNSを活用して、利用者の知識を共有できるサービスを提案します。</p>
                     </div>
                     <div class="res-card">
-                        <img src="@/assets/re-03.png" alt="alt" class="about2-image">
+                        <img src="@/assets/re-03.png" alt="alt" class="about2-image element-hidden">
                         <h4>情報セキュリティ行動支援技術</h4>
                         <p>コンピュータネットワークのリスクを利用者が正しく理解し、脅威を利用者が常に意識して行動する攻めのセキュリティを目指します。</p>
                     </div>
                 </article>
             </div>
             <div class="about-3">
-                <img class="about3-image" src="@/assets/security_image.png">
+                <img class="about3-image element-hidden" src="@/assets/security_image.png">
                 <div class="about3-content">
-                    <h3>研究テーマ例（2023）</h3>
-                    <ul class="research-examples">
+                    <h3 class="element-hidden">研究テーマ例（2023）</h3>
+                    <ul class="research-examples element-hidden">
                         <li>ショルダーハックに関する調査</li>
                         <li>APEX LEGENDSサーバの仕組みに関する調査</li>
                         <li>ブロックチェーンを用いた電子投票システムに関する調査</li>

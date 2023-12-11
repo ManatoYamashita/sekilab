@@ -1,5 +1,5 @@
 <template>
-    <div id="main">
+    <div id="main" class="fup">
         <div class="l-wrapper_02 card-radius_02">
             <article class="card_02">
                 <div class="card__header_02">

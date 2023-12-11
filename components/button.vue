@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="fup">
         <nuxt-link :to="url" class="btn">
             <slot>Default Button</slot>
         </nuxt-link>  
