@@ -101,16 +101,16 @@
         width: 100%;
     }
     h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: bold;
         margin-bottom: 2rem;
     }
     h3 {
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: bold;
     }
     h4 {
-        font-size: .8rem;
+        font-size: 1.3rem;
         font-weight: bold;
         margin-bottom: .5rem;
     }
@@ -119,12 +119,12 @@
         padding: 2rem 0 1rem 0;
     }
     li {
-        font-size: .8rem;
+        font-size: 1rem;
         margin-bottom: .5rem;
         font-family: Arial, Helvetica, sans-serif, monospace;
     }
     p {
-        font-size: .65rem;
+        font-size: 1rem;
         margin-bottom: 2rem;
         padding-left: 1rem;
     }
@@ -149,16 +149,23 @@
         position: absolute;
         bottom: 0;
         padding: .5rem;
-        font-size: .7rem;
+        font-size: .8rem;
         font-family: Arial, Helvetica, sans-serif, monospace;
         text-align: center;
     }
     @media screen and (max-width: 768px) {
         footer {
             flex-direction: column;
+            height: 80%;
         }
-        h3 {
-            font-size: .8rem;
+        h2 {
+            font-size: 1.5rem;
+        }
+        h3, h4 {
+            font-size: medium;
+        }
+        ul, li, p {
+            font-size: small;
         }
     }
 </style>

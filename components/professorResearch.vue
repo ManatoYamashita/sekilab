@@ -3,7 +3,8 @@
       <h2 id="head-res">研究</h2>
       <div class="accordion">
           <h3>一部抜粋 (2023年度現在)</h3>
-          <div class="option">
+          
+          <div class="option fup">
               <input type="checkbox" id="toggle1" class="toggle">
               <label class="title" for="toggle1">論文（38本）</label>
                   <div class="content">
@@ -42,7 +43,7 @@
                       </div>
                   </div>
           </div>
-          <div class="option">
+          <div class="option fup">
               <input type="checkbox" id="toggle2" class="toggle">
               <label class="title" for="toggle2">MISC（86件）</label>
                   <div class="content">
@@ -76,7 +77,7 @@
                       </div>
                   </div>
           </div>
-          <div class="option">
+          <div class="option fup">
               <input type="checkbox" id="toggle3" class="toggle">
               <label class="title" for="toggle3">書籍等出版物（2冊）</label>
                   <div class="content">
@@ -95,7 +96,7 @@
                       </div>
                   </div>
           </div>
-          <div class="option">
+          <div class="option fup">
               <input type="checkbox" id="toggle4" class="toggle">
               <label class="title" for="toggle4">講演・発表等（119件）</label>
                   <div class="content">

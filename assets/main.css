@@ -47,3 +47,15 @@ a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+.fup {
+    opacity: 0;
+    transform: translateY(10rem);
+    transition: opacity 1s, transform 1s;
+    animation-delay: .5s;
+}
+
+.element-visible {
+    opacity: 1;
+    transform: translateY(0);
+}

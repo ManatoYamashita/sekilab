@@ -12,12 +12,12 @@
 <template>
     <div class="blog-wrap">
         <div class="blog-left">
-            <img src="@/assets/tcu_yc.jpg" alt="blog">
+            <img src="@/assets/tcu_yc.jpg" alt="blog" class="fup">
         </div>
 
         <article class="blog-right">
-            <h2>活動報告</h2>
-            <ul class="blogs">
+            <h2 class="fup">活動報告</h2>
+            <ul class="blogs fup">
                 <li v-for="blog in data?.contents" :key="blog.id" class="blog-data">
                     <NuxtLink :to="`/${blog.id}`" class="blog-card">
                     <div class="article">
@@ -26,7 +26,7 @@
                     </NuxtLink>
                 </li>
             </ul>
-            <Button url="/blogs">もっと見る</Button>
+            <Button url="/blogs" class="fup">もっと見る</Button>
         </article>
     </div>
 </template>

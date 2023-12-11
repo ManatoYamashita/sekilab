@@ -14,9 +14,9 @@
         </div>
       </div>
 
-      <div id="conteiner">
+      <div id="container">
         <section>
-          <div class="section_content">
+          <div class="section_content fup">
             <h1 id="scroll-head">
               <span>More secure for "<strong>Connecting</strong>"</span>
               <span>"<strong>つながる</strong>"にもっと安心を</span>
@@ -25,9 +25,9 @@
         </section>
 
         <div id="content">
-          <BlogComponent />
-          <ProfessorComponent />
-          <AboutComponent />
+          <BlogComponent class="fup" />
+          <ProfessorComponent class="fup" />
+          <AboutComponent class="fup" />
         </div>
       </div>
   </div>
@@ -110,25 +110,25 @@
     font-family: serif;
     display: block;
   }
-  #conteiner {
+  #container {
     position: relative;
     background-color: white;
-    z-index: 1;
   }
-  /* スクロールテリングアニメーション */
+
   section {
-  min-height: 100vh;
-  height: 200vh;
-  display: grid;
-  place-items: center;
-  position: relative;
-  width: 100vw;
-  display: block;
-  view-timeline-name: --section;
-}
+    min-height: 100vh;
+    height: 200vh;
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 100vw;
+    display: block;
+    /* view-timeline-name: --section; */
+  }
 .section_content {
   min-height: 100vh;
-  position: sticky;
+  /* position: sticky; */
+  position: relative;
   top: 0;
   width: 75vw;
   display: grid;
@@ -139,7 +139,8 @@
 }
 h1#scroll-head {
   display: grid;
-  font-size: clamp(2rem, 7vw + 2rem, 4rem);
+  /* font-size: clamp(2rem, 7vw + 2rem, 4rem); */
+  font-size: 4rem;
   text-align: center;
   line-height: 1;
   margin: 0;
@@ -148,11 +149,13 @@ h1#scroll-head {
   top: 0%;
   left: 50%;
   translate: -50% -50%;
+  transition: scale .5s;
+  animation-delay: 1s;
 }
-@keyframes activate {
+/* @keyframes activate {
   0% { --active: 0; }
   100% { --active: 1; }
-}
+} */
 
 h1#scroll-head span:first-of-type {
   display: inline-block;
@@ -160,21 +163,21 @@ h1#scroll-head span:first-of-type {
   font-size: 0.35em;
   padding: 2rem;
   display: inline-block;
-  animation: fade-away both linear;
-  animation-timeline: --section;
-  animation-range: entry-crossing 50% exit 50%;
+  /* animation: fade-away both linear;
+  animation-timeline: --section; */
+  /* animation-range: entry-crossing 50% exit 50%; */
 }
 
 h1#scroll-head span:last-of-type {
   display: inline-block;
-  animation: scale-up both cubic-bezier(.1,.7,.9,1.3), fade-away both linear;
-  animation-timeline: --section;
-  animation-range: entry-crossing 60% exit 70%, exit 10% exit 50%;  
+  /* animation: scale-up both cubic-bezier(.1,.7,.9,1.3), fade-away both linear; */
+  /* animation-timeline: --section; */
+  /* animation-range: entry-crossing 60% exit 70%, exit 10% exit 50%;  */
 }
 span strong {
   color: var(--seki-main-color);
 }
-@keyframes scale-up {
+/* @keyframes scale-up {
   to {
     scale: 1.5;
   }
@@ -190,9 +193,25 @@ span strong {
   100% {
     opacity: 0;
   }
-}
+} */
 #content {
   z-index: 0;
+}
+
+.element-visible #scroll-head {
+  transform: scale(1);
+  animation: scale 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: 1s cubic-bezier(0,.81,.86,.98);
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.7);
+  }
 }
 
 /* sp表示 */

@@ -1,7 +1,6 @@
 <template>
     <div id="main">
-      <section id="timeline">
-
+      <section id="timeline" class="fup">
         <div class="tl-item">
 
           <div class="tl-bg"></div>

@@ -4,7 +4,7 @@
   <div id="main">
     <header-component :title="title" />
     <article>
-      <ul class="blogs">
+      <ul class="blogs fup">
         <li v-for="blog in data?.contents" :key="blog.id" class="blog-data">
           <NuxtLink :to="`/${blog.id}`" class="blog-card">
             <img :src="blog.thumbnail?.url" :width="100" alt="article-thumbnail" class="thumbnail" />

@@ -1,11 +1,11 @@
 <template>
     <div class="wrap">
-        <div class="about-left">
+        <div class="about-left fup">
             <h2>研究室概要</h2>
-            <img src="@/assets/tcu_yc.jpg" alt="lab">
+            <img src="@/assets/tcu_yc.jpg" alt="lab" class="fup">
         </div>
-        <div class="about-right">
-            <ul>
+        <div class="about-right fup">
+            <ul class="fup">
                 <li>01&nbsp;<h3>知的協調作業支援技術</h3></li>
                 <p>共通の仕事や目的のために働く利用者のグループを支援し、共有作業環境インタフェースを提供するコンピュータベースのシステムを創造します。</p>
 
@@ -16,7 +16,7 @@
                 <p>コンピュータネットワークのリスクを利用者が正しく理解し、脅威を利用者が常に意識して行動する攻めのセキュリティを目指します。</p>
                 <br>
 
-                <Button url="/about">もっと見る</Button>
+                <Button url="/about" class="fup">もっと見る</Button>
             </ul>
         </div>
     </div>
