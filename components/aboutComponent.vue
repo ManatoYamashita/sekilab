@@ -1,0 +1,131 @@
+<template>
+    <div class="wrap">
+        <div class="about-left">
+            <h2>研究室概要</h2>
+            <img src="@/assets/tcu_yc.jpg" alt="lab">
+        </div>
+        <div class="about-right">
+            <ul>
+                <li>01&nbsp;<h3>知的協調作業支援技術</h3></li>
+                <p>共通の仕事や目的のために働く利用者のグループを支援し、共有作業環境インタフェースを提供するコンピュータベースのシステムを創造します。</p>
+
+                <li>02&nbsp;<h3>知識共有ネットワーク技術</h3></li>
+                <p>社会的ネットワークをインターネット上で構成するSNSを活用して、利用者の知識を共有できるサービスを提案します</p>
+
+                <li>03&nbsp;<h3>情報セキュリティ行動支援技術</h3></li>
+                <p>コンピュータネットワークのリスクを利用者が正しく理解し、脅威を利用者が常に意識して行動する攻めのセキュリティを目指します。</p>
+                <br>
+
+                <Button url="/about">もっと見る</Button>
+            </ul>
+        </div>
+    </div>
+</template>
+
+<style scoped>
+    div.wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        padding: 0 3rem;
+    }
+    div.about-left, div.about-right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    div.about-right {
+        margin: 0 auto;
+        padding-left: 1rem;
+    }
+    h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    h3 {
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--seki-text-color);
+    }
+    ul {
+        list-style: none;
+        padding: 5rem 0 3rem 0;
+    }
+    li {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: .5rem;
+        color: grey;
+    }
+    p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        padding-left: 3rem;
+        color: var(--seki-text-color);
+    }
+    img {
+        width: 75%;
+        object-fit: cover;
+    }
+
+    /* sp表示 */
+    @media screen and (max-width: 768px) {
+        div.wrap {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            height: 100%;
+        }
+        div.about-left, div.about-right {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div.about-right {
+            margin: 0 auto;
+            padding-left: 0;
+        }
+        h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+        h3 {
+            display: inline-block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--seki-text-color);
+        }
+        ul {
+            list-style: none;
+            padding: 5rem 1rem 3rem 1rem;
+        }
+        li {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: .5rem;
+            color: grey;
+        }
+        p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            padding-left: 0;
+            color: var(--seki-text-color);
+        }
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+</style>
