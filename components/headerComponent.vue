@@ -53,6 +53,7 @@ export default {
     text-align: center;
 }
 h1 {
+    font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
     font-size: 2rem;
 }
 </style>

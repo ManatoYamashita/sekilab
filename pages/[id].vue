@@ -22,12 +22,14 @@
         </div>
       </div>
       <div id="content" v-html="data.content"></div>
+      <Button url="/blog" class="btn fup">戻る</Button>
+      <br>
       </main>
   </template>
 </template>
 
 <script setup lang="ts">
-  import { Blog } from "~~/types/blog";
+  import type { Blog } from "~~/types/blog";
 
   const { params } = useRoute();
 
@@ -49,12 +51,11 @@
     width: 100%;
     height: 100%;
     padding-top: 5rem;
-    color: #ccc;
+    color: #f3f3f3;
   }
   h1 {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
     font-size: 2rem;
-    font-weight: bold;
     color: white;
     margin-top: 3rem;
     padding-left: 1rem;
@@ -69,5 +70,8 @@
   }
   #content {
     padding: 1rem 1rem 4rem 1rem;
+  }
+  .btn {
+    margin: 1rem;
   }
 </style>

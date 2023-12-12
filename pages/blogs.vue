@@ -7,7 +7,7 @@
       <ul class="blogs fup">
         <li v-for="blog in data?.contents" :key="blog.id" class="blog-data">
           <NuxtLink :to="`/${blog.id}`" class="blog-card">
-            <img :src="blog.thumbnail?.url" :width="100" alt="article-thumbnail" class="thumbnail" />
+            <img :src="blog.thumbnail?.url" :width="100" alt="article-thumbnail" class="thumbnail"/>
             <div class="article">
               <div>
                 <h2 class="blog-title">{{ blog.title }}</h2>
@@ -21,14 +21,14 @@
   </div>
 </template>
 
-  <script setup lang="ts">
-    import { Blog } from "~/types/blog";
-    const title = 'ブログ一覧'
-    const { data } = await useMicroCMSGetList<Blog>({
-      endpoint: "blog",
-    });
-    console.log(data)
-  </script>
+<script setup lang="ts">
+  import type { Blog } from "~/types/blog";
+  const title = 'ブログ一覧'
+  const { data } = await useMicroCMSGetList<Blog>({
+    endpoint: "blog",
+  });
+  console.log(data)
+</script>
   
 <style scoped>
 article {
@@ -61,8 +61,8 @@ article {
     object-fit: cover;
   }
   .blog-title {
+    font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
     font-size: 1.2rem;
-    font-weight: bold;
   }
   .blog-date {
     font-size: 0.8rem;

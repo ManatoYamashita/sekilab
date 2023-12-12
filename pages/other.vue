@@ -58,8 +58,8 @@
     padding: 2rem;
 }
 h1 {
+    font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
     font-size: 2rem;
-    font-weight: bold;
     color: #333;
     padding: 1rem;
 }

@@ -34,7 +34,7 @@
                 </article>
             </div>
             <div class="about-3">
-                <img class="about3-image element-hidden" src="@/assets/security_image.png">
+                <img class="about3-image element-hidden" src="@/assets/research.png">
                 <div class="about3-content">
                     <h3 class="element-hidden">研究テーマ例（2023）</h3>
                     <ul class="research-examples element-hidden">
@@ -75,6 +75,7 @@ const data = '研究室概要'
     text-align: center;
 }
 h2 {
+    font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
     font-size: 2.5rem;
     padding: 5rem 0;
 }
@@ -116,14 +117,14 @@ h3 {
 }
 .res-card {
     width: 25%;
-    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    margin: 0 .5rem 3rem .5rem;
+    margin: 0 1rem 3rem .5rem;
     border-radius: .3rem .3rem 1rem;
+    padding-bottom: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .about2-image {
@@ -155,7 +156,7 @@ h3 {
 .about3-content {
     width: 100%;
     height: 100%;
-    padding: 5%;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,8 +166,7 @@ h3 {
     width: 50%;
     height: 50%;
     object-fit: cover;
-    border-radius: .3rem .3rem 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 0;
 }
 .research-examples {
     width: 50%;
