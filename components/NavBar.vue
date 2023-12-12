@@ -52,12 +52,16 @@ import { ref } from 'vue';
         position: fixed;
         top: 0;
         left: 0;
-        color: var(--seki-text-color);
+        right: 0;
         width: 100%;
+        max-width: 100%;
+        color: var(--seki-text-color);
         height: 100px;
         z-index: 1;
     }
     #menu-inner {
+        display: inline-block;
+        width: 100%;
         padding: 1.5rem 3rem;
     }
     #navArea {

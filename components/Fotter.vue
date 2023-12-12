@@ -148,6 +148,10 @@
     #copy {
         position: absolute;
         bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
         padding: .5rem;
         font-size: .8rem;
         font-family: Arial, Helvetica, sans-serif, monospace;
