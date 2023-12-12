@@ -8,8 +8,10 @@
 to learn more.
 
 ## About
-<img width="100" href="https://github.com/ManatoYamashita/sekilab/assets/95745485/860bced5-217e-4830-8d16-6142ca9f9f94" />
-<img width="100" href="https://github.com/ManatoYamashita/sekilab/assets/95745485/31658ae7-8ccc-4173-9ad6-fc04ded04067" />
+
+<img href="https://github.com/ManatoYamashita/sekilab/assets/95745485/860bced5-217e-4830-8d16-6142ca9f9f94" width="100"  />
+
+<img href="https://github.com/ManatoYamashita/sekilab/assets/95745485/31658ae7-8ccc-4173-9ad6-fc04ded04067" width="100" />
 
 **東京都市大学 情報セキュリティ研究室**の新Web siteです。
 2023年から情報システム学科からデザインデータ科学科に一転するためこれを機に2014年から使われているwebサイトを一新します。
@@ -22,7 +24,7 @@ to learn more.
 
 ### 注意
 
-開発s￥する際は.envファイルを追加して下さい。
+開発する際は.envファイルを追加して下さい。
 .envファイルに中身は公開しないでください。microCMSのAPIを叩くときに使います。これが他者にバレると、他者によるコンテンツの書き換えが可能になります。
 また使用されている画像の権利には十分注意するようにしてください。メンバーの肖像権を守るために必ず許可をとり、グラフィックはAIで生成するか、自分で作ってください。
 
