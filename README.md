@@ -8,8 +8,8 @@
 to learn more.
 
 ## About
-![security_image](https://github.com/ManatoYamashita/sekilab/assets/95745485/860bced5-217e-4830-8d16-6142ca9f9f94)
-![whatisis](https://github.com/ManatoYamashita/sekilab/assets/95745485/31658ae7-8ccc-4173-9ad6-fc04ded04067)
+<img width="100" href="https://github.com/ManatoYamashita/sekilab/assets/95745485/860bced5-217e-4830-8d16-6142ca9f9f94" />
+<img width="100" href="https://github.com/ManatoYamashita/sekilab/assets/95745485/31658ae7-8ccc-4173-9ad6-fc04ded04067" />
 
 **東京都市大学 情報セキュリティ研究室**の新Web siteです。
 2023年から情報システム学科からデザインデータ科学科に一転するためこれを機に2014年から使われているwebサイトを一新します。
