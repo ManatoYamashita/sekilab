@@ -8,11 +8,11 @@
             <p>博士（情報科学 東北大学） 2001年5月10日<br>
                 学位論文題目: 利用者誘導機能を用いた情報共有システムに関する研究
             </p>
-            <Button url="/seki-yoshiaki">もっと見る</Button>
+            <Button url="/sekiYoshiaki">もっと見る</Button>
         </div>
         <div class="pro-right fup">
             <div class="card card0">
-                <nuxt-link to="/seki-yoshiaki">
+                <nuxt-link to="/sekiYoshiaki">
                     <div class="border">
                         <h2 id="cardtitle">Yoshiaki Seki</h2>
                     </div>
@@ -48,11 +48,12 @@
         justify-content: center;
     }
     h2 {
+        font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
         font-size: 3rem;
-        font-weight: bold;
         margin-bottom: 2rem;
     }
     h3 {
+        font-family: 'Noto Sans JP','Helvetica', monospace;
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 1rem;
@@ -101,8 +102,6 @@
     @media screen and (max-width: 768px) {
         div.wrap {
             flex-direction: column;
-            padding: 0;
-            margin: 2rem 0;
             padding: 2rem 1rem;
             height: 100%;
         }

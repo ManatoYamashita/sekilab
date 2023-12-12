@@ -1,7 +1,7 @@
 <!-- トップページにあるブログリスト -->
 
 <script setup lang="ts">
-    import { Blog } from "~/types/blog";
+    import type { Blog } from "~/types/blog";
 
     const { data } = await useMicroCMSGetList<Blog>({
         endpoint: "blog",
@@ -38,7 +38,8 @@
         align-items: center;
         margin: 0 auto;
         width: 100%;
-        height: 100vh;
+        height: 100%;
+        background-color: #fff;
     }
     .blog-left, .blog-right {
         width: 50%;
@@ -59,8 +60,8 @@
         color: #333;
     }
     h2 {
+        font-family: "Dela Gothic One", "Noto Sans JP", sans-serif;
         font-size: 3rem;
-        font-weight: bold;
         margin-bottom: 2rem;
     }
     ul.blogs {
@@ -85,8 +86,9 @@
             justify-content: center;
             align-items: center;
             margin: 0 auto;
+            padding: 3rem 0;
             width: 100%;
-            height: 100vh;
+            height: 100%;
         }
         .blog-left, .blog-right {
             width: 100%;
@@ -108,7 +110,6 @@
         }
         h2 {
             font-size: 2rem;
-            font-weight: bold;
             margin-bottom: 2rem;
         }
         ul.blogs {

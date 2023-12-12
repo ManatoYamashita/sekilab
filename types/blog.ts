@@ -5,6 +5,7 @@ import type { MicroCMSImage, MicroCMSListContent } from "microcms-js-sdk";
 
 export type Blog = {
   title?: string;
+  thumbnail?: MicroCMSImage;
   content?: string;
   eyecatch?: MicroCMSImage;
   // category: (MicroCMSListContent & Category) | null;

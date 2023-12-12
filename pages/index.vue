@@ -94,14 +94,14 @@
     display: block;
     font-size: 2rem;
     font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1;
   }
   .cover h1#sekiken {
     display: block;
     font-size: 4rem;
     font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1;
   }
   .cover h1#inforsec {
@@ -109,7 +109,7 @@
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1;
   }
   .cover h2 {
@@ -119,9 +119,7 @@
   }
   #container {
     position: relative;
-    background-color: white;
   }
-  
   section {
     min-height: 100vh;
     height: 100vh;
@@ -137,10 +135,8 @@
   /* position: sticky; */
   position: relative;
   top: 0;
-  width: 90vw;
   display: grid;
   place-items: center;
-  padding: 1rem;
   max-width: 100vw;
   margin: 0 auto;
   overflow: hidden;
@@ -152,9 +148,12 @@ h1#scroll-head {
   text-align: center;
   line-height: 1;
   margin: 0;
+  width: 100%;
   max-width: 100vw;
   transition: scale .5s;
   animation-delay: 1s;
+  padding: 2rem 3rem 3.5rem 3rem;
+  background-color: #f6f6f6;
 }
 /* @keyframes activate {
   0% { --active: 0; }
@@ -170,7 +169,6 @@ h1#scroll-head span:first-of-type {
   animation-timeline: --section; */
   /* animation-range: entry-crossing 50% exit 50%; */
 }
-
 h1#scroll-head span:last-of-type {
   display: inline-block;
   /* animation: scale-up both cubic-bezier(.1,.7,.9,1.3), fade-away both linear; */

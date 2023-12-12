@@ -2,7 +2,7 @@
     <div class="wrap">
         <div class="about-left fup">
             <h2>研究室概要</h2>
-            <img src="@/assets/tcu_yc.jpg" alt="lab" class="fup">
+            <img src="@/assets/whatisis.jpg" alt="lab" class="fup">
         </div>
         <div class="about-right fup">
             <ul class="fup">
@@ -31,6 +31,7 @@
         width: 100%;
         height: 100%;
         padding: 0 3rem;
+        background-color: #fff;
     }
     div.about-left, div.about-right {
         width: 50%;
@@ -44,14 +45,15 @@
         padding-left: 1rem;
     }
     h2 {
+        font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
         font-size: 3rem;
-        font-weight: bold;
         margin-bottom: 2rem;
     }
     h3 {
+        font-family: 'Noto Sans JP','Helvetica', monospace;
+        font-weight: bold;
         display: inline-block;
         font-size: 2rem;
-        font-weight: bold;
         color: var(--seki-text-color);
     }
     ul {

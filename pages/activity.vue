@@ -30,8 +30,7 @@
 </template>
 
 <script setup>
-const data = '活動内容';
-
+  const data = '活動内容';
 </script>
 
 <style scoped>
@@ -41,9 +40,8 @@ const data = '活動内容';
 }
 .detail {
     width: 100%;
-    height: 80vh;
     background-color: black;
-    padding: 2rem 5rem;
+    padding: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,6 +75,7 @@ li {
     text-align: center;
 }
 h2 {
+  font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
     font-size: 2.5rem;
     padding: 5rem 0;
     color: white;
