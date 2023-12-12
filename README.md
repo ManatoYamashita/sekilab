@@ -1,5 +1,5 @@
 # SekiLab-2023
-![ogp](https://github.com/ManatoYamashita/sekilab/assets/95745485/2759cf6f-ffb6-4b9d-a4d0-4bdca7a8b0d7)
+<img src="https://github.com/ManatoYamashita/sekilab/assets/95745485/2759cf6f-ffb6-4b9d-a4d0-4bdca7a8b0d7" width="300" />
 
 * [要件定義書(Exel)](https://1drv.ms/x/s!AruScVw9sB9O5D9dQ_PdhAIP56h9?e=VYmnix)
 * [画面遷移図(Notion)](https://tcu-yamamana.notion.site/seki-lab-New-website-c2f137c1e5a647aaabeed47c67276792?pvs=4)
@@ -9,9 +9,9 @@ to learn more.
 
 ## About
 
-<img href="https://github.com/ManatoYamashita/sekilab/assets/95745485/860bced5-217e-4830-8d16-6142ca9f9f94" width="100"  />
+<img src="https://github.com/ManatoYamashita/sekilab/assets/95745485/860bced5-217e-4830-8d16-6142ca9f9f94" width="200"  />
 
-<img href="https://github.com/ManatoYamashita/sekilab/assets/95745485/31658ae7-8ccc-4173-9ad6-fc04ded04067" width="100" />
+<img src="https://github.com/ManatoYamashita/sekilab/assets/95745485/31658ae7-8ccc-4173-9ad6-fc04ded04067" width="200" />
 
 **東京都市大学 情報セキュリティ研究室**の新Web siteです。
 2023年から情報システム学科からデザインデータ科学科に一転するためこれを機に2014年から使われているwebサイトを一新します。
