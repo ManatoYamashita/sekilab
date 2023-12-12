@@ -4,7 +4,7 @@
   <div>
       <div class="cover">
         <div id="video-area">
-          <video id="video" src="@/assets/video.mp4" preload="auto" autoplay loop muted></video>
+          <video id="video" src="@/assets/video.mp4" preload="auto" autoplay loop muted playsinline></video>
         </div>
         <div class="title">
           <h1 id="tcu">東京都市大学</h1>
@@ -66,6 +66,13 @@
     min-height: 100%;
     min-width: 100%;
   }
+  video::-webkit-media-controls {
+  display: none;
+  }
+
+  video::-moz-fullscreen-media-controls {
+    display: none;
+  }
   .title {
     display: block;
     position: absolute;
@@ -114,10 +121,10 @@
     position: relative;
     background-color: white;
   }
-
+  
   section {
     min-height: 100vh;
-    height: 200vh;
+    height: 100vh;
     display: grid;
     place-items: center;
     position: relative;
@@ -130,25 +137,22 @@
   /* position: sticky; */
   position: relative;
   top: 0;
-  width: 75vw;
+  width: 90vw;
   display: grid;
   place-items: center;
   padding: 1rem;
   max-width: 100vw;
   margin: 0 auto;
+  overflow: hidden;
 }
 h1#scroll-head {
   display: grid;
   /* font-size: clamp(2rem, 7vw + 2rem, 4rem); */
-  font-size: 4rem;
+  font-size: 2rem;
   text-align: center;
   line-height: 1;
   margin: 0;
-  width: 100%;
-  position: relative;
-  top: 0%;
-  left: 50%;
-  translate: -50% -50%;
+  max-width: 100vw;
   transition: scale .5s;
   animation-delay: 1s;
 }
@@ -156,7 +160,6 @@ h1#scroll-head {
   0% { --active: 0; }
   100% { --active: 1; }
 } */
-
 h1#scroll-head span:first-of-type {
   display: inline-block;
   color: dimgray;
@@ -199,7 +202,9 @@ span strong {
 }
 
 .element-visible #scroll-head {
+  max-width: 100%;
   transform: scale(1);
+  font-size: 2rem;
   animation: scale 1s;
   animation-delay: 1s;
   animation-fill-mode: both;
@@ -207,10 +212,10 @@ span strong {
 }
 @keyframes scale {
   0% {
-    transform: scale(1);
+    font-size: 2rem;
   }
   100% {
-    transform: scale(1.7);
+    font-size: 3rem;
   }
 }
 
