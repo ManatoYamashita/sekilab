@@ -22,7 +22,9 @@
         </div>
       </div>
       <div id="content" v-html="data.content"></div>
-      <Button url="/blog" class="btn fup">戻る</Button>
+      <div class="btn">
+        <Button url="/blog">戻る</Button>
+      </div>
       <br>
       </main>
   </template>
