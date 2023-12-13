@@ -14,17 +14,31 @@
       { rel: 'canonical', href: 'https://comm.tcu.ac.jp/seki_lab' }
     ],
     meta: [
+      // 全てのオーガニック検索から除外
+      {name: 'robots', content: 'noindex, nofollow' },
+
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'keywords', content: '東京都市大学, 関研究室, 情報セキュリティ, 情報共有システム, 情報セキュリティ行動支援システム' },
       { name: 'description', content: '"つながる"にもっと安心を。東京都市大学 情報システム学科の関研究室のホームページです。情報セキュリティを中心に、情報共有システムや情報セキュリティ行動支援システムの研究を行っています。' },
       { property: 'og:title', content: 'Tokyo City University SEKI-Information Security Lab.' },
       { property: 'og:description', content: 'a Website SEKI Lab. at TCU, research about Information Security.' },
-      { property: 'og:image', content: '/ogp.jpg' },
+      { property: 'og:image', content: '/ogp.png' },
+      { property: 'og:type', content: 'website' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'keywords', content: '東京都市大学, 関研究室, 情報セキュリティ, 情報共有システム, 情報セキュリティ行動支援システム' },
+      { name: 'description', content: '"つながる"にもっと安心を。東京都市大学 情報システム学科の関研究室のホームページです。情報セキュリティを中心に、情報共有システムや情報セキュリティ行動支援システムの研究を行っています。' },
+      { property: 'og:title', content: 'Tokyo City University SEKI-Information Security Lab.' },
+      { property: 'og:description', content: 'a Website SEKI Lab. at TCU, research about Information Security.' },
+      { property: 'og:image', content: '/ogp.png' },
       { property: 'og:type', content: 'website' }
     ]
   })
   import { onMounted, onUnmounted, ref } from 'vue';
-
+  
   // 要素が画面内に入ったかをチェックする関数
-  const checkVisible = (elm) => {
+  const checkVisible = (elm: HTMLElement) => {
     const rect = elm.getBoundingClientRect();
     const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
     return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
