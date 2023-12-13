@@ -37,7 +37,7 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       "Noto+Sans+JP": [400, 500, 700],
-      "Dela+Gothic+One": [400],
+      "Dela+Gothic+One": [300],
     }
   },
 })

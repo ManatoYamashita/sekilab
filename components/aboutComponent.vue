@@ -16,7 +16,9 @@
                 <p>コンピュータネットワークのリスクを利用者が正しく理解し、脅威を利用者が常に意識して行動する攻めのセキュリティを目指します。</p>
                 <br>
 
-                <Button url="/about" class="fup">もっと見る</Button>
+                <div class="btnarea">
+                    <Button url="/about" class="fup">もっと見る</Button>
+                </div>
             </ul>
         </div>
     </div>
@@ -30,11 +32,10 @@
         margin: 0 auto;
         width: 100%;
         height: 100%;
-        padding: 0 3rem;
+        padding: 0 1.5rem;
         background-color: #fff;
     }
     div.about-left, div.about-right {
-        width: 50%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -53,7 +54,7 @@
         font-family: 'Noto Sans JP','Helvetica', monospace;
         font-weight: bold;
         display: inline-block;
-        font-size: 2rem;
+        font-size: 1.3rem;
         color: var(--seki-text-color);
     }
     ul {
@@ -61,7 +62,7 @@
         padding: 5rem 0 3rem 0;
     }
     li {
-        font-size: 2rem;
+        font-size: 1.3rem;
         font-weight: bold;
         margin-bottom: .5rem;
         color: grey;
@@ -75,6 +76,11 @@
     img {
         width: 75%;
         object-fit: cover;
+    }
+    .btnarea {
+        display: flex;
+        justify-content: right;
+        align-items: center;
     }
 
     /* sp表示 */
@@ -100,7 +106,6 @@
         }
         h2 {
             font-size: 2rem;
-            font-weight: bold;
             margin-bottom: 2rem;
         }
         h3 {

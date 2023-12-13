@@ -11,7 +11,7 @@
                                 <nuxt-link to="/about">研究室概要</nuxt-link>
                                 <ul class="second-content">
                                     <li class="nav-li"><nuxt-link to="/sekiYoshiaki">関先生について</nuxt-link></li>
-                                    <li class="nav-li"><nuxt-link to="/activity">活動報告</nuxt-link></li>            
+                                    <li class="nav-li"><nuxt-link to="/activity">活動内容</nuxt-link></li>            
                                 </ul>
                             </li>
                             <li class="first-content nav-li">
