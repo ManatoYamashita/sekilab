@@ -1,5 +1,8 @@
 # SekiLab-2023
-<img src="https://github.com/ManatoYamashita/sekilab/assets/95745485/2759cf6f-ffb6-4b9d-a4d0-4bdca7a8b0d7" width="300" />
+
+[デプロイ（vercel）](https://sekilab.vercel.app)
+
+![ogp](https://github.com/ManatoYamashita/sekilab/assets/95745485/7021afc1-7c29-4b5e-a555-6d0f8710e3b8)
 
 * [要件定義書(Exel)](https://1drv.ms/x/s!AruScVw9sB9O5D9dQ_PdhAIP56h9?e=VYmnix)
 * [画面遷移図(Notion)](https://tcu-yamamana.notion.site/seki-lab-New-website-c2f137c1e5a647aaabeed47c67276792?pvs=4)
