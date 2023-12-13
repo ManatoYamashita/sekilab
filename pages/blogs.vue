@@ -69,5 +69,9 @@ article {
     font-size: 0.8rem;
     color: #666;
   }
-  
+  @media screen and (max-width: 768px) {
+    .blog-title {
+      font-size: 1rem;
+    }
+  }
 </style>
