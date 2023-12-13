@@ -23,7 +23,7 @@
       </div>
       <div id="content" v-html="data.content"></div>
       <div class="btn">
-        <Button url="/blog">戻る</Button>
+        <Button url="/">戻る</Button>
       </div>
       <br>
       </main>
@@ -47,6 +47,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+  a {
+    color: #f3f3f3;
+    font-weight: bolder;
   }
   main {
     background-color: black;
@@ -72,6 +76,9 @@
   }
   #content {
     padding: 1rem 1rem 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   .btn {
     margin: 1rem;

@@ -27,7 +27,7 @@ export default defineNuxtConfig({
   css: [
     '@/assets/main.css'
   ],
-
+  
   modules: ["nuxt-microcms-module", "@nuxtjs/google-fonts"],
   
   microCMS: {
@@ -37,7 +37,7 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       "Noto+Sans+JP": [400, 500, 700],
-      "Dela+Gothic+One": [300],
+      "Dela+Gothic+One": [400],
     }
   },
 })
