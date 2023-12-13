@@ -4,7 +4,7 @@
   <div id="main">
     <header-component :title="title" />
     <article>
-      <ul class="blogs fup">
+      <ul class="blogs fup" v-if="data?.contents">
         <li v-for="blog in data?.contents" :key="blog.id" class="blog-data">
           <NuxtLink :to="`/${blog.id}`" class="blog-card">
             <img :src="blog.thumbnail?.url" :width="100" alt="article-thumbnail" class="thumbnail"/>
@@ -17,6 +17,7 @@
           </NuxtLink>
         </li>
       </ul>
+      <p v-else>コンテンツの読み込みに失敗しました。再読み込みしてください。</p>
     </article>
   </div>
 </template>
@@ -61,7 +62,7 @@ article {
     object-fit: cover;
   }
   .blog-title {
-    font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
+    font-family: 'Helvetica', monospace;
     font-size: 1.2rem;
   }
   .blog-date {

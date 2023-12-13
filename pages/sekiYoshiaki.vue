@@ -3,9 +3,9 @@
         <header-component :title="data" />
         <div class="professor">
             <div class="prof-1">
-                <h2 class="fup" id="name"><strong>関良明</strong>&nbsp;Yoshiaki Seki</h2>
+                <h2 id="name"><strong>関良明</strong>&nbsp;Yoshiaki Seki</h2>
                 <div class="prof-flex">
-                    <div class="card card0 prof-flex-content fup">
+                    <div class="card card0 prof-flex-content">
                         <div class="border">
                             <h2 id="cardtitle">Yoshiaki Seki</h2>
                             <em>
