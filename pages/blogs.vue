@@ -24,7 +24,7 @@
 
 <script setup lang="ts">
   import type { Blog } from "~/types/blog";
-  const title = 'ブログ一覧'
+  const title = '活動報告(blogs)'
   const { data } = await useMicroCMSGetList<Blog>({
     endpoint: "blog",
   });

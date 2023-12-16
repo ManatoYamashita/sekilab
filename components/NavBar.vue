@@ -6,7 +6,7 @@
                 <nav>
                     <div class="inner">
                         <nuxt-link to="/" class="log-sp"><img class="logo-sp" src="@/assets/logo.png" alt="logo"></nuxt-link>
-                        <ul id="menu-content">
+                        <ul id="menu-content" @click="toggle">
                             <li class="first-content nav-li">
                                 <nuxt-link to="/about">研究室概要</nuxt-link>
                                 <ul class="second-content">
@@ -158,7 +158,7 @@ import { ref } from 'vue';
         transition: all 0.2s;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 700px) {
         nav {
             position: fixed;
             top: 0;
@@ -227,7 +227,7 @@ import { ref } from 'vue';
             position: absolute;
             left: 0;
             width: 30px;
-            height: 1px;
+            height: 3px;
             background-color: #ccc;
             border-radius: 4px;
             -webkit-transition: all 0.3s;

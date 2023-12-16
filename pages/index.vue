@@ -25,9 +25,9 @@
         </section>
 
         <div id="content">
-          <BlogComponent class="fup" />
-          <ProfessorComponent class="fup" />
-          <AboutComponent class="fup" />
+          <BlogComponent />
+          <ProfessorComponent />
+          <AboutComponent />
         </div>
       </div>
   </div>
@@ -206,7 +206,7 @@ span strong {
   animation: scale 1s;
   animation-delay: 1s;
   animation-fill-mode: both;
-  animation-timing-function: 1s cubic-bezier(0,.81,.86,.98);
+  animation-timing-function: 1.5s cubic-bezier(0,.81,.86,.98);
 }
 @keyframes scale {
   0% {
@@ -240,7 +240,13 @@ span strong {
     height: 100vh;
   }
   h1#scroll-head {
-    font-size: 2rem;
+    padding: 3rem .5rem 5rem .5rem;
+  }
+  #scroll-head span:first-of-type {
+    font-size: 50%;
+  }
+  #scroll-head span {
+    font-size: 60%;
   }
 }
 </style>
