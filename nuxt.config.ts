@@ -15,7 +15,7 @@ export default defineNuxtConfig({
       ],
       htmlAttrs: {
         lang: 'ja',
-        prefix: 'og: /ogp.jpg'
+        prefix: 'og: /ogp.png'
       },
     },
         pageTransition: {

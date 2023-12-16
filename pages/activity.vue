@@ -2,6 +2,7 @@
     <div class="main">
         <header-component :title="data" />
         <div class="detail fup">
+          <h2>年間スケジュール</h2>
             <p>関研究室では様々な活動を行います。その年によって違いますが、一般的な一年のイベントとしては、</p>
             <ul>
                 <li>4月: 新３年生配属</li>
@@ -30,7 +31,7 @@
 </template>
 
 <script setup>
-  const data = '活動内容';
+  const data = '活動履歴';
 </script>
 
 <style scoped>
