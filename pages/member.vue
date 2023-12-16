@@ -118,7 +118,17 @@ const members3 = reactive<{name: string, image: string, detail: string}[]>([
     align-items: center;
 
 }
-
+h2 {
+    font-family: "Noto Sans JP", sans-serif, "Helvetica", monospace;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+p {
+    font-family: "Noto Sans JP", sans-serif, "Helvetica", monospace;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
 .fancy {
  background-color: transparent;
  border: 2px solid #000;

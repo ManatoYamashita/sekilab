@@ -69,7 +69,8 @@
     padding-left: 3rem;
 }
 h2 {
-    font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
+    font-family: "Noto Sans JP", sans-serif, "Helvetica", monospace;
+    font-weight: bold;
     font-size: 2.5rem;
     padding: 5rem 0;
     text-align: center;

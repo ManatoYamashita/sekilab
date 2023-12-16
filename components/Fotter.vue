@@ -36,11 +36,13 @@
             </div>
             <div class="univ">
                     <h4><a href="https://www.tcu.ac.jp">東京都市大学 横浜キャンパス</a></h4>
-                    <p><a href="https://informatics.tcu.ac.jp/faculty/system/" target="_blank">メディア情報学部 情報システム学科</a><br>
+                    <p>
+                        <a href="https://informatics.tcu.ac.jp/faculty/system/" target="_blank">メディア情報学部 情報システム学科</a><br>
                         <a href="https://www.comm.tcu.ac.jp/gseis/department/index.html" target="_blank">環境情報学専攻</a>
-                        <a href="https://www.comm.tcu.ac.jp/ddprom/" target="_blank">デザインデータ科学部 デザインデータ科学科</a></p>
-                </div>
-            <span id="copy">&copy; 2023 - {{ year }} 東京都市大学 関研究室 all right reserve | produced by <a href="https://manapuraza.com" target="_blank">Manato Yamashita</a></span>
+                        <a href="https://www.comm.tcu.ac.jp/ddprom/" target="_blank">デザインデータ科学部 デザインデータ科学科</a>
+                    </p>
+            </div>
+            <span id="copy">&copy; 2023 - {{ year }} 東京都市大学 関研究室 all right reserve | Designed by <a href="https://manapuraza.com" target="_blank">Manato Yamashita</a></span>
         </footer>
     </div>
 </template>
@@ -101,8 +103,8 @@
         width: 100%;
     }
     h2 {
+        font-family: 'Dela Gothic One', "Noto Sans JP", sans-serif, "Helvetica", monospace;
         font-size: 2rem;
-        font-weight: bold;
         margin-bottom: 2rem;
     }
     h3 {
@@ -157,6 +159,7 @@
         font-family: Arial, Helvetica, sans-serif, monospace;
         text-align: center;
     }
+
     @media screen and (max-width: 768px) {
         footer {
             flex-direction: column;
@@ -165,11 +168,20 @@
         h2 {
             font-size: 1.5rem;
         }
-        h3, h4 {
+        h3 {
             font-size: medium;
+        }
+        h4 {
+            font-size: small;
         }
         ul, li, p {
             font-size: small;
+        }
+        .univ > p, .univ > a {
+            font-size: x-small;
+        }
+        #copy {
+            font-size: xx-small;
         }
     }
 </style>

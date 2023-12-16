@@ -41,4 +41,7 @@
         background-position: 0 0;
         color: #000;
     }
+    a:hover {
+        text-decoration: none;
+    }
 </style>

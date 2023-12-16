@@ -48,7 +48,8 @@
         justify-content: center;
     }
     h2 {
-        font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
+        font-family: "Noto Sans JP", sans-serif, "Helvetica", monospace;
+        font-weight: bold;     
         font-size: 3rem;
         margin-bottom: 2rem;
     }
@@ -119,12 +120,10 @@
         }
         h2 {
             font-size: 2rem;
-            font-weight: bold;
             margin-bottom: 1rem;
         }
         h3 {
             font-size: 1.5rem;
-            font-weight: bold;
             margin-bottom: 1rem;
         }
         p {

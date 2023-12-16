@@ -33,7 +33,7 @@
       { property: 'og:description', content: 'a Website SEKI Lab. at TCU, research about Information Security.' },
       { property: 'og:image', content: '/ogp.png' },
       { property: 'og:type', content: 'website' },
-      { property: 'twitter:card, content: large_summary_image' },
+      { property: 'twitter:card, content: summary_large_image' },
     ]
   })
   import { onMounted, onUnmounted, ref } from 'vue';
@@ -106,6 +106,7 @@
     z-index: 2;
     animation: slideIn .3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
   }
+  
   @keyframes slideIn {
     0% { transform: translateX(-100%); }
     100% { transform: translateX(0); }

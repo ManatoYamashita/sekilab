@@ -52,8 +52,9 @@ export default {
     justify-content: center;
     text-align: center;
 }
-h1 {
-    font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
+h1 {        
+    font-family: "Noto Sans JP", sans-serif, "Helvetica", monospace;
+    font-weight: bold;
     font-size: 2rem;
 }
 </style>

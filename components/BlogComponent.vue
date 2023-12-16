@@ -61,7 +61,8 @@
         color: #333;
     }
     h2 {
-        font-family: "Dela Gothic One", "Noto Sans JP", sans-serif;
+        font-family: "Noto Sans JP", sans-serif, "Helvetica", monospace;
+        font-weight: bold;
         font-size: 3rem;
         margin-bottom: 2rem;
     }
