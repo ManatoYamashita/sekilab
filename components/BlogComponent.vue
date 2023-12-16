@@ -26,7 +26,7 @@
                     </NuxtLink>
                 </li>
             </ul>
-            <p v-else>コンテンツの読み込みに失敗しました。再読み込みしてください。</p>
+            <p v-else>コンテンツの読み込みに失敗しました。再読み込みしてください。（command/control + R）</p>
             <Button url="/blogs" class="fup">もっと見る</Button>
         </article>
     </div>
@@ -78,6 +78,11 @@
     img {
         width: 100%;
         object-fit: cover;
+    }
+    p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        padding: 2rem;
     }
 
     /* sp表示 */
