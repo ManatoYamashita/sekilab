@@ -1,8 +1,8 @@
 <!-- 単体記事ページ -->
 
 <template>
-  <template v-if="data">
-    <main>
+  <template v-if="data?.content">
+    <main  id="blog-article">
       <h1>
         {{ data.title }}
       </h1>
@@ -28,6 +28,7 @@
       <br>
       </main>
   </template>
+  <p v-else>コンテンツの読み込みに失敗しました。再読み込みしてください。（command/control + R）</p>
 </template>
 
 <script setup lang="ts">
@@ -82,5 +83,10 @@
   }
   .btn {
     margin: 1rem;
+  }
+  p {
+    padding: 10rem;
+    text-align: center;
+    font-size: 1.5rem;
   }
 </style>

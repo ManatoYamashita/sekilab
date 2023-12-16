@@ -17,7 +17,7 @@
           </NuxtLink>
         </li>
       </ul>
-      <p v-else>コンテンツの読み込みに失敗しました。再読み込みしてください。</p>
+      <p v-else>コンテンツの読み込みに失敗しました。再読み込みしてください。（command/control + R）</p>
     </article>
   </div>
 </template>
@@ -30,7 +30,7 @@
   });
   console.log(data)
 </script>
-  
+
 <style scoped>
 article {
   width: 100%;
@@ -68,6 +68,11 @@ article {
   .blog-date {
     font-size: 0.8rem;
     color: #666;
+  }
+  p {
+    font-size: 1.2rem;
+    padding: 10rem;
+    text-align: center;
   }
   @media screen and (max-width: 768px) {
     .blog-title {
