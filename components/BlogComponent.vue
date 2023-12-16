@@ -6,7 +6,6 @@
     const { data } = await useMicroCMSGetList<Blog>({
         endpoint: "blog",
     });
-    console.log(data)
 </script>
 
 <template>
@@ -16,17 +15,19 @@
         </div>
         
         <article class="blog-right">
-            <h2 class="fup">活動報告</h2>
-            <ul class="blogs fup" v-if="data?.contents">
-                <li v-for="blog in data?.contents" :key="blog.id" class="blog-data">
-                    <NuxtLink :to="`/${blog.id}`" class="blog-card">
-                    <div class="article">
-                        <div>{{ dateFormat(blog.publishedAt ?? blog.createdAt) }}&nbsp; <strong>{{ blog.title }}</strong></div>
-                    </div>
-                    </NuxtLink>
-                </li>
-            </ul>
-            <p v-else>コンテンツの読み込みに失敗しました。再読み込みしてください。（command/control + R）</p>
+            <h2 class="fup">最新情報</h2>
+            <client-only>
+                <ul class="blogs fup" v-if="data?.contents">
+                    <li v-for="blog in data?.contents" :key="blog.id" class="blog-data">
+                        <NuxtLink :to="`/${blog.id}`" class="blog-card">
+                        <div class="article">
+                            <div>{{ dateFormat(blog.publishedAt ?? blog.createdAt) }}&nbsp; <strong>{{ blog.title }}</strong></div>
+                        </div>
+                        </NuxtLink>
+                    </li>
+                </ul>
+                <p v-else>コンテンツの読み込みに失敗しました。再読み込みしてください。（command/control + R）</p>
+            </client-only>
             <Button url="/blogs" class="fup">もっと見る</Button>
         </article>
     </div>

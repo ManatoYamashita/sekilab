@@ -2,25 +2,28 @@
     <div id="menu">
         <div id="menu-inner">
             <div id="navArea" ref="nav">
-                <nuxt-link to="/" id="logo-pc"><img src="@/assets/logo-white.png" alt="logo"></nuxt-link>
+                <nuxt-link to="/" id="logo-pc"><img src="@/assets/logo-white.webp" alt="logo"></nuxt-link>
                 <nav>
                     <div class="inner">
                         <nuxt-link to="/" class="log-sp"><img class="logo-sp" src="@/assets/logo.png" alt="logo"></nuxt-link>
                         <ul id="menu-content" @click="toggle">
                             <li class="first-content nav-li">
-                                <nuxt-link to="/about">研究室概要</nuxt-link>
+                                <nuxt-link to="/">Home</nuxt-link>
+                            </li>
+                            <li class="first-content nav-li">
+                                <nuxt-link to="/about">About</nuxt-link>
                                 <ul class="second-content">
-                                    <li class="nav-li"><nuxt-link to="/sekiYoshiaki">関先生について</nuxt-link></li>
-                                    <li class="nav-li"><nuxt-link to="/activity">活動内容</nuxt-link></li>            
+                                    <li class="nav-li"><nuxt-link to="/sekiYoshiaki">Proffesor</nuxt-link></li>
+                                    <li class="nav-li"><nuxt-link to="/activity">Activity</nuxt-link></li>            
                                 </ul>
                             </li>
                             <li class="first-content nav-li">
-                                <nuxt-link to="/member">メンバー</nuxt-link>
+                                <nuxt-link to="/member">Member</nuxt-link>
                                 <ul class="second-content">
                                 </ul>
                             </li>
                             <li class="first-content nav-li">
-                                <nuxt-link to="/other">その他</nuxt-link>
+                                <nuxt-link to="/other">Other</nuxt-link>
                             </li>
                         </ul>
                     </div>
@@ -44,7 +47,7 @@ import { ref } from 'vue';
     const toggle = () => { 
         nav.value.classList.toggle(open),
         humb.value.classList.toggle(open)
-    }
+    };
 </script>
 
 <style scoped>
@@ -157,7 +160,7 @@ import { ref } from 'vue';
         -webkit-transition: all 0.2s;
         transition: all 0.2s;
     }
-
+    
     @media screen and (max-width: 700px) {
         nav {
             position: fixed;
@@ -227,8 +230,9 @@ import { ref } from 'vue';
             position: absolute;
             left: 0;
             width: 30px;
-            height: 3px;
-            background-color: #ccc;
+            height: 4px;
+            background-color: whitesmoke;
+            border: 1px solid black;
             border-radius: 4px;
             -webkit-transition: all 0.3s;
             transition: all 0.3s;

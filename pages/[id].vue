@@ -85,7 +85,7 @@
     margin: 1rem;
   }
   p {
-    padding: 10rem;
+    padding: 3rem;
     text-align: center;
     font-size: 1.5rem;
   }

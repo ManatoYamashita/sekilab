@@ -71,7 +71,7 @@ article {
   }
   p {
     font-size: 1.2rem;
-    padding: 10rem;
+    padding: 2rem;
     text-align: center;
   }
   @media screen and (max-width: 768px) {

@@ -4,8 +4,10 @@
   <div>
       <div class="cover">
         <div id="video-area">
-          <video id="video" src="@/assets/video.mp4" preload="auto" autoplay loop muted playsinline></video>
-        </div>
+          <Client-only>
+            <video id="video" src="@/assets/video.mp4" preload="auto" autoplay loop muted playsinline></video>
+          </Client-only>
+         </div>
         <div class="title">
           <h1 id="tcu">東京都市大学</h1>
           <h1 id="sekiken">関研究室</h1>
