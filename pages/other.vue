@@ -2,7 +2,7 @@
     <div class="main">
         <headerComponent :title="data" />
         <div class="other-1">
-            <h1><strong>『セキュリティメタデザイン研究室』</strong>について</h1>
+            <h1><strong>『セキュリティメタデザイン研究室』</strong>&nbsp;について</h1>
             <div class="images">
                 <img src="@/assets/secumetadesign.png" alt="security-meta-design-lab">
                 <img src="@/assets/security_image.png" alt="what-is-information-security">
@@ -74,6 +74,7 @@ p {
     font-weight: semi-bold;
     color: #333;
     padding: .5rem;
+    text-align: justify;
 }
 .other-2 {
     width: 100%;
@@ -106,5 +107,39 @@ strong {
     font-weight: bold;
     color: var(--seki-main-color);
     padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
+        font-size: 1.5rem;
+        color: #333;
+        padding: 1rem;
+    }
+    .images {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .thats-semi {
+        width: 100%;
+        max-width: 30rem;
+        height: auto;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    strong {
+        font-size: 120%;
+        font-weight: bold;
+        color: var(--seki-main-color);
+        padding: 0;
+    }
 }
 </style>

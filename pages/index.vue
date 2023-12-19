@@ -12,7 +12,8 @@
           <h1 id="tcu">東京都市大学</h1>
           <h1 id="sekiken">関研究室</h1>
           <h1 id="inforsec">情報セキュリティ</h1>
-          <h2>Tokyo City University Information Security Lab</h2>
+          <h2>Tokyo City University<br>
+             Information Security Lab</h2>
         </div>
       </div>
 

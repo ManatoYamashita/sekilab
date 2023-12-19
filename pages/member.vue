@@ -16,7 +16,7 @@
             <h3>M1</h3>
                 <div class="mems-cards">
                     <div class="mems" v-for="member in membersM1" :key="member.name">
-                        <member-card-component :name="member.name" :image="member.image" :detail="member.detail" />
+                        <member-card-component :name="member.name" :image="member.image" :roll="member.roll" :detail="member.detail" />
                     </div>
                 </div>
         </div>
@@ -25,7 +25,7 @@
             <p>メディア情報学部 情報システム学科 10人</p>
             <div class="mems-cards">
                 <div class="mems" v-for="member in membersU4" :key="member.name">
-                    <member-card-component :name="member.name" :image="member.image" :detail="member.detail" />
+                    <member-card-component :name="member.name" :image="member.image" :roll="member.roll" :detail="member.detail" />
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@
             <p>メディア情報学部 情報システム学科 13人</p>
             <div class="mems-cards">
                 <div class="mems" v-for="member in membersU3" :key="member.name">
-                    <member-card-component :name="member.name" :image="member.image" :detail="member.detail" />
+                    <member-card-component :name="member.name" :image="member.image" :roll="member.roll" :detail="member.detail" />
                 </div>
             </div>
         </div>
@@ -56,40 +56,40 @@ import ProfessorComponent from '~/components/professorComponent.vue'
 import { reactive } from 'vue'
 const data = 'メンバー紹介'
 
-const membersM2 = reactive<{name: string, image: string, detail: string}[]>([
-  {name: "篠崎礼司", image: "_nuxt/assets/mems/m01.webp", detail: "研究内容: スマートフォンを用いて物理現象を理解させる3Dアプリケーションに関する研究"},
+const membersM2 = reactive<{name: string, image: string, roll: string, detail: string}[]>([
+  {name: "篠﨑 玲士", image: "_nuxt/assets/mems/m01.webp", roll: "ゼミ長", detail: "「スマートフォンを用いて物理現象を理解させる3Dアプリケーションに関する研究」"},
 ])
 
-const membersM1 = reactive<{name: string, image: string, detail: string}[]>([
-  {name: "相吉澤 奏", image: "_nuxt/assets/mems/m01.webp", detail: "研究内容: 共分散構造分析の設計手法に関する研究"},
+const membersM1 = reactive<{name: string, image: string, roll: string, detail: string}[]>([
+  {name: "相吉澤 奏", image: "_nuxt/assets/mems/m01.webp", roll: "環境", detail: "「共分散構造分析の設計手法に関する研究」"},
 ])
 
-const membersU4 = reactive<{name: string, image: string, detail: string}[]>([
-  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", detail: "研究内容: 「期間限定販売法における転売防止手法に関する研究」, 役職: ゼミ長"},
-  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", detail: "研究内容: 期間限定販売法における転売防止手法に関"},
-  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", detail: "研究内容: 期間限定販売法における転売防止手法に関"},
-  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", detail: "研究内容: 期間限定販売法における転売防止手法に関"},
-  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", detail: "研究内容: 期間限定販売法における転売防止手法に関"},
-  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", detail: "研究内容: 期間限定販売法における転売防止手法に関"},
-  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", detail: "研究内容: 期間限定販売法における転売防止手法に関"},
-  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", detail: "研究内容: 期間限定販売法における転売防止手法に関"},
-  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", detail: "研究内容: 期間限定販売法における転売防止手法に関"},
-  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", detail: "研究内容: 期間限定販売法における転売防止手法に関"},
+const membersU4 = reactive<{name: string, image: string, roll: string, detail: string}[]>([
+  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", roll: "ゼミ長", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", roll: "ゼミ長", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", roll: "ゼミ長", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", roll: "ゼミ長", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", roll: "ゼミ長", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", roll: "ゼミ長", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", roll: "ゼミ長", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", roll: "ゼミ長", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", roll: "ゼミ長", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "堀 恭輔", image: "_nuxt/assets/mems/m01.webp", roll: "ゼミ長", detail: "「期間限定販売法における転売防止手法に関する研究」"},
 ])
-const membersU3 = reactive<{name: string, image: string, detail: string}[]>([
-  {name: "岸 祐奈", image: "_nuxt/assets/mems/m01.webp", detail: "事例研究: AI生成イラストの判断"},
-  {name: "山下 真和都", image: "_nuxt/assets/mems/m01.webp", detail: "事例研究: 未定"},
-  {name: "岸 祐奈", image: "_nuxt/assets/mems/m01.webp", detail: "事例研究: AI生成イラストの判断"},
-  {name: "山下 真和都", image: "_nuxt/assets/mems/m01.webp", detail: "事例研究: 未定"},
-  {name: "岸 祐奈", image: "_nuxt/assets/mems/m01.webp", detail: "事例研究: AI生成イラストの判断"},
-  {name: "山下 真和都", image: "_nuxt/assets/mems/m01.webp", detail: "事例研究: 未定"},
-  {name: "岸 祐奈", image: "_nuxt/assets/mems/m01.webp", detail: "事例研究: AI生成イラストの判断"},
-  {name: "山下 真和都", image: "_nuxt/assets/mems/m01.webp", detail: "事例研究: 未定"},
-  {name: "岸 祐奈", image: "_nuxt/assets/mems/m01.webp", detail: "事例研究: AI生成イラストの判断"},
-  {name: "山下 真和都", image: "_nuxt/assets/mems/m01.webp", detail: "事例研究: 未定"},
-  {name: "岸 祐奈", image: "_nuxt/assets/mems/m01.webp", detail: "事例研究: AI生成イラストの判断"},
-  {name: "山下 真和都", image: "_nuxt/assets/mems/m01.webp", detail: "事例研究: 未定"},
-  {name: "岸 祐奈", image: "_nuxt/assets/mems/m01.webp", detail: "事例研究: AI生成イラストの判断"},
+const membersU3 = reactive<{name: string, image: string, roll: string, detail: string}[]>([
+  {name: "岸 祐奈", image: "_nuxt/assets/mems/m01.webp", roll: "ゼミ長", detail: "「AI生成イラストの判断」"},
+  {name: "山下 真和都", image: "_nuxt/assets/mems/m01.webp", roll: "広報", detail: "「未定」"},
+  {name: "岸 祐奈", image: "_nuxt/assets/mems/m01.webp", roll: "ゼミ長", detail: "「AI生成イラストの判断」"},
+  {name: "山下 真和都", image: "_nuxt/assets/mems/m01.webp", roll: "広報", detail: "「未定」"},
+  {name: "岸 祐奈", image: "_nuxt/assets/mems/m01.webp", roll: "ゼミ長", detail: "「AI生成イラストの判断」"},
+  {name: "山下 真和都", image: "_nuxt/assets/mems/m01.webp", roll: "広報", detail: "「未定」"},
+  {name: "岸 祐奈", image: "_nuxt/assets/mems/m01.webp", roll: "ゼミ長", detail: "「AI生成イラストの判断」"},
+  {name: "山下 真和都", image: "_nuxt/assets/mems/m01.webp", roll: "広報", detail: "「未定」"},
+  {name: "岸 祐奈", image: "_nuxt/assets/mems/m01.webp", roll: "ゼミ長", detail: "「AI生成イラストの判断」"},
+  {name: "山下 真和都", image: "_nuxt/assets/mems/m01.webp", roll: "広報", detail: "「未定」"},
+  {name: "岸 祐奈", image: "_nuxt/assets/mems/m01.webp", roll: "ゼミ長", detail: "「AI生成イラストの判断」"},
+  {name: "山下 真和都", image: "_nuxt/assets/mems/m01.webp", roll: "広報", detail: "「未定」"},
+
 ])
 </script>
 

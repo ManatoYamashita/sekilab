@@ -35,7 +35,7 @@ export default {
     position: relative;
     top: 0;
     height: 20vh;
-    background-image: url(@/assets/tcu_yc.jpg);
+    background-image: url(@/assets/cover.webp);
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;

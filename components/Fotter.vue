@@ -1,7 +1,7 @@
 <template>
     <div class="wrap">
         <div class="footer-back">
-            <img src="@/assets/gakuseisitu.jpg" alt="background" class="footer-cover">
+            <img src="@/assets/cover.webp" alt="background" class="footer-cover">
         </div>
         <footer>
             <h2>Contact us</h2>
@@ -61,7 +61,7 @@
                     </a>
                 </div>
             </div>
-            <span id="copy">&copy; 2023 - {{ year }} 東京都市大学 関研究室 all right reserve | Designed by <a href="https://manapuraza.com" target="_blank">Manato Yamashita</a></span>
+            <span id="copy">&copy; 2023 - {{ year }} 東京都市大学 関研究室 All right reserved | Designed by <a href="https://manapuraza.com" target="_blank">Manato Yamashita</a></span>
         </footer>
     </div>
 </template>

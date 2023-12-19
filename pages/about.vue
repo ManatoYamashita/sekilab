@@ -34,7 +34,7 @@
                 </article>
             </div>
             <div class="about-3">
-                <img class="about3-image" src="@/assets/research.png">
+                <img class="about3-image" src="@/assets/gakuseisitu.jpg">
                 <div class="about3-content">
                     <h3>研究テーマ例（2023）</h3>
                     <ul class="research-examples fup">
@@ -92,9 +92,10 @@ strong {
 }
 p {
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 2rem;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
     color: rgb(214, 214, 214);
+    text-align: justify;
 }
 
 .about-2 {
@@ -187,7 +188,7 @@ h3 {
         padding: 2rem 1rem;
     }
     p {
-        padding: 0 1rem;
+        padding: 2rem;
     }
     .about-2 {
         height: 100%;
