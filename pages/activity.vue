@@ -3,7 +3,8 @@
         <header-component :title="data" />
         <div class="detail fup">
           <h2>年間スケジュール</h2>
-            <p>関研究室では様々な活動を行います。その年によって違いますが、一般的な一年のイベントとしては、</p>
+            <p>関研究室では様々な活動を行います。<br>
+              その年によって違いますが一般的な一年のイベントとしては、</p>
             <ul>
                 <li>4月: 新３年生配属</li>
                 <li>6月: 横浜祭</li>
@@ -57,6 +58,7 @@ ul {
     margin: 1rem;
 }
 li {
+    list-style: none;
     margin: 0 0 0 1rem;
 }
 #blog {
@@ -140,5 +142,14 @@ button {
   text-decoration: none;
   border: none;
   background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+  .detail {
+    padding: 1rem 2rem 5rem 2rem;
+  }
 }
 </style>

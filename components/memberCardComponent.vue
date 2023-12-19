@@ -14,8 +14,11 @@
                 </figure>
                 </div>
                 <div class="card__body_02">
+                    <p class="card__text_02">
+                        担当: <string>{{ roll }}</string>
+                    </p>
                 <p class="card__text2_02">
-                    {{ detail }}
+                    研究内容: {{ detail }}
                 </p>
                 </div>    
             </article>
@@ -28,6 +31,7 @@
 interface Props {
     name: string,
     image: string,
+    roll: string,
     detail: string
 }
 
@@ -83,13 +87,14 @@ const props = defineProps<Props>()
     .card__body_02 {
         padding: .5rem;
     }
-
     .card__text_02 {
         font-size: .8rem;
         text-align:center;
         text-decoration: none;
     }
-
+    .card__text_02 string {
+        font-weight: bold;
+    }
     .card__text2_02 {
         font-size: .8rem;
         margin-top: 0;

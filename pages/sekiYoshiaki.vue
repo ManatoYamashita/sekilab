@@ -87,6 +87,7 @@ p {
     padding: 1rem;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
     color: rgb(214, 214, 214);
+    text-align: justify;
 }
 
 .border {
