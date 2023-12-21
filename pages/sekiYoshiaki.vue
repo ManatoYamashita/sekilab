@@ -182,7 +182,6 @@ em {
     }
     .card {
         width: 75%;
-        height: 100%;
     }
     .card0 {
         background-size: 100%;

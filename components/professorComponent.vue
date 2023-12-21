@@ -70,7 +70,7 @@
         position: relative;
     }
     .card {
-        height: 379px;
+        height: 100%;
         width: 100%;
         transition: background 0.8s;
         overflow: hidden;
