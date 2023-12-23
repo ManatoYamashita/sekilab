@@ -21,6 +21,7 @@
         <section>
           <div class="section_content fup">
             <h1 id="scroll-head">
+              <span>Under Constraction....</span>
               <span>More secure for "<strong>Connecting</strong>"</span>
               <span>"<strong>つながる</strong>"にもっと安心を</span>
             </h1>
