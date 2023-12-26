@@ -43,12 +43,13 @@ const props = defineProps<Props>()
     .l-wrapper_02 {
         margin: 1rem auto;
         width: 10rem;
+        height: 23rem;
     }
     .l-wrapper_02:hover {
         box-shadow: 0 0 0px rgba(0, 0, 0, .16);
     }
     .card-radius_02{
-        overflow: hidden;
+        overflow: scroll;
         border-radius: 8px;
         box-shadow: 0 4px 15px rgba(0,0,0,.2);
     }

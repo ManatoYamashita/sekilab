@@ -5,13 +5,13 @@
       <div class="cover">
         <div id="video-area">
           <Client-only>
-            <video id="video" src="@/assets/video.mp4" preload="auto" autoplay loop muted playsinline></video>
+            <video id="video" src="@/assets/video.mp4" preload="auto" autoplay muted playsinline loop></video>
           </Client-only>
          </div>
         <div class="title">
           <h1 id="tcu">東京都市大学</h1>
           <h1 id="sekiken">関研究室</h1>
-          <h1 id="inforsec">情報セキュリティ</h1>
+          <h1 id="inforsec">Under Constraction...</h1>
           <h2>Tokyo City University<br>
              Information Security Lab</h2>
         </div>
@@ -21,7 +21,6 @@
         <section>
           <div class="section_content fup">
             <h1 id="scroll-head">
-              <span>Under Constraction....</span>
               <span>More secure for "<strong>Connecting</strong>"</span>
               <span>"<strong>つながる</strong>"にもっと安心を</span>
             </h1>
@@ -90,31 +89,22 @@
     display: block;
     font-size: 3rem;
     margin-bottom: .5rem;
-    font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
-    font-weight: bold;
+    font-family: 'Noto Sans JP','Helvetica', monospace;
+    font-weight: 800;
     line-height: 1;
   }
   .cover h1#tcu {
     display: block;
-    font-size: 2rem;
-    font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
-    font-weight: normal;
-    line-height: 1;
+    font-size: 3rem;
   }
   .cover h1#sekiken {
     display: block;
-    font-size: 4rem;
-    font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
-    font-weight: normal;
-    line-height: 1;
+    font-size: 7rem;
   }
   .cover h1#inforsec {
     display: block;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
-    font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
-    font-weight: normal;
-    line-height: 1;
   }
   .cover h2 {
     font-size: 1rem;
@@ -239,6 +229,15 @@ span strong {
     bottom: 0;
     left: 0;
     padding: 3rem;
+  }
+  h1#tcu {
+    font-size: 2rem !important;
+  }
+  h1#sekiken {
+    font-size: 4rem !important;
+  }
+  h1#inforsec {
+    font-size: 1.5rem !important;
   }
   section {
     height: 100vh;

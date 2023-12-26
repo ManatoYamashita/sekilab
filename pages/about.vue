@@ -73,6 +73,7 @@ const data = '研究室概要'
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 h2 {
     font-family: "Noto Sans JP", sans-serif, "Helvetica", monospace;
@@ -85,7 +86,7 @@ strong {
     font-size: 120%;
 }
 .about-image {
-    width: 100vw;
+    width: 50%;
     height: 100%;
     object-fit: cover;
     margin: 1em 0;

@@ -32,7 +32,7 @@
 </template>
 
 <script setup>
-  const data = '活動履歴';
+  const data = '活動';
 </script>
 
 <style scoped>
