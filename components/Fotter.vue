@@ -49,9 +49,9 @@
                 <div class="univ footer-left">
                     <h4><a href="https://www.tcu.ac.jp">東京都市大学</a></h4>
                     <p>
-                        <a href="https://www.comm.tcu.ac.jp/gseis/department/index.html" target="_blank">環境情報学専攻</a><br>
+                        <a href="https://www.comm.tcu.ac.jp/gseis/department/index.html" target="_blank">大学院環境情報学研究科 環境情報学専攻</a><br>
                         <a href="https://informatics.tcu.ac.jp/faculty/system/" target="_blank">メディア情報学部 情報システム学科</a><br>
-                        <a href="https://www.comm.tcu.ac.jp/ddprom/" target="_blank">デザインデータ科学部 デザインデータ科学科</a>
+                        <a href="https://www.comm.tcu.ac.jp/ddprom/" target="_blank">デザイン・データ科学部 デザイン・データ科学科</a>
                     </p>
                 </div>
                 <div class="old-site footer-right">
@@ -63,7 +63,7 @@
                     </a>
                 </div>
             </div>
-            <span id="copy">&copy; 2023 - {{ year }} 東京都市大学 関研究室 All right reserved | Designed by <a href="https://manapuraza.com" target="_blank">Manato Yamashita</a></span>
+            <span id="copy">&copy; 2023 - {{ year }} 東京都市大学 関研究室 All right reserved | Constracted by <a href="https://manapuraza.com" target="_blank">Manato Yamashita</a></span>
         </footer>
     </div>
 </template>
@@ -108,7 +108,7 @@
         width: 100%;
         background-color: var(--seki-main-color);
         color: white;
-        padding: 2rem;
+        padding: 1.5rem;
     }
     .footer-flex {
         width: 100%;
@@ -148,7 +148,7 @@
     }
     ul {
         list-style: none;
-        padding: 1rem 0;
+        padding-top: 1rem;
     }
     li {
         font-size: 1rem;
@@ -184,7 +184,7 @@
         left: 0;
         width: 100%;
         max-width: 100%;
-        padding: .5rem;
+        padding: .3rem;
         font-size: .8rem;
         font-family: Arial, Helvetica, sans-serif, monospace;
         text-align: center;

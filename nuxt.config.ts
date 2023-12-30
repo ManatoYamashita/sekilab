@@ -7,6 +7,10 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'ja',
+        prefix: 'og: /ogp.png'
+      },
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       title: 'Tokyo City University SEKI - Information Security Lab.',
@@ -18,7 +22,7 @@ export default defineNuxtConfig({
           { name: 'format-detection', content: 'telephone=no' },
           { name: 'keywords', content: '東京都市大学, 関研究室, 情報セキュリティ, 関良明, 都市大, TCU, sekilab, seki, デザインデータ科学' },
           { name: 'description', content: '"つながる"にもっと安心を。東京都市大学 情報システム学科の関研究室のホームページです。情報セキュリティを中心に、情報共有システムや情報セキュリティ行動支援システムの研究を行っています。' },
-          { property: 'twitter:card, content: summary_large_image' },
+          { name: 'twitter:card', content: 'summary_large_image' },
           { property: 'og:title', content: 'Tokyo City University SEKI-Information Security Lab.' },
           { property: 'og:description', content: 'a Website SEKI Lab. at TCU, research about Information Security.' },
           { property: 'og:image', content: '/ogp.png' },
@@ -29,10 +33,7 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ],
-      htmlAttrs: {
-        lang: 'ja',
-        prefix: 'og: /ogp.png'
-      },
+
     },
         pageTransition: {
       name: 'page',

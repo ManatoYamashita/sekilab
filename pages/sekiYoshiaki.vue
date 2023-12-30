@@ -4,17 +4,14 @@
         <div class="professor">
             <div class="prof-1">
                 <h2 id="name"><strong>関良明</strong>&nbsp;Yoshiaki Seki</h2>
+                <p class="roll"><small>東京都市大学<br>
+                    メディア情報学部 情報システム学科,
+                    大学院環境情報学研究科 環境情報学専攻 教授<br>
+                    デザイン・データ科学部 学部長</small>
+                </p>
                 <div class="prof-flex">
-                    <div class="card card0 prof-flex-content">
-                        <div class="border">
-                            <h2 id="cardtitle">Yoshiaki Seki</h2>
-                            <em>
-                                東京都市大学<br>
-                                メディア情報学部 情報システム学科<br>
-                                デザインデータ科学部 デザインデータ科学科<br>
-                                環境情報学専攻<br>
-                            </em>
-                        </div>
+                    <div class="prof-flex-content">
+                        <img src="@/assets/seki.jpeg" alt="seki-yoshiaki">
                     </div>
                     <div class="prof-flex-content message fup">
                         <h3>「社会活動を効率的に推進する情報共有と情報資産を守るセキュリティを探求しよう」</h3>
@@ -57,6 +54,11 @@
     color: #fff;
     padding: 3rem;
 }
+.roll {
+    line-height: 1.3;
+    text-align: center;
+    padding-bottom: 4rem;
+}
 .prof-flex {
     display: flex;
     justify-content: center;
@@ -72,7 +74,8 @@ h2 {
     font-family: "Noto Sans JP", sans-serif, "Helvetica", monospace;
     font-weight: bold;
     font-size: 2.5rem;
-    padding: 5rem 0;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
     text-align: center;
 }
 h3 {
@@ -89,57 +92,13 @@ p {
     color: rgb(214, 214, 214);
     text-align: justify;
 }
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
 
-.border {
-  height: 369px;
-  width: 290px;
-  background: transparent;
-  border-radius: 10px;
-  transition: border 1s;
-  position: relative;
-}
-.border:hover {
-  border: 1px solid #fff;
-}
-.card {
-  height: 379px;
-  width: 300px;
-  border-radius: 10px;
-  transition: background 0.8s;
-  overflow: hidden;
-  box-shadow: 0 70px 63px -60px #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.card0 {
-  background: url("@/assets/seki.jpeg") center center no-repeat;
-  background-size: 300px;
-}
-.card0:hover {
-  background: url("@/assets/seki-mono-transp.png") left center no-repeat;
-  background-color: #000; ;
-  background-size: 600px;
-}
-#cardtitle, em {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #fff;
-  opacity: 0;
-  transition: opacity 1s;
-  padding: 1rem;
-}
-em {
-  position: absolute;
-  color: #fff;
-  height: 130px;
-  top: 260px;
-  font-size: .75rem;
-}
-.card:hover #cardtitle,
-.card:hover em {
-  opacity: 1;
-}
 #history {
     width: 100%;
     height: 100vh;
@@ -172,27 +131,15 @@ em {
     .prof-flex-content {
         width: 100%;
         padding: 1rem;
+        text-align: center;
     }
     .message {
         padding-left: 0;
     }
-    .border {
-        height: 100%;
-        width: 100%;
-    }
-    .card {
+    img {
         width: 50%;
-        padding: 5rem 1rem;
-    }
-    .card0 {
-        background-size: 100%;
-    }
-    em {
-        position: absolute;
-        color: #fff;
-        height: 130px;
-        top: 260px;
-        font-size: .75rem;
+        object-fit: cover;
+        border-radius: 1rem;
     }
     #history {
         height: auto;
