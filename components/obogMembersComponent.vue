@@ -17,7 +17,6 @@
         name: string,
         detail: string
     }
-
     const props = defineProps<Props>()
 </script>
 

@@ -34,7 +34,6 @@ interface Props {
     roll: string,
     detail: string
 }
-
 // propsを受け取る
 const props = defineProps<Props>()
 </script>

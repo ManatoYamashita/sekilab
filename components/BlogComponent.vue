@@ -2,7 +2,7 @@
 
 <script setup lang="ts">
     import type { Blog } from "~/types/blog";
-
+    
     const { data } = await useMicroCMSGetList<Blog>({
         endpoint: "blog",
     });
