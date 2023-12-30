@@ -13,7 +13,7 @@ export default defineNuxtConfig({
       },
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'Tokyo City University SEKI - Information Security Lab.',
+      title: 'Tokyo City University SEKI lab -Information Security',
       meta: [
           // 全てのオーガニック検索から除外
           { name: 'robots', content: 'noindex, nofollow' },
