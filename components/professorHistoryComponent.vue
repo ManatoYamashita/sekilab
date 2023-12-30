@@ -204,7 +204,10 @@
 }
  .tl-item:hover {
 	 width: 45% !important;
+   overflow: scroll;
+   background-color: black;
 }
+   
  .tl-item:hover:after {
 	 opacity: 0;
 }
