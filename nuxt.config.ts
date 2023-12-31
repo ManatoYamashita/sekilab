@@ -5,12 +5,14 @@ export default defineNuxtConfig({
   devtools: {
     enabled: false,
   },
+  
   app: {
     head: {
       htmlAttrs: {
         lang: 'ja',
         prefix: 'og: /ogp.png'
       },
+
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       title: 'Tokyo City University SEKI lab -Information Security',
@@ -30,20 +32,19 @@ export default defineNuxtConfig({
           { property: 'og:site_name', content: '東京都市大学 関研究室 Information Security' },
           { property: 'og:url', content: 'https://comm.tcu.ac.jp/seki_lab' },
       ],
+
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ],
-
     },
-        pageTransition: {
+        
+    pageTransition: {
       name: 'page',
       mode: 'out-in'
     },
   },
 
-  css: [
-    '@/assets/main.css'
-  ],
+  css: ['@/assets/main.css'],
   
   modules: ["nuxt-microcms-module", "@nuxtjs/google-fonts"],
   
@@ -51,9 +52,16 @@ export default defineNuxtConfig({
     serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN,
     apiKey: process.env.MICROCMS_API_KEY,
   },
+
   googleFonts: {
     families: {
       "Noto+Sans+JP": [400, 500, 700, 800],
     }
   },
 })
+
+module.exports = {
+  cache: {
+    enabled: true,
+  },
+};
