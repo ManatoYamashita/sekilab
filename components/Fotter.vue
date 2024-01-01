@@ -152,12 +152,12 @@
         padding-top: 1rem;
     }
     li {
-        font-size: .8rem;
+        font-size: .9rem;
         margin: 0 0 .5rem 1rem;
         font-family: Arial, Helvetica, sans-serif, monospace;
     }
     p {
-        font-size: .8rem;
+        font-size: .9rem;
         margin: .5rem 0;
         padding-left: 1rem;
     }
