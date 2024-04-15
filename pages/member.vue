@@ -15,6 +15,7 @@
                         <member-card-component :name="member.name" :image="member.image" :roll="member.roll" :detail="member.detail" />
                     </div>
                 </div>
+
             <h3>M1</h3>
                 <div class="mems-cards">
                     <div class="mems" v-for="member in membersM1" :key="member.name">
@@ -22,6 +23,7 @@
                     </div>
                 </div>
         </div>
+
         <div class="under-4 stud">
             <h2>学部4年生</h2>
             <p>メディア情報学部 情報システム学科 13人</p>
@@ -31,6 +33,7 @@
                 </div>
             </div>
         </div>
+
         <div class="under-3 stud">
             <h2>学部3年生</h2>
             <p>メディア情報学部 情報システム学科 10人</p>
@@ -44,7 +47,7 @@
         <hr>
         <div class="obog stud">
             <h2>OB&OG</h2>
-            <p>90人</p>
+            <p>卒業生 100人</p>
             <div class="obogs">
                 <div class="obog-card" v-for="member in membersOBOG" :key="member.name">
                     <obog-members-component :name="member.name" :detail="member.detail" />
