@@ -59,29 +59,44 @@
 import HeaderComponent from '~/components/headerComponent.vue'
 import ProfessorComponent from '~/components/professorComponent.vue'
 import { reactive } from 'vue'
+
+// 画像ファイルのインポート
+import aiyoshizawaImg from '@/assets/mems/pre/aiyoshizawa.jpg'
+import kishiImg from '@/assets/mems/2021/kishi.webp'
+import yamashitaImg from '@/assets/mems/2021/yamashita.webp'
+import konishikawaImg from '@/assets/mems/2021/konishikawa.webp'
+import kobayashiShoeiImg from '@/assets/mems/2021/kobayashi-shoei.webp'
+import niimiImg from '@/assets/mems/2021/niimi.webp'
+import kobayashiShoutaImg from '@/assets/mems/2021/kobayashi-shouta.webp'
+import watanabeImg from '@/assets/mems/2021/watanabe.webp'
+import akamaImg from '@/assets/mems/2021/akama.webp'
+import sukegawaImg from '@/assets/mems/2021/sukegawa.webp'
+import wakayamaImg from '@/assets/mems/2021/wakayama.webp'
+import igarashiImg from '@/assets/mems/2021/igarashi.webp'
+import fukamachiImg from '@/assets/mems/2021/fukamachi.webp'
+import yukitomoImg from '@/assets/mems/2021/yukitomo.webp'
+
 const data = 'メンバー紹介'
 
-const membersM2 = reactive<{name: string, image: string, roll: string, detail: string}[]>([
-{name: "相吉澤 奏", image: "src/assets/mems/pre/aiyoshizawa.jpg", roll: "環境", detail: "「共分散構造分析の設計手法に関する研究」"},
-])
-const membersM1 = reactive<{name: string, image: string, roll: string, detail: string}[]>([
-{name: "not yet assigned", image: "", roll: "", detail: ""},
-])
-const membersU4 = reactive<{name: string, image: string, roll: string, detail: string}[]>([
-  {name: "岸 佑奈", image: "@/assets/mems/2021/kishi.webp", roll: "ゼミ長", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-  {name: "山下 真和都", image: "./assets/mems/2021/yamashita.webp", roll: "広報", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-  {name: "小西川 龍希", image: "../assets/mems/2021/konishikawa.webp", roll: "イベント", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-  {name: "小林 祥瑛", image: "_nuxt/assets/mems/2021/kobayashi-shoei.webp", roll: "イベント", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-  {name: "新實 一心", image: "static/assets/mems/2021/niimi.webp", roll: "イベント", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-  {name: "小林 将大", image: "./mems/2021/kobayashi-shouta.webp", roll: "環境", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-  {name: "渡邊 悠人", image: "/mems/2021/watanabe.webp", roll: "環境", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-  {name: "赤間 弦", image: "mems/2021/akama.webp", roll: "広報", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-  {name: "助川 優香", image: "./assets/mems/2021/sukegawa.webp", roll: "懇親", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-  {name: "若山 樹", image: "./assets/mems/2021/wakayama.webp", roll: "懇親", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-  {name: "五十嵐 星哉", image: "./assets/mems/2021/igarashi.webp", roll: "合宿", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-  {name: "深町 公貴", image: "./assets/mems/2021/fukamachi.webp", roll: "合宿", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-  {name: "行友 裕哉", image: "./assets/mems/2021/yukitomo.webp", roll: "合宿", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-])
+const membersM2 = reactive([
+  {name: "相吉澤 奏", image: aiyoshizawaImg, roll: "環境", detail: "「共分散構造分析の設計手法に関する研究」"},
+]);
+
+const membersU4 = reactive([
+  {name: "岸 佑奈", image: kishiImg, roll: "ゼミ長", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "山下 真和都", image: yamashitaImg, roll: "広報", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "小西川 龍希", image: konishikawaImg, roll: "イベント", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "小林 祥瑛", image: kobayashiShoeiImg, roll: "イベント", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "新實 一心", image: niimiImg, roll: "イベント", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "小林 将大", image: kobayashiShoutaImg, roll: "環境", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "渡邊 悠人", image: watanabeImg, roll: "環境", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "赤間 弦", image: akamaImg, roll: "広報", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "助川 優香", image: sukegawaImg, roll: "懇親", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "若山 樹", image: wakayamaImg, roll: "懇親", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "五十嵐 星哉", image: igarashiImg, roll: "合宿", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "深町 公貴", image: fukamachiImg, roll: "合宿", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "行友 裕哉", image: yukitomoImg, roll: "合宿", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+]);
 const membersU3 = reactive<{name: string, image: string, roll: string, detail: string}[]>([
 {name: "not yet assigned", image: "", roll: "", detail: ""},
 
