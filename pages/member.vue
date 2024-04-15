@@ -62,16 +62,16 @@ import { reactive } from 'vue'
 const data = 'メンバー紹介'
 
 const membersM2 = reactive<{name: string, image: string, roll: string, detail: string}[]>([
-{name: "相吉澤 奏", image: "./assets/mems/pre/aiyoshizawa.jpg", roll: "環境", detail: "「共分散構造分析の設計手法に関する研究」"},
+{name: "相吉澤 奏", image: "src/assets/mems/pre/aiyoshizawa.jpg", roll: "環境", detail: "「共分散構造分析の設計手法に関する研究」"},
 ])
 const membersM1 = reactive<{name: string, image: string, roll: string, detail: string}[]>([
 {name: "not yet assigned", image: "", roll: "", detail: ""},
 ])
 const membersU4 = reactive<{name: string, image: string, roll: string, detail: string}[]>([
-  {name: "岸 佑奈", image: "./assets/mems/2021/kishi.webp", roll: "ゼミ長", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "岸 佑奈", image: "@/assets/mems/2021/kishi.webp", roll: "ゼミ長", detail: "「期間限定販売法における転売防止手法に関する研究」"},
   {name: "山下 真和都", image: "./assets/mems/2021/yamashita.webp", roll: "広報", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-  {name: "小西川 龍希", image: "./assets/mems/2021/konishikawa.webp", roll: "イベント", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-  {name: "小林 祥瑛", image: "./assets/mems/2021/kobayashi-shoei.webp", roll: "イベント", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "小西川 龍希", image: "../assets/mems/2021/konishikawa.webp", roll: "イベント", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+  {name: "小林 祥瑛", image: "_nuxt/assets/mems/2021/kobayashi-shoei.webp", roll: "イベント", detail: "「期間限定販売法における転売防止手法に関する研究」"},
   {name: "新實 一心", image: "./assets/mems/2021/niimi.webp", roll: "イベント", detail: "「期間限定販売法における転売防止手法に関する研究」"},
   {name: "小林 将大", image: "./assets/mems/2021/kobayashi-shouta.webp", roll: "環境", detail: "「期間限定販売法における転売防止手法に関する研究」"},
   {name: "渡邊 悠人", image: "./assets/mems/2021/watanabe.webp", roll: "環境", detail: "「期間限定販売法における転売防止手法に関する研究」"},
