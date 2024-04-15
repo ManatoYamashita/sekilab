@@ -34,7 +34,9 @@
                 </article>
             </div>
             <div class="about-3">
-                <img class="about3-image" src="@/assets/gakuseisitu.jpg">
+                <div class="about3-img-wrap">
+                    <img class="about3-image" src="@/assets/gakuseisitu.jpg">
+                </div>
                 <div class="about3-content">
                     <h3>研究テーマ例（2023）</h3>
                     <ul class="research-examples fup">
@@ -114,7 +116,7 @@ h3 {
     width: 100%;
     height: auto;
     padding: 2rem;
-    margin: 2rem 0;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
 }
@@ -149,27 +151,29 @@ h3 {
 
 .about-3 {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: black;
     display: flex;
-    flex-direction: space-between;
-    justify-content: center;
-    align-items: center;
 }
 .about3-content {
     width: 100%;
-    height: 100%;
-    padding: 2rem;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.about3-image {
+.about3-img-wrap {
     width: 50%;
-    height: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about3-image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    padding: 0;
 }
 .research-examples {
     width: 50%;
@@ -218,12 +222,14 @@ h3 {
     .about-3 {
         flex-direction: column;
     }
-    .about3-image {
+    .about3-img-wrap {
         width: 100%;
         height: 50%;
+    }
+    .about3-image {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        border-radius: .3rem .3rem 1rem;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
     .about3-content {
         width: 100%;

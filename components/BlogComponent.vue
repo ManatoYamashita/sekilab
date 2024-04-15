@@ -56,7 +56,7 @@
     }
     .blog-card {
         display: block;
-        padding: 1rem 0;
+        padding-bottom: 1rem;
         border-bottom: 1px solid #ccc;
         text-decoration: none;
         color: #333;
@@ -77,7 +77,7 @@
         margin-bottom: .5rem;
     }
     img {
-        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
     p {
@@ -94,16 +94,15 @@
             justify-content: center;
             align-items: center;
             margin: 0 auto;
-            padding: 3rem 0;
             width: 100%;
-            height: 100%;
+            height: 100vh;
         }
         .blog-left, .blog-right {
             width: 100%;
             height: 50%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
         }
         article.blog-right {
             margin: 0 auto;
