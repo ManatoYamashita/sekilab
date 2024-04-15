@@ -4,8 +4,8 @@
         <div class="other-1">
             <h1><strong>『セキュリティメタデザイン研究室』</strong>&nbsp;について</h1>
             <div class="images">
-                <img src="@/assets/secumetadesign.png" alt="security-meta-design-lab">
-                <img src="@/assets/security_image.png" alt="what-is-information-security">
+                <nuxt-img format="webp" src="/images/secumetadesign.webp" alt="security-meta-design-lab" />
+                <nuxt-img format="webp" src="/images/security_image.webp" alt="what-is-information-security" />
             </div>
             
             <p class="fup">情報システム学科関研究室（情報セキュリティ）はこれまで教授として指導していた関先生が2023年に開設された

@@ -2,7 +2,7 @@
     <div class="wrap">
         <div class="about-left fup">
             <h2>研究室概要</h2>
-            <img src="@/assets/whatisis.jpg" alt="lab" class="fup">
+            <nuxt-img format="webp" src="/images/whatisis.webp" alt="What is Infomation Security" class="fup" />
         </div>
         <div class="about-right fup">
             <ul class="fup">

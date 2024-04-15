@@ -6,7 +6,7 @@
       <h1>
         {{ data.title }}
       </h1>
-      <img
+      <nuxt-img
         id="thumbnail"
         :src="data.thumbnail?.url"
         :width="data.eyecatch?.width"

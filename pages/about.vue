@@ -8,7 +8,7 @@
                     社会活動の効率化を目指した情報共有サービスと、情報資産を守るための情報セキュリティは表裏一体関係にあります。私達関研究室は、
                     「情報共有サービス」と「情報セキュリティ」を密接に結びつけ、セキュリティを考慮した情報共有システムの構築を目指し日々研究に取り組んでいます。
                 </p>
-                <img class="about-image" src="@/assets/security_image.png" alt="information security">
+                <img class="about-image" format="webp" src="/images/security_image.webp" alt="information security">
             </div>
             
             <professor-component />
@@ -17,17 +17,17 @@
                 <h3>研究内容</h3>
                 <article id="research">
                     <div class="res-card fup">
-                        <img src="@/assets/re-01.png" alt="alt" class="about2-image element-hidden">
+                        <img format="webp" src="/images/re-01.webp" alt="alt" class="about2-image element-hidden">
                         <h4>知的協調作業支援技術</h4>
                         <p>共通の仕事や目的のために働く利用者のグループを支援し、共有作業環境インタフェースを提供するコンピュータベースのシステムを創造します。</p>
                     </div>
                     <div class="res-card fup">
-                        <img src="@/assets/re-02.png" alt="alt" class="about2-image element-hidden">
+                        <img format="webp" src="/images/re-02.webp" alt="alt" class="about2-image element-hidden">
                         <h4>知識共有ネットワーク技術</h4>
                         <p>社会的ネットワークをインターネット上で構成するSNSを活用して、利用者の知識を共有できるサービスを提案します。</p>
                     </div>
                     <div class="res-card fup">
-                        <img src="@/assets/re-03.png" alt="alt" class="about2-image element-hidden">
+                        <img format="webp" src="/images/re-03.webp" alt="alt" class="about2-image element-hidden">
                         <h4>情報セキュリティ行動支援技術</h4>
                         <p>コンピュータネットワークのリスクを利用者が正しく理解し、脅威を利用者が常に意識して行動する攻めのセキュリティを目指します。</p>
                     </div>
@@ -35,7 +35,7 @@
             </div>
             <div class="about-3">
                 <div class="about3-img-wrap">
-                    <img class="about3-image" src="@/assets/gakuseisitu.jpg">
+                    <img class="about3-image" format="webp" src="/images/gakuseisitu.webp">
                 </div>
                 <div class="about3-content">
                     <h3>研究テーマ例（2023）</h3>

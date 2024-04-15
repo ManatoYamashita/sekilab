@@ -1,7 +1,7 @@
 <template>
     <div class="wrap">
         <div class="footer-back">
-            <img src="@/assets/cover.webp" alt="background" class="footer-cover">
+            <nuxt-img format="webp" src="/images/cover.webp" alt="background" class="footer-cover" />
         </div>
         <footer>
             <h2>Contact us</h2>

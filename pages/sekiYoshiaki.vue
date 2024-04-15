@@ -11,7 +11,7 @@
                 </p>
                 <div class="prof-flex">
                     <div class="prof-flex-content">
-                        <img src="@/assets/seki.jpeg" alt="seki-yoshiaki">
+                        <nuxt-img format="webp" src="/images/seki.webp" alt="seki-yoshiaki" />
                     </div>
                     <div class="prof-flex-content message fup">
                         <h3>「社会活動を効率的に推進する情報共有と情報資産を守るセキュリティを探求しよう」</h3>
@@ -36,7 +36,7 @@
     export default {
         setup() {
             const data = '教授紹介';
-            return { data}
+            return { data }
         }
     }
 </script>

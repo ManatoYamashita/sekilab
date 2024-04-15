@@ -7,7 +7,7 @@
       <ul class="blogs fup" v-if="data?.contents">
         <li v-for="blog in data?.contents" :key="blog.id" class="blog-data">
           <NuxtLink :to="`/${blog.id}`" class="blog-card">
-            <img :src="blog.thumbnail?.url" :width="100" alt="article-thumbnail" class="thumbnail"/>
+            <nuxt-img :src="blog.thumbnail?.url" :width="100" alt="article-thumbnail" class="thumbnail" />
             <div class="article">
               <div>
                 <h2 class="blog-title">{{ blog.title }}</h2>

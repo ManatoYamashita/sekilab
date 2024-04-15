@@ -12,7 +12,7 @@
         </div>
         <div class="pro-right fup">
             <nuxt-link to="/sekiYoshiaki">
-                <img src="@/assets/seki.jpeg" alt="seki-yoshiaki">
+                <nuxt-img format="webp" src="/images/seki.webp" alt="seki-yoshiaki" />
             </nuxt-link>
         </div>
     </div>

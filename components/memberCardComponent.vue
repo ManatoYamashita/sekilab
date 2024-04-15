@@ -7,20 +7,20 @@
                     {{ name }}
                 </p>
                 <figure class="card__thumbnail">
-                    <img 
-                    :src="image"
+                    <img
+                    format="webp | jpg"
+                    :src=imageSrc
                         @error="setImageToDefault"
                         alt="member_thumbnail" class="card__image"
                     />
-                    
                 </figure>
                 </div>
                 <div class="card__body">
                     <p class="card__text">
-                        担当: <string>{{ roll }}</string>
+                        担当: <strong>{{ rollComputed }}</strong>
                     </p>
                 <p class="card__text2">
-                    研究内容: <string>{{ detail }}</string>
+                    研究内容: <strong>{{ detailComputed }}</strong>
                 </p>
                 </div>    
             </article>
@@ -31,32 +31,46 @@
         <!-- モーダル内に表示したい内容 -->
         <div>
             <h2>{{ name }}</h2>
-            <img :src="image" alt="member_thumbnail" class="card__image_modal">
-            <p>担当: <strong>{{ roll }}</strong></p>
-            <p>研究内容: <strong>{{ detail }}</strong></p>
+            <img 
+                :src="imageSrc" 
+                @error="setImageToDefault" 
+                alt="member_thumbnail" 
+                class="card__image" 
+            />
+            <p>担当: <strong>{{ rollComputed }}</strong></p>
+            <p>研究内容: <strong>{{ detailComputed }}</strong></p>
         </div>
     </ModalComponent>
 </template>
 
 <script setup lang="ts">
 import ModalComponent from '@/components/memberModalComponent.vue'
-
 const showModal = ref(false)
+// デフォルト画像のパスをインポート
+import defaultImage from '/images/mems/default.webp'
 
 // propsの型を定義する
 interface Props {
     name: string,
     image: string,
-    roll: string,
-    detail: string
+    roll: string | "",
+    detail: string | ""
 }
 // propsを受け取る
 const props = defineProps<Props>()
 
-// デフォルト画像のパスをインポート
-import defaultImage from '@/assets/mems/default.webp'
+const imageSrc = computed(() => {
+    return props.image || defaultImage;
+});
 
-// エラー時に画像をデフォルトに設定する関数
+const rollComputed = computed(() => {
+    return props.roll === "" ? "undefined" : props.roll;
+});
+
+const detailComputed = computed(() => {
+    return props.detail === "" ? "undefined" : props.detail;
+});
+
 const setImageToDefault = (event: Event) => {
     const target = event.target as HTMLImageElement;
     target.src = defaultImage;

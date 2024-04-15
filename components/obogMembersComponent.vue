@@ -34,6 +34,8 @@
     padding: 1rem;
     text-align: center;
     overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 .card:hover {
     box-shadow: 0 0 0px rgba(0, 0, 0, .16);

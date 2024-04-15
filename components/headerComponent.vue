@@ -35,7 +35,7 @@ export default {
     position: relative;
     top: 0;
     height: 20vh;
-    background-image: url(@/assets/cover.webp);
+    background-image: url(/images/cover.webp);
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;

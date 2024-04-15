@@ -44,7 +44,7 @@ export default defineNuxtConfig({
 
   css: ['@/assets/main.css'],
   
-  modules: ["nuxt-microcms-module", "@nuxtjs/google-fonts"],
+  modules: ["nuxt-microcms-module", "@nuxtjs/google-fonts", "@nuxt/image"],
   microCMS: {
     serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN,
     apiKey: process.env.MICROCMS_API_KEY,
@@ -53,5 +53,5 @@ export default defineNuxtConfig({
     families: {
       "Noto+Sans+JP": [400, 500, 700, 800],
     }
-  }
+  },
 })
