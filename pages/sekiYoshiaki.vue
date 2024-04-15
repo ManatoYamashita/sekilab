@@ -137,7 +137,6 @@ img {
         padding-left: 0;
     }
     img {
-        width: 50%;
         object-fit: cover;
         border-radius: 1rem;
     }
