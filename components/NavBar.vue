@@ -167,7 +167,7 @@ import { ref } from 'vue';
         nav {
             position: fixed;
             top: 0;
-            left: -300px;
+            left: -100vw;
             bottom: 0;
             width: 60%;
             background: #fff;
