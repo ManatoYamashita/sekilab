@@ -5,7 +5,7 @@ import type { MicroCMSImage } from "microcms-js-sdk";
 export type Blog = {
   title: string;
   thumbnail: MicroCMSImage;
-  contents: string;
+  // contents: string;
   content: string;
   eyecatch: MicroCMSImage;
   };
