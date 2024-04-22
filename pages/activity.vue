@@ -33,6 +33,23 @@
 
 <script setup>
   const data = '活動';
+  useHead({
+    script: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Event",
+          name: "関研究室 - 年間スケジュール",
+          description: "関研究室では様々な活動を行います。年間を通じて、新３年生配属、横浜祭、オープンキャンパス、ゼミ合宿、That's Seminar（研究室紹介）、世田谷祭、事例研究発表会、卒業研究発表会などのイベントがあります。",
+          image: "https://comm.tcu.ac.jp/seki_lab/ogp.png",
+          startDate: "2023-04-01",
+          
+        })
+
+      }
+    ]
+  })
 </script>
 
 <style scoped>

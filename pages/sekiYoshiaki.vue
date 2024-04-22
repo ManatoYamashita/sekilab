@@ -39,6 +39,36 @@
             return { data }
         }
     }
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "関良明",
+        "affiliation": {
+            "@type": "Organization",
+            "name": "東京都市大学",
+            "department": "メディア情報学部 情報システム学科, 大学院環境情報学研究科 環境情報学専攻, デザインデータ科学部 学部長",
+            "role": "教授"
+        },
+        "jobTitle": "教授, 副学長, 学部長",
+        "url": "https://comm.tcu.ac.jp/seki_lab/",
+        "image": "/images/seki.webp",
+        "sameAs": [
+            "https://www.researchgate.net/profile/Yoshiaki-Seki",
+            "https://scholar.google.co.jp/citations?user=exampleUser"
+        ],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "関良明 教授"
+        }
+    };
+    useHead({
+        script: [
+            {
+            type: 'application/ld+json',
+            children: JSON.stringify(schema)
+            }
+        ]
+    });
 </script>
 
 <style lang="css" scoped>

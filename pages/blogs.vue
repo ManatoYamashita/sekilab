@@ -1,5 +1,13 @@
 <!-- ブログページ（もっと見る から） -->
 
+<script setup lang="ts">
+  import type { Blog } from "~/types/blog";
+  const title = 'ブログ一覧'
+  const { data } = await useMicroCMSGetList<Blog>({
+    endpoint: "blog",
+  });
+</script>
+
 <template>
   <div id="main">
     <header-component :title="title" />
@@ -21,14 +29,6 @@
     </article>
   </div>
 </template>
-
-<script setup lang="ts">
-  import type { Blog } from "~/types/blog";
-  const title = 'ブログ一覧'
-  const { data } = await useMicroCMSGetList<Blog>({
-    endpoint: "blog",
-  });
-</script>
 
 <style scoped>
 article {

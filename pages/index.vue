@@ -1,5 +1,35 @@
 <!-- index.vue -->
 
+<script setup>
+import { useHead } from '#imports'
+
+const organization = {
+  name: '東京都市大学 関研究室 - Information Security Lab.',
+  description: '東京都市大学 関研究室のホームページです。情報セキュリティを中心に、情報共有システムや情報セキュリティ行動支援システムの研究を行っています。',
+  image: 'https://comm.tcu.ac.jp/seki_lab/ogp.png',
+  brand: 'Tokyu City University Seki Lab.'
+};
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'organization',
+        name: organization.name,
+        description: organization.description,
+        image: organization.image,
+        brand: {
+          '@type': 'Brand',
+          name: organization.brand
+        }
+      })
+    }
+  ]
+});
+</script>
+
 <template>
   <div>
       <div class="cover">

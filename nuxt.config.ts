@@ -16,8 +16,6 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
       title: 'Tokyo City University SEKI lab -Information Security',
       meta: [
-          // 全てのオーガニック検索から除外
-          { name: 'robots', content: 'noindex, nofollow' },
           { charset: 'utf-8' },
           { name: 'viewport', content: 'width=device-width, initial-scale=1' },
           { name: 'format-detection', content: 'telephone=no' },
@@ -35,7 +33,6 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ],
     },
-        
     pageTransition: {
       name: 'page',
       mode: 'out-in'
@@ -44,7 +41,21 @@ export default defineNuxtConfig({
 
   css: ['@/assets/main.css'],
   
-  modules: ["nuxt-microcms-module", "@nuxtjs/google-fonts", "@nuxt/image"],
+  modules: [
+    "nuxt-microcms-module",
+    "@nuxtjs/google-fonts",
+    "@nuxt/image",
+    "@nuxtjs/seo",
+    "@nuxtjs/sitemap",
+    "nuxt-simple-robots",
+    "nuxt-schema-org",
+  ],
+  site: {
+    url: "https://comm.tcu.ac.jp/seki_lab",
+    name: "Tokyo City University SEKI Lab. -Information Security",
+    description: "a Website SEKI Lab. at TCU, for Information Security.",
+    baseUrl: "https://comm.tcu.ac.jp/seki_lab",
+  },
   microCMS: {
     serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN,
     apiKey: process.env.MICROCMS_API_KEY,
@@ -54,4 +65,5 @@ export default defineNuxtConfig({
       "Noto+Sans+JP": [400, 500, 700, 800],
     }
   },
+  
 })
