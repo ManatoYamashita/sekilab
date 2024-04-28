@@ -35,7 +35,7 @@ useHead({
       <div class="cover">
         <div id="video-area">
           <Client-only>
-            <video id="video" format="webp" src="/images/video.webm" preload="auto" autoplay muted playsinline loop></video>
+            <video id="video" format="webm" src="/images/video.webm" preload="auto" autoplay muted playsinline loop></video>
           </Client-only>
          </div>
         <div class="title">

@@ -113,19 +113,16 @@
     const membersU3 = reactive<{name: string, image: string, roll: string, detail: string}[]>([
         {name: "not yet assigned", image: "", roll: "", detail: ""},
 
-    //   {name: "岸 祐奈", image: "./assets/mems/m01.webp", roll: "ゼミ長", detail: "「AI生成イラストの判断」"},
-    //   {name: "山下 真和都", image: "./assets/mems/m01.webp", roll: "広報", detail: "「未定」"},
-    //   {name: "岸 祐奈", image: "./assets/mems/m01.webp", roll: "ゼミ長", detail: "「AI生成イラストの判断」"},
-    //   {name: "山下 真和都", image: "./assets/mems/m01.webp", roll: "広報", detail: "「未定」"},
-    //   {name: "岸 祐奈", image: "./assets/mems/m01.webp", roll: "ゼミ長", detail: "「AI生成イラストの判断」"},
-    //   {name: "山下 真和都", image: "./assets/mems/m01.webp", roll: "広報", detail: "「未定」"},
-    //   {name: "岸 祐奈", image: "./assets/mems/m01.webp", roll: "ゼミ長", detail: "「AI生成イラストの判断」"},
-    //   {name: "山下 真和都", image: "./assets/mems/m01.webp", roll: "広報", detail: "「未定」"},
-    //   {name: "岸 祐奈", image: "./assets/mems/m01.webp", roll: "ゼミ長", detail: "「AI生成イラストの判断」"},
-    //   {name: "山下 真和都", image: "./assets/mems/m01.webp", roll: "広報", detail: "「未定」"},
-    //   {name: "岸 祐奈", image: "./assets/mems/m01.webp", roll: "ゼミ長", detail: "「AI生成イラストの判断」"},
-    //   {name: "山下 真和都", image: "./assets/mems/m01.webp", roll: "広報", detail: "「未定」"},
-
+      {name: "石井 春陽", image: "./assets/mems/m01.webp", roll: "未定", detail: "未定"},
+      {name: "稲村 悠", image: "./assets/mems/m01.webp", roll: "未定", detail: "未定"},
+      {name: "居山 日々木", image: "./assets/mems/m01.webp", roll: "未定", detail: "「未定」"},
+      {name: "大野 真楓", image: "./assets/mems/m01.webp", roll: "未定", detail: "「未定」"},
+      {name: "桒村 駿輔", image: "./assets/mems/m01.webp", roll: "ゼミ長", detail: "「未定」"},
+      {name: "小室 大輝", image: "./assets/mems/m01.webp", roll: "未定", detail: "「未定」"},
+      {name: "小森 春幸", image: "./assets/mems/m01.webp", roll: "ゼミ長", detail: "「未定」"},
+      {name: "斉藤 悠太", image: "./assets/mems/m01.webp", roll: "未定", detail: "「未定」"},
+      {name: "田代 佳也", image: "./assets/mems/m01.webp", roll: "ゼミ長", detail: "「未定」"},
+      {name: "平野 澪央", image: "./assets/mems/m01.webp", roll: "未定", detail: "「未定」"},
     ])
     const membersOBOG = reactive<{name: string, detail: string}[]>([
         {name: "篠﨑 玲士", detail: "スマートフォンを用いて物理現象を理解させる3Dアプリケーションに関する研究"},
