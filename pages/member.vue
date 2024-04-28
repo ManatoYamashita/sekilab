@@ -80,6 +80,8 @@
     import igarashiImg from '/images/mems/2021/igarashi.webp'
     import fukamachiImg from '/images/mems/2021/fukamachi.webp'
     import yukitomoImg from '/images/mems/2021/yukitomo.webp'
+    import kajiyaImg from '/images/mems/2021/kajiya.webp'
+    import togashiImg from '/images/mems/2021/togashi.webp'
 
     const data = 'メンバー紹介'
 
@@ -105,6 +107,8 @@
         {name: "五十嵐 星哉", image: igarashiImg, roll: "合宿", detail: "「期間限定販売法における転売防止手法に関する研究」"},
         {name: "深町 公貴", image: fukamachiImg, roll: "合宿", detail: "「期間限定販売法における転売防止手法に関する研究」"},
         {name: "行友 裕哉", image: yukitomoImg, roll: "合宿", detail: "「期間限定販売法における転売防止手法に関する研究」"},
+        {name: "加治屋 直希", image: kajiyaImg, roll: "未定", detail: "「未定」"},
+        {name: "富樫 駿也", image: togashiImg, roll: "未定", detail: "「未定」"},
     ]);
     const membersU3 = reactive<{name: string, image: string, roll: string, detail: string}[]>([
         {name: "not yet assigned", image: "", roll: "", detail: ""},
