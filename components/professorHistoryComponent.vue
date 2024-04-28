@@ -204,7 +204,10 @@
 }
  .tl-item:hover {
 	 width: 45% !important;
+   overflow: scroll;
+   background-color: black;
 }
+   
  .tl-item:hover:after {
 	 opacity: 0;
 }
@@ -245,9 +248,10 @@
    margin-top: 1rem;
 }
  .tl-title {
-	 position: absolute;
+	 position: sticky;
 	 top: 50%;
 	 left: 50%;
+   width: 50%;
 	 transform: translateX(-50%) translateY(-50%);
 	 z-index: 1;
 	 border-top: 1px solid #fff;

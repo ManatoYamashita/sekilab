@@ -1,17 +1,47 @@
 <!-- index.vue -->
 
+<script setup>
+import { useHead } from '#imports'
+
+const organization = {
+  name: '東京都市大学 関研究室 - Information Security Lab.',
+  description: '東京都市大学 関研究室のホームページです。情報セキュリティを中心に、情報共有システムや情報セキュリティ行動支援システムの研究を行っています。',
+  image: 'https://comm.tcu.ac.jp/seki_lab/ogp.png',
+  brand: 'Tokyu City University Seki Lab.'
+};
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'organization',
+        name: organization.name,
+        description: organization.description,
+        image: organization.image,
+        brand: {
+          '@type': 'Brand',
+          name: organization.brand
+        }
+      })
+    }
+  ]
+});
+</script>
+
 <template>
   <div>
       <div class="cover">
         <div id="video-area">
           <Client-only>
-            <video id="video" src="@/assets/video.mp4" preload="auto" autoplay loop muted playsinline></video>
+            <video id="video" format="webm" src="/images/video.webm" preload="auto" autoplay muted playsinline loop></video>
           </Client-only>
          </div>
         <div class="title">
           <h1 id="tcu">東京都市大学</h1>
           <h1 id="sekiken">関研究室</h1>
-          <h1 id="inforsec">情報セキュリティ</h1>
+          <h1 id="inforsec">Under Constraction...</h1>
           <h2>Tokyo City University<br>
              Information Security Lab</h2>
         </div>
@@ -89,31 +119,22 @@
     display: block;
     font-size: 3rem;
     margin-bottom: .5rem;
-    font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
-    font-weight: bold;
+    font-family: 'Noto Sans JP','Helvetica', monospace;
+    font-weight: 800;
     line-height: 1;
   }
   .cover h1#tcu {
     display: block;
-    font-size: 2rem;
-    font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
-    font-weight: normal;
-    line-height: 1;
+    font-size: 3rem;
   }
   .cover h1#sekiken {
     display: block;
-    font-size: 4rem;
-    font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
-    font-weight: normal;
-    line-height: 1;
+    font-size: 7rem;
   }
   .cover h1#inforsec {
     display: block;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
-    font-family: 'Dela Gothic One', 'Noto Sans JP','Helvetica', monospace;
-    font-weight: normal;
-    line-height: 1;
   }
   .cover h2 {
     font-size: 1rem;
@@ -238,6 +259,15 @@ span strong {
     bottom: 0;
     left: 0;
     padding: 3rem;
+  }
+  h1#tcu {
+    font-size: 2rem !important;
+  }
+  h1#sekiken {
+    font-size: 4rem !important;
+  }
+  h1#inforsec {
+    font-size: 1.5rem !important;
   }
   section {
     height: 100vh;

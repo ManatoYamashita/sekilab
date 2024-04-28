@@ -3,7 +3,7 @@
         <div class="pro-left">
             <h2>教授紹介</h2>
             <h3>関良明</h3>
-            <p class="fup">東京都市大学 副学長 / デザインデータ科学部長 / ダイバーシティ推進室長</p>
+            <p class="fup">東京都市大学 デザイン・データ科学部 学部長</p>
             <h3>学位称号</h3>
             <p class="fup">博士（情報科学 東北大学） 2001年5月10日<br>
                 学位論文題目: 利用者誘導機能を用いた情報共有システムに関する研究
@@ -11,13 +11,9 @@
             <Button url="/sekiYoshiaki">もっと見る</Button>
         </div>
         <div class="pro-right fup">
-            <div class="card card0">
-                <nuxt-link to="/sekiYoshiaki">
-                    <div class="border">
-                        <h2 id="cardtitle">Yoshiaki Seki</h2>
-                    </div>
-                </nuxt-link>
-            </div>
+            <nuxt-link to="/sekiYoshiaki">
+                <nuxt-img format="webp" src="/images/seki.webp" alt="seki-yoshiaki" />
+            </nuxt-link>
         </div>
     </div>
 </template>
@@ -63,42 +59,13 @@
         font-size: 1rem;
         margin-bottom: 2rem;
     }
-    .border {
+    img {
+        width: 100%;
         height: 100%;
-        width: 100%;
-        background: transparent;
-        position: relative;
+        object-fit: cover;
+        border-radius: 1rem;
     }
-    .card {
-        height: 379px;
-        width: 100%;
-        transition: background 0.8s;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-    .card0 {
-        background: url("@/assets/seki.jpeg") center center no-repeat;
-        background-color: #000;
-        background-size: 100%;
-    }
-    .card0:hover {
-        background: url("@/assets/seki-mono-transp.png") left center no-repeat;
-        background-color: #000;
-        background-size: 200%;
-    }
-    #cardtitle {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        color: #fff;
-        opacity: 0;
-        transition: opacity 1s;
-        padding: 1rem;
-    }
-    .card:hover #cardtitle {
-        opacity: 1;
-    }
+
     /* sp表示 */
     @media screen and (max-width: 768px) {
         div.wrap {
@@ -108,15 +75,14 @@
         }
         div.pro-left {
             width: 100%;
-            height: 40%;
             padding: .5rem;
         }
         div.pro-right {
             width: 100%;
-            height: 60%;
             flex-direction: initial;
             order: -1;
             padding: 1rem;
+            text-align: center;
         }
         h2 {
             font-size: 2rem;
@@ -130,36 +96,11 @@
             font-size: 1rem;
             margin-bottom: 1rem;
         }
-        .card {
+        img {
             width: 75%;
-            transition: background 0.8s;
+            height: 100%;
+            object-fit: cover;
             border-radius: 1rem;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            text-align: center;
-        }
-        .card0 {
-            background: url("@/assets/seki.jpeg") center center no-repeat;
-            background-color: #000;
-            background-size: 100%;
-        }
-        .card0:hover {
-            background: url("@/assets/seki-mono-transp.png") left center no-repeat;
-            background-color: #000;
-            background-size: 200%;
-        }
-        #cardtitle {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            color: #fff;
-            opacity: 0;
-            transition: opacity 1s;
-            padding: 1rem;
-        }
-        .card:hover #cardtitle {
-            opacity: 1;
         }
     }
 </style>

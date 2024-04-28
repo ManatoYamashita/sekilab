@@ -2,10 +2,12 @@
     <div id="menu">
         <div id="menu-inner">
             <div id="navArea" ref="nav">
-                <nuxt-link to="/" id="logo-pc"><img src="@/assets/logo-white.webp" alt="logo"></nuxt-link>
+                <nuxt-link to="/" id="logo-pc"><nuxt-img format="webp" src="/images/logo.webp" alt="logo" /></nuxt-link>
                 <nav>
                     <div class="inner">
-                        <nuxt-link to="/" class="log-sp"><img class="logo-sp" src="@/assets/logo.png" alt="logo"></nuxt-link>
+                        <nuxt-link to="/" class="log-sp">
+                            <nuxt-img format="webp" class="logo-sp" src="/images/logo-black.webp" alt="logo" />
+                        </nuxt-link>
                         <ul id="menu-content" @click="toggle">
                             <li class="first-content nav-li">
                                 <nuxt-link to="/">Home</nuxt-link>
@@ -165,7 +167,7 @@ import { ref } from 'vue';
         nav {
             position: fixed;
             top: 0;
-            left: -300px;
+            left: -100vw;
             bottom: 0;
             width: 60%;
             background: #fff;

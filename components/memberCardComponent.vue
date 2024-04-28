@@ -1,71 +1,112 @@
 <template>
-    <div id="main" class="fup">
-        <div class="l-wrapper_02 card-radius_02">
-            <article class="card_02">
-                <div class="card__header_02">
-                <p class="card__title_02">
+    <div id="main" class="fup" @click="showModal = true">
+        <div class="l-wrapper card-radius">
+            <article class="card">
+                <div class="card__header">
+                <p class="card__title">
                     {{ name }}
                 </p>
-                <figure class="card__thumbnail_02">
-                    <img 
-                        :src="image"
-                        alt="member_sumbnaiil" class="card__image_02"
+                <figure class="card__thumbnail">
+                    <img
+                    format="webp | jpg"
+                    :src=imageSrc
+                        @error="setImageToDefault"
+                        alt="member_thumbnail" class="card__image"
                     />
                 </figure>
                 </div>
-                <div class="card__body_02">
-                    <p class="card__text_02">
-                        担当: <string>{{ roll }}</string>
+                <div class="card__body">
+                    <p class="card__text">
+                        担当: <strong>{{ rollComputed }}</strong>
                     </p>
-                <p class="card__text2_02">
-                    研究内容: {{ detail }}
+                <p class="card__text2">
+                    研究内容: <strong>{{ detailComputed }}</strong>
                 </p>
                 </div>    
             </article>
         </div>
     </div>
+
+    <ModalComponent :isVisible="showModal" @update:isVisible="showModal = $event">
+        <!-- モーダル内に表示したい内容 -->
+        <div>
+            <h2>{{ name }}</h2>
+            <img 
+                :src="imageSrc" 
+                @error="setImageToDefault" 
+                alt="member_thumbnail" 
+                class="card__image" 
+            />
+            <p>担当: <strong>{{ rollComputed }}</strong></p>
+            <p>研究内容: <strong>{{ detailComputed }}</strong></p>
+        </div>
+    </ModalComponent>
 </template>
 
 <script setup lang="ts">
+import ModalComponent from '@/components/memberModalComponent.vue'
+const showModal = ref(false)
+// デフォルト画像のパスをインポート
+import defaultImage from '/images/mems/default.webp'
+
 // propsの型を定義する
 interface Props {
     name: string,
     image: string,
-    roll: string,
-    detail: string
+    roll: string | "",
+    detail: string | ""
 }
-
 // propsを受け取る
 const props = defineProps<Props>()
+
+const imageSrc = computed(() => {
+    return props.image || defaultImage;
+});
+
+const rollComputed = computed(() => {
+    return props.roll === "" ? "undefined" : props.roll;
+});
+
+const detailComputed = computed(() => {
+    return props.detail === "" ? "undefined" : props.detail;
+});
+
+const setImageToDefault = (event: Event) => {
+    const target = event.target as HTMLImageElement;
+    target.src = defaultImage;
+}
 </script>
 
 <style lang="css" scoped>
-    .l-wrapper_02 {
+    .l-wrapper {
         margin: 1rem auto;
         width: 10rem;
+        height: 23rem;
+        transition: box-shadow .3s;
+        cursor: pointer;
     }
-    .l-wrapper_02:hover {
+    .l-wrapper:hover {
         box-shadow: 0 0 0px rgba(0, 0, 0, .16);
     }
-    .card-radius_02{
+    .card-radius{
         overflow: hidden;
         border-radius: 8px;
         box-shadow: 0 4px 15px rgba(0,0,0,.2);
     }
 
-    .card_02 {
+    .card {
         background-color: #fff;
         box-shadow: 0 0 0px rgba(0, 0, 0, .16);
         color: #212121;
         text-decoration: none;
     }
 
-    .card__header_02 {
+    .card__header {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .card__title_02 {
+    .card__title {
         text-align: center;
         padding: .5rem;
         font-size: 1.2rem;
@@ -75,27 +116,38 @@ const props = defineProps<Props>()
         border-bottom: solid 1px black;
     }
 
-    .card__thumbnail_02 {
+    .card__thumbnail {
         margin: 0;
         order: 0;
-    }
-
-    .card__image_02 {
         width: 100%;
+        height: 10rem;
     }
 
-    .card__body_02 {
+    .card__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .card__image_modal {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .card__body {
         padding: .5rem;
     }
-    .card__text_02 {
+    .card__text {
         font-size: .8rem;
         text-align:center;
         text-decoration: none;
     }
-    .card__text_02 string {
+    .card__text string {
         font-weight: bold;
     }
-    .card__text2_02 {
+    .card__text2 {
         font-size: .8rem;
         margin-top: 0;
         margin-bottom: 1.5rem;

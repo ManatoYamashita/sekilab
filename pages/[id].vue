@@ -6,7 +6,7 @@
       <h1>
         {{ data.title }}
       </h1>
-      <img
+      <nuxt-img
         id="thumbnail"
         :src="data.thumbnail?.url"
         :width="data.eyecatch?.width"
@@ -40,7 +40,6 @@
     endpoint: "blog",
     contentId: Array.isArray(params.id) ? params.id[0] : params.id,
   });
-  console.log(data)
 </script>
 
 <style lang="css" scoped>

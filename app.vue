@@ -14,8 +14,6 @@
       { rel: 'canonical', href: 'https://comm.tcu.ac.jp/seki_lab' }
     ],
     meta: [
-      // 全てのオーガニック検索から除外
-      { name: 'robots', content: 'noindex, nofollow' },
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'format-detection', content: 'telephone=no' },
@@ -36,7 +34,32 @@
       { property: 'twitter:card, content: summary_large_image' },
     ]
   })
-  import { onMounted, onUnmounted, ref } from 'vue';
+
+  useSchemaOrg([
+    defineWebPage({
+      name: '東京都市大学 関良明研究室'
+    }),
+    defineWebSite({
+      name: '東京都市大学 関良明研究室'
+    }),
+    defineBreadcrumb([
+      {
+        name: '東京都市大学',
+        item: 'https://www.tcu.ac.jp/'
+      },
+      {
+        name: '関研究室',
+        item: 'https://comm.tcu.ac.jp/seki_lab'
+      }
+    ]),
+    defineOrganization({
+      name: '東京都市大学 関研究室',
+      url: 'https://comm.tcu.ac.jp/seki_lab',
+      logo: 'https://comm.tcu.ac.jp/ogp.png',
+    }),
+  ])
+
+  import { onMounted, onUnmounted } from 'vue';
   
   // 要素が画面内に入ったかをチェックする関数
   const checkVisible = (elm: HTMLElement) => {

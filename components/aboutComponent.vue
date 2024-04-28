@@ -2,7 +2,7 @@
     <div class="wrap">
         <div class="about-left fup">
             <h2>研究室概要</h2>
-            <img src="@/assets/whatisis.jpg" alt="lab" class="fup">
+            <nuxt-img format="webp" src="/images/whatisis.webp" alt="What is Infomation Security" class="fup" />
         </div>
         <div class="about-right fup">
             <ul class="fup">
@@ -15,7 +15,7 @@
                 <li>03&nbsp;<h3>情報セキュリティ行動支援技術</h3></li>
                 <p>コンピュータネットワークのリスクを利用者が正しく理解し、脅威を利用者が常に意識して行動する攻めのセキュリティを目指します。</p>
                 <br>
-
+                
                 <div class="btnarea">
                     <Button url="/about" class="fup">もっと見る</Button>
                 </div>

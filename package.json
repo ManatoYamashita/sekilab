@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "sekilab",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -10,11 +10,16 @@
   },
   "devDependencies": {
     "@nuxtjs/google-fonts": "^3.1.1",
+    "@nuxtjs/seo": "^2.0.0-rc.10",
+    "@nuxtjs/sitemap": "^5.1.4",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@tailwindcss/typography": "^0.5.9",
-    "nuxt": "^3.7.0"
+    "nuxt": "^3.7.0",
+    "nuxt-schema-org": "^3.3.6",
+    "nuxt-simple-robots": "^4.0.0-rc.17"
   },
   "dependencies": {
+    "@nuxt/image": "^1.5.0",
     "dayjs": "^1.11.9",
     "microcms-js-sdk": "^2.7.0",
     "nuxt-microcms-module": "^3.0.2"
