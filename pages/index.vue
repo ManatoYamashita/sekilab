@@ -274,15 +274,32 @@ span strong {
     height: 100vh;
     opacity: 1;
     position: relative;
+    view-timeline: none;
   }
   h1#scroll-head {
     padding: 3rem .5rem 5rem .5rem;
+    font-size: 1.5rem;
   }
   #scroll-head span:first-of-type {
     font-size: 50%;
   }
   #scroll-head span {
     font-size: 60%;
+  }
+
+  h1#scroll-head span:first-of-type {
+    animation: none;
+  }
+  h1#scroll-head span:last-of-type {
+    animation: none;
+  }
+
+  .element-visible #scroll-head {
+    max-width: 100%;
+    transform: scale(1);
+    font-size: 2rem;
+    animation: scale 1s forwards;
+    animation-delay: 1s;
   }
 }
 </style>
