@@ -111,8 +111,6 @@
         {name: "富樫 駿也", image: togashiImg, roll: "未定", detail: "「未定」"},
     ]);
     const membersU3 = reactive<{name: string, image: string, roll: string, detail: string}[]>([
-        {name: "not yet assigned", image: "", roll: "", detail: ""},
-
       {name: "石井 春陽", image: "./assets/mems/m01.webp", roll: "未定", detail: "未定"},
       {name: "稲村 悠", image: "./assets/mems/m01.webp", roll: "未定", detail: "未定"},
       {name: "居山 日々木", image: "./assets/mems/m01.webp", roll: "未定", detail: "「未定」"},
