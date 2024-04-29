@@ -272,6 +272,8 @@ span strong {
   }
   section {
     height: 100vh;
+    opacity: 1;
+    position: relative;
   }
   h1#scroll-head {
     padding: 3rem .5rem 5rem .5rem;
