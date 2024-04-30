@@ -8,7 +8,7 @@
                     社会活動の効率化を目指した情報共有サービスと、情報資産を守るための情報セキュリティは表裏一体関係にあります。私達関研究室は、
                     「情報共有サービス」と「情報セキュリティ」を密接に結びつけ、セキュリティを考慮した情報共有システムの構築を目指し日々研究に取り組んでいます。
                 </p>
-                <img class="about-image" format="webp" src="/images/security_image.webp" alt="information security">
+                <nuxt-img class="about-image" format="webp" src="/images/security_image.webp" alt="information security" />
             </div>
             
             <professor-component />
@@ -54,7 +54,7 @@
 </template>
 
 <script setup>
-const data = '研究室概要'
+    const data = '研究室概要'
 </script>
 
 <style lang="css" scoped>
@@ -151,7 +151,8 @@ h3 {
 
 .about-3 {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     background-color: black;
     display: flex;
 }

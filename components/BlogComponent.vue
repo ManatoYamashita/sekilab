@@ -70,7 +70,23 @@
     ul.blogs {
         list-style: none;
         padding: 0 0 2rem 0;
+        margin-bottom: 2rem;
         z-index: 0;
+        height: 40vh;
+        overflow-y: scroll;
+        scrollbar-width: 10px;
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1; 
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #888; 
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555; 
+            }
     }
     li.blog-data {
         font-size: 1rem;

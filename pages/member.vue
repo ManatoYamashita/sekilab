@@ -67,7 +67,7 @@
 
     // 画像ファイルのインポート
     import aiyoshizawaImg from '/images/mems/pre/aiyoshizawa.jpg'
-    import kishiImg from '@/public/images/mems/2021/kishi.webp'
+    import kishiImg from '/images/mems/2021/kishi.webp'
     import yamashitaImg from '/images/mems/2021/yamashita.webp'
     import konishikawaImg from '/images/mems/2021/konishikawa.webp'
     import kobayashiShoeiImg from '/images/mems/2021/kobayashi-shoei.webp'
@@ -111,16 +111,16 @@
         {name: "富樫 駿也", image: togashiImg, roll: "未定", detail: "「未定」"},
     ]);
     const membersU3 = reactive<{name: string, image: string, roll: string, detail: string}[]>([
-      {name: "石井 春陽", image: "./assets/mems/m01.webp", roll: "未定", detail: "未定"},
-      {name: "稲村 悠", image: "./assets/mems/m01.webp", roll: "未定", detail: "未定"},
-      {name: "居山 日々木", image: "./assets/mems/m01.webp", roll: "未定", detail: "「未定」"},
-      {name: "大野 真楓", image: "./assets/mems/m01.webp", roll: "未定", detail: "「未定」"},
-      {name: "桒村 駿輔", image: "./assets/mems/m01.webp", roll: "ゼミ長", detail: "「未定」"},
-      {name: "小室 大輝", image: "./assets/mems/m01.webp", roll: "未定", detail: "「未定」"},
-      {name: "小森 春幸", image: "./assets/mems/m01.webp", roll: "ゼミ長", detail: "「未定」"},
-      {name: "斉藤 悠太", image: "./assets/mems/m01.webp", roll: "未定", detail: "「未定」"},
-      {name: "田代 佳也", image: "./assets/mems/m01.webp", roll: "ゼミ長", detail: "「未定」"},
-      {name: "平野 澪央", image: "./assets/mems/m01.webp", roll: "未定", detail: "「未定」"},
+      {name: "石井 春陽", image: "", roll: "未定", detail: "未定"},
+      {name: "稲村 悠", image: "./assets/mems/default.webp", roll: "未定", detail: "未定"},
+      {name: "居山 日々木", image: "./assets/mems/default.webp", roll: "未定", detail: "「未定」"},
+      {name: "大野 真楓", image: "./assets/mems/default.webp", roll: "未定", detail: "「未定」"},
+      {name: "桒村 駿輔", image: "./assets/mems/default.webp", roll: "ゼミ長", detail: "「未定」"},
+      {name: "小室 大輝", image: "./assets/mems/default.webp", roll: "未定", detail: "「未定」"},
+      {name: "小森 春幸", image: "./assets/mems/default.webp", roll: "ゼミ長", detail: "「未定」"},
+      {name: "斉藤 悠太", image: "./assets/mems/default.webp", roll: "未定", detail: "「未定」"},
+      {name: "田代 佳也", image: "./assets/mems/default.webp", roll: "ゼミ長", detail: "「未定」"},
+      {name: "平野 澪央", image: "./assets/mems/default.webp", roll: "未定", detail: "「未定」"},
     ])
     const membersOBOG = reactive<{name: string, detail: string}[]>([
         {name: "篠﨑 玲士", detail: "スマートフォンを用いて物理現象を理解させる3Dアプリケーションに関する研究"},
@@ -227,6 +227,9 @@
         width: 100%;
         height: 100%;
         background-color: black;
+    }
+    .prof {
+        margin-top: 20vh;
     }
     .mems-cards {
         margin: 0 auto;
