@@ -34,7 +34,7 @@
                 </article>
             </div>
             <div class="about-3">
-                <div class="about3-img-wrap">
+                <div class="about3-img-wrap sin">
                     <img class="about3-image" format="webp" src="/images/gakuseisitu.webp">
                 </div>
                 <div class="about3-content">
