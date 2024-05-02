@@ -15,7 +15,7 @@
                             <li class="first-content nav-li">
                                 <nuxt-link to="/about">About</nuxt-link>
                                 <ul class="second-content">
-                                    <li class="nav-li"><nuxt-link to="/sekiYoshiaki">Proffesor</nuxt-link></li>
+                                    <li class="nav-li"><nuxt-link to="/sekiYoshiaki">Professor</nuxt-link></li>
                                     <li class="nav-li"><nuxt-link to="/activity">Activity</nuxt-link></li>            
                                 </ul>
                             </li>
