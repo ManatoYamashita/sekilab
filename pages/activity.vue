@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-      <header-component v-for="item in items" :key="item.title" :title="item.title" :subtitle="item.subtitle" :paragraph="item.paragraph" />
+      <header-component v-for="item in items" :key="item.title" :title="item.title" :subtitle="item.subtitle" :paragraph="item.paragraph" :image="item.image" />
         <div class="detail fup">
           <article class="schedule">
             <h2 class="sche-title">年間スケジュール</h2>
@@ -59,7 +59,8 @@
                   {
                       title: '活動報告',
                       subtitle: 'Activity page',
-                      paragraph: '関研究室では様々な活動を行います。このページでは1年のスケジュールのモデルと活動報告をblog形式でお届けします。'
+                      paragraph: '関研究室では様々な活動を行います。このページでは1年のスケジュールのモデルと活動報告をblog形式でお届けします。',
+                      image: '/images/gakuseisitu.webp'
                   }
               ]
           };

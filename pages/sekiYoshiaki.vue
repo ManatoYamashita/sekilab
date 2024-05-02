@@ -1,6 +1,7 @@
 <template>
     <div id="main">
-        <header-component :title="data" />
+        <header-component v-for="item in items" :key="item.title" :title="item.title" :subtitle="item.subtitle" :paragraph="item.paragraph" :image="item.image" />
+
         <div class="professor">
             <div class="prof-1">
                 <h2 id="name"><strong>関良明</strong>&nbsp;Yoshiaki Seki</h2>
@@ -33,12 +34,20 @@
 </template>
 
 <script>
-    export default {
-        setup() {
-            const data = '教授紹介';
-            return { data }
-        }
-    }
+  export default {
+      data() {
+          return {
+              items: [
+                  {
+                      title: '教授紹介',
+                      subtitle: 'Professor page',
+                      paragraph: '研究室の指導教員である関先生についての紹介です。',
+                      image: '/images/tcu_yc.webp'
+                  }
+              ]
+          };
+      }
+  }
     const schema = {
         "@context": "https://schema.org",
         "@type": "Person",

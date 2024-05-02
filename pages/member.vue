@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <header-component v-for="item in items" :key="item.title" :title="item.title" :subtitle="item.subtitle" :paragraph="item.paragraph" />
+        <header-component v-for="item in items" :key="item.title" :title="item.title" :subtitle="item.subtitle" :paragraph="item.paragraph" :image="item.image" />
         <div class="prof">
             <professor-component />
         </div>
@@ -63,7 +63,8 @@
         {
             title: 'メンバー紹介',
             subtitle: 'Members page',
-            paragraph: '関先生を含めた関研究室のメンバーと研究内容を紹介します。'
+            paragraph: '関先生を含めた関研究室のメンバーと研究内容を紹介します。',
+            image: '/images/members.webp'
         }
     ]
 

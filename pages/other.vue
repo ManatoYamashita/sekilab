@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <headerComponent :title="data" />
+        <header-component v-for="item in items" :key="item.title" :title="item.title" :subtitle="item.subtitle" :paragraph="item.paragraph" :image="item.image" />
         <div class="other-1">
             <h1><strong>『セキュリティメタデザイン研究室』</strong>&nbsp;について</h1>
             <div class="images">
@@ -37,15 +37,18 @@
 </template>
 
 <script>
-    import HeaderComponent from '~/components/headerComponent.vue'
     export default {
-        components: {
-            HeaderComponent
-        },
         data() {
             return {
-                data: 'その他'
-            }
+                items: [
+                    {
+                        title: 'その他',
+                        subtitle: 'Other Page',
+                        paragraph: '2025年からデザインデータ科学部に設置される「セキュリティメタデザイン研究室」やその他配布コンテンツについて',
+                        image: '/images/whatisis.webp'
+                    }
+                ]
+            };
         }
     }
 </script>

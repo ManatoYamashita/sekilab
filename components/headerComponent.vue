@@ -1,6 +1,9 @@
 <template>
     <div class="section__container header__container">
-        <div class="header__image__container">
+        <div class="image-container">
+            <slot name="image">
+                <nuxt-img class="img" :src="image" alt="cover" />
+            </slot>
             <div class="header__content">
                 <h1 class="fup">{{ title }}</h1>
                 <h2 class="fup">{{ subtitle }}</h2>
@@ -26,6 +29,10 @@
       paragraph: {
         type: String,
         default: 'Page Paragraph'
+      },
+      image: {
+        type: String,
+        default: '/public/images/cover.webp'
       }
     }
   }
@@ -33,7 +40,7 @@
 
 <style scoped>
 .section__container {
-  max-width: var(--max-width);
+  max-width: 85vw;
   margin: auto;
   padding: 5rem 1rem;
   height: 100%;
@@ -46,20 +53,46 @@
 
 }
 
-.header__image__container {
+.image-container {
   position: relative;
   top: 20vh;
   min-height: 500px;
-  background-image: linear-gradient(
+  background: linear-gradient(
       to right,
       rgba(44, 56, 85, 0.9),
       rgba(100, 125, 187, 0.1)
     ),
-    url("/public/images/cover.webp");
+    /* url("/public/images/cover.webp"); */;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: 1;
   border-radius: 2rem;
+}
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(44, 56, 85, 0.9),
+    rgba(100, 125, 187, 0.1)
+  );
+  border-radius: 2rem;
+
+}
+.img {
+  display: block;
+  position: absolute;
+  width: 100%;
+  min-height: 500px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+  z-index: -1;
 }
 
 .header__content {
