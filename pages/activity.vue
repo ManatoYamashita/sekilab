@@ -1,8 +1,9 @@
 <template>
     <div class="main">
-        <header-component :title="data" />
+      <header-component v-for="item in items" :key="item.title" :title="item.title" :subtitle="item.subtitle" :paragraph="item.paragraph" />
         <div class="detail fup">
-          <h2>年間スケジュール</h2>
+          <article class="schedule">
+            <h2 class="sche-title">年間スケジュール</h2>
             <p>関研究室では様々な活動を行います。<br>
               その年によって違いますが一般的な一年のイベントとしては、</p>
             <ul>
@@ -16,6 +17,7 @@
                 <li>2月: 卒業研究発表会</li>
             </ul>
             <p>などがあります。他にも「他大学との交流会」や、「勉強会」などに参加したりもします。</p>
+          </article>
         </div>
         <div id="blog">
             <blog-component />
@@ -31,8 +33,7 @@
     </div>
 </template>
 
-<script setup>
-  const data = '活動';
+<script>
   useHead({
     script: [
       {
@@ -49,7 +50,21 @@
 
       }
     ]
-  })
+  });
+
+  export default {
+      data() {
+          return {
+              items: [
+                  {
+                      title: '活動報告',
+                      subtitle: 'Activity page',
+                      paragraph: '関研究室では様々な活動を行います。このページでは1年のスケジュールのモデルと活動報告をblog形式でお届けします。'
+                  }
+              ]
+          };
+      }
+  }
 </script>
 
 <style scoped>
@@ -59,20 +74,49 @@
 }
 .detail {
     width: 100%;
-    background-color: black;
+    min-height: 100vh;
+    height: 100%;
+    background-color: whitesmoke;
     padding: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: var(--seki-text-color);
+}
+.schedule {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    font-family: "Noto Sans JP", sans-serif, "Helvetica", monospace;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding: 5rem 0;
+}
+article .sche-title {
+    font-family: "Noto Sans JP", sans-serif, "Helvetica", monospace;
+    font-size: 2.5rem;
+    padding: 2rem;
 }
 p {
-    color: white;
     font-size: 1rem;
 }
 ul {
-    color: white;
     font-size: 1rem;
     margin: 1rem;
+    text-align: left;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 li {
     list-style: none;
@@ -85,19 +129,12 @@ li {
 #past {
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: var(--seki-main-color);
     padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-}
-h2 {
-    font-family: "Noto Sans JP", sans-serif, "Helvetica", monospace;
-    font-weight: bold;
-    font-size: 2.5rem;
-    padding: 5rem 0;
-    color: white;
 }
 .btn2 {
   position: relative;
@@ -119,7 +156,7 @@ h2 {
   left: -2px;
   width: calc(100% + 4px);
   height: calc(100% - -2px);
-  background-color: black;
+  background-color: var(--seki-main-color);
   transition: 0.3s ease-out;
   transform: scaleY(1);
 }
@@ -131,7 +168,7 @@ h2 {
   left: -2px;
   width: calc(100% + 4px);
   height: calc(100% - 50px);
-  background-color: black;
+  background-color: var(--seki-main-color);
   transition: 0.3s ease-out;
   transform: scaleY(1);
 }

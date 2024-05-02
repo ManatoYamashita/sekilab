@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <header-component :title="data" />
+        <header-component v-for="item in items" :key="item.title" :title="item.title" :subtitle="item.subtitle" :paragraph="item.paragraph" />
         <div class="prof">
             <professor-component />
         </div>
@@ -59,6 +59,14 @@
 </template>
 
 <script setup lang="ts">
+    const items = [
+        {
+            title: 'メンバー紹介',
+            subtitle: 'Members page',
+            paragraph: '関先生を含めた関研究室のメンバーと研究内容を紹介します。'
+        }
+    ]
+
     import HeaderComponent from '~/components/headerComponent.vue'
     import ProfessorComponent from '~/components/professorComponent.vue'
     import { reactive } from 'vue'
@@ -82,8 +90,6 @@
     import yukitomoImg from '/images/mems/2021/yukitomo.webp'
     import kajiyaImg from '/images/mems/2021/kajiya.webp'
     import togashiImg from '/images/mems/2021/togashi.webp'
-
-    const data = 'メンバー紹介'
 
     const membersM2 = reactive([
         {name: "相吉澤 奏", image: aiyoshizawaImg, roll: "環境", detail: "「共分散構造分析の設計手法に関する研究」"},
@@ -226,7 +232,7 @@
     .main {
         width: 100%;
         height: 100%;
-        background-color: black;
+        background-color: whitesmoke;
     }
     .prof {
         margin-top: 20vh;

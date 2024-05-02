@@ -1,15 +1,7 @@
 <template>
     <div class="main">
-        <header-component :title="data" />
+        <header-component v-for="item in items" :key="item.title" :title="item.title" :subtitle="item.subtitle" :paragraph="item.paragraph" />
         <div class="abouts">
-            <div class="about-1">
-                <h2><strong>『安全につながる』</strong>&nbsp;情報共有を目指して</h2>
-                <p>コンピュータ・ネットワークの多様な発展、拡大とそれに伴う各種脅威の顕在化など、情報通信環境は変化し続けています。このような変革期において、
-                    社会活動の効率化を目指した情報共有サービスと、情報資産を守るための情報セキュリティは表裏一体関係にあります。私達関研究室は、
-                    「情報共有サービス」と「情報セキュリティ」を密接に結びつけ、セキュリティを考慮した情報共有システムの構築を目指し日々研究に取り組んでいます。
-                </p>
-                <nuxt-img class="about-image" format="webp" src="/images/security_image.webp" alt="information security" />
-            </div>
             
             <professor-component />
             
@@ -53,19 +45,31 @@
     </div>
 </template>
 
-<script setup>
-    const data = '研究室概要'
+<script>
+    export default {
+        data() {
+            return {
+                items: [
+                    {
+                        title: '『安全につながる』 情報共有を目指して',
+                        subtitle: '研究室概要 - about page',
+                        paragraph: 'コンピュータ・ネットワークの多様な発展、拡大とそれに伴う各種脅威の顕在化など、情報通信環境は変化し続けています。このような変革期において、 社会活動の効率化を目指した情報共有サービスと、情報資産を守るための情報セキュリティは表裏一体関係にあります。私達関研究室は、 「情報共有サービス」と「情報セキュリティ」を密接に結びつけ、セキュリティを考慮した情報共有システムの構築を目指し日々研究に取り組んでいます。'
+                    }
+                ]
+            };
+        }
+    }
 </script>
 
 <style lang="css" scoped>
 .main {
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: white;
 }
 .abouts {
     width: 100%;
-    background-color: black;
+    background-color: whitesmoke;
     color: #fff;
 }
 .about-1 {
@@ -103,6 +107,7 @@ p {
 
 .about-2 {
     width: 100%;
+    min-height: 100vh;
     height: 100%;
     background-color: #fff;
     color: var(--seki-text-color);
@@ -153,12 +158,14 @@ h3 {
     width: 100%;
     min-height: 100vh;
     height: 100%;
-    background-color: black;
+    background-color: whitesmoke;
+    color: var(--seki-text-color);
     display: flex;
 }
 .about3-content {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -177,11 +184,9 @@ h3 {
     object-fit: cover;
 }
 .research-examples {
-    width: 50%;
     height: 50%;
     padding: 1rem;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
-    color: white;
     font-size: 1rem;
 }
 

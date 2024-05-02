@@ -54,12 +54,12 @@ a:hover::after {
     opacity: 0;
     transform: translateY(2rem);
     transition: opacity 1s, transform 1s;
-    animation-delay: .5s;
+    animation-delay: 1s;
 }
 .sin {
     transform: translateX(-100%);
     transition: transform 1s;
-    animation-delay: .5s;
+    animation-delay: 1s;
 }
 
 .element-visible {

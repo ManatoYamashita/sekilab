@@ -6,15 +6,6 @@
         <footer>
             <h2>Contact us</h2>
             <div class="footer-flex">
-                <!-- <div class="footer-left">
-                    <h3>SNS</h3>
-                    <ul>
-                        <li>Instagram</li>
-                        <li>X</li>
-                        <li>Facebook</li>
-                        <li>linkedIn</li>
-                    </ul>
-                </div> -->
                 <div class="footer-middle">
                     <h3>関研究室 <small>Information Security lab.</small></h3>
                     <p>
@@ -106,7 +97,7 @@
         bottom: 0;
         height: 70vh;
         width: 100%;
-        background-color: var(--seki-main-color);
+        background-color: black;
         color: white;
         padding: 1.5rem;
     }

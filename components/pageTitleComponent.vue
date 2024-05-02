@@ -1,13 +1,14 @@
+
 <template>
     <div class="section__container header__container">
         <div class="header__image__container">
-            <div class="header__content">
-                <h1 class="fup">{{ title }}</h1>
-                <h2 class="fup">{{ subtitle }}</h2>
-            </div>
-            <div class="paragraph_container">
-                <p>{{ paragraph }}</p>
-            </div>
+        <div class="header__content">
+            <h1>{{ title }}</h1>
+            <p>{{ subtitle }}</p>
+        </div>
+        <div class="paragraph_container">
+            <p>{{ paragraph }}</p>
+        </div>
         </div>
     </div>
 </template>
@@ -36,19 +37,21 @@
   max-width: var(--max-width);
   margin: auto;
   padding: 5rem 1rem;
-  height: 100%;
-  min-height: 100vh;
+}
+
+.section__header {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-align: center;
 }
 
 .header__container {
   padding: 1rem 1rem 5rem 1rem;
-  animation: scaleIn cubic-bezier(1,-0.01,0,1.01) 2s forwards;
-
 }
 
 .header__image__container {
   position: relative;
-  top: 20vh;
   min-height: 500px;
   background-image: linear-gradient(
       to right,
@@ -72,11 +75,11 @@
   font-size: 3.5rem;
   line-height: 4rem;
   font-weight: 600;
-  color:white;
+  color: var(--white);
 }
 
-.header__content h2 {
-  color: whitesmoke;
+.header__content p {
+  color: var(--extra-light);
 }
 
 .paragraph_container {
@@ -100,17 +103,5 @@
   width: 100%;
   flex: 1;
   color: var(black);
-  font-size: 1.2rem;
-}
-
-@keyframes scaleIn {
-  from {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
 }
 </style>
