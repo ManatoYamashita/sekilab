@@ -132,7 +132,7 @@
 .paragraph_container p {
   width: 100%;
   flex: 1;
-  color: var(black);
+  color: black;
   font-size: 1.2rem;
 }
 
@@ -144,6 +144,28 @@
   to {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-container  {
+    top: 15vh;
+  }
+  .header__content h1 {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  .header__content h2 {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+  .paragraph_container {
+    bottom: -2rem;
+    width: calc(100% - 3rem);
+    padding: 1.5rem 2rem;
+  }
+  .paragraph_container p {
+    font-size: .8rem;
   }
 }
 </style>

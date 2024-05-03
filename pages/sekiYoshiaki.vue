@@ -10,7 +10,7 @@
                     大学院環境情報学研究科 環境情報学専攻 教授<br>
                     デザイン・データ科学部 学部長</small>
                 </p>
-                <div class="prof-flex">
+                <!-- <div class="prof-flex">
                     <div class="prof-flex-content">
                         <nuxt-img format="webp" src="/images/seki.webp" alt="seki-yoshiaki" />
                     </div>
@@ -21,7 +21,8 @@
                             研究室では、指導教員の企業での実務経験から、やり抜く力、プレゼンテーション・コミュニケーション能力、マネジメント能力を高め、社会に貢献できる人材を輩出したいと考えています。
                         </p>
                     </div>
-                </div>
+                </div> -->
+                <professorHeadComponent />
             </div>
             <div id="history">
                 <professorHistoryComponent />
