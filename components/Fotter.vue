@@ -318,7 +318,8 @@
             font-size: x-small;
         }
         #copy {
-            font-size: xx-small;
+            font-size: .5rem;
+            padding: .5rem 0;
         }
         .fancy {
             padding: .5em 1em;

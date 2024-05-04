@@ -23,12 +23,8 @@
             <blog-component />
         </div>
         <div id="past">
-            <h2>過去の活動はこちら</h2>
-            <button>
-            <a href="#" class="btn2 fup"><span class="spn2">
-                <p>旧Webサイト（2014~2022）</p>
-            </span></a>
-            </button>
+            <h2 class="past-title fup">過去の活動はこちら</h2>
+            <Button to="#" >2014~2022年の活動</Button>
         </div>
     </div>
 </template>
@@ -130,73 +126,15 @@
   #past {
       width: 100%;
       height: 100vh;
-      background-color: var(--seki-main-color);
+      background-color: whitesmoke;
       padding: 2rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
   }
-  .btn2 {
-    position: relative;
-    display: inline-block;
-    padding: 15px 30px;
-    border: 2px solid #fefefe;
-    text-transform: uppercase;
-    color: #fefefe;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 20px;
-    transition: 0.3s;
-  }
-
-  .btn2::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    width: calc(100% + 4px);
-    height: calc(100% - -2px);
-    background-color: var(--seki-main-color);
-    transition: 0.3s ease-out;
-    transform: scaleY(1);
-  }
-
-  .btn2::after {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    width: calc(100% + 4px);
-    height: calc(100% - 50px);
-    background-color: var(--seki-main-color);
-    transition: 0.3s ease-out;
-    transform: scaleY(1);
-  }
-
-  .btn2:hover::before {
-    transform: translateY(-25px);
-    height: 0;
-  }
-
-  .btn2:hover::after {
-    transform: scaleX(0);
-    transition-delay: 0.15s;
-  }
-
-  .btn2:hover {
-    border: 2px solid #fefefe;
-  }
-
-  .btn2 span {
-    position: relative;
-    z-index: 3;
-  }
-
-  button {
-    text-decoration: none;
-    border: none;
-    background-color: transparent;
+  .past-title {
+      color: #333;
   }
 
   @media screen and (max-width: 768px) {
@@ -205,6 +143,20 @@
     }
     .detail {
       padding: 1rem 2rem 5rem 2rem;
+    }
+    .schedule {
+      padding: 2rem 1.5rem;
+    }
+    article .sche-title {
+      font-size: 1.7rem;
+      padding: 1rem 0;
+    }
+    p {
+      font-size: .8rem;
+    }
+    ul {
+      font-size: .8rem;
+      padding: 1rem;
     }
   }
 </style>

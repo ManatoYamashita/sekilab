@@ -56,7 +56,7 @@
 .image-container {
   position: relative;
   top: 20vh;
-  min-height: 500px;
+  min-height: 60vh;
   background: linear-gradient(
       to right,
       rgba(44, 56, 85, 0.9),
@@ -88,7 +88,7 @@
   display: block;
   position: absolute;
   width: 100%;
-  min-height: 500px;
+  min-height: 60vh;
   height: 100%;
   object-fit: cover;
   border-radius: 2rem;
@@ -148,9 +148,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .image-container  {
-    top: 15vh;
-  }
   .header__content h1 {
     font-size: 1.5rem;
     line-height: 1;

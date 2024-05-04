@@ -115,10 +115,16 @@
         }
         .blog-left, .blog-right {
             width: 100%;
-            height: 50%;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+        }
+        .blog-left {
+            height: 40%;
+        }
+        .blog-right {
+            height: 60%;
+            padding: 0;
         }
         article.blog-right {
             margin: 0 auto;
@@ -136,9 +142,8 @@
             margin-bottom: 2rem;
         }
         ul.blogs {
-            list-style: none;
+            height: 25vh;
             padding: 0 0 2rem 0;
-            z-index: 0;
         }
         li.blog-data {
             font-size: .7rem;

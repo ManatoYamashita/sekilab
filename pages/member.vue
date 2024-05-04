@@ -64,7 +64,7 @@
             title: 'メンバー紹介',
             subtitle: 'Members page',
             paragraph: '関先生を含めた関研究室のメンバーと研究内容を紹介します。',
-            image: '/images/members.webp'
+            image: '/images/members2024.webp'
         }
     ]
 
@@ -119,15 +119,15 @@
     ]);
     const membersU3 = reactive<{name: string, image: string, roll: string, detail: string}[]>([
       {name: "石井 春陽", image: "", roll: "", detail: ""},
-      {name: "稲村 悠", image: "./assets/mems/default.webp", roll: "", detail: ""},
-      {name: "居山 日々木", image: "./assets/mems/default.webp", roll: "", detail: "「」"},
-      {name: "大野 真楓", image: "./assets/mems/default.webp", roll: "", detail: "「」"},
-      {name: "桒村 駿輔", image: "./assets/mems/default.webp", roll: "", detail: "「」"},
-      {name: "小室 大輝", image: "./assets/mems/default.webp", roll: "", detail: "「」"},
-      {name: "小森 春幸", image: "./assets/mems/default.webp", roll: "", detail: "「」"},
-      {name: "斉藤 悠太", image: "./assets/mems/default.webp", roll: "", detail: "「」"},
-      {name: "田代 佳也", image: "./assets/mems/default.webp", roll: "", detail: "「」"},
-      {name: "平野 澪央", image: "./assets/mems/default.webp", roll: "", detail: "「」"},
+      {name: "稲村 悠", image: "", roll: "", detail: ""},
+      {name: "居山 日々木", image: "", roll: "", detail: "「」"},
+      {name: "大野 真楓", image: "", roll: "", detail: "「」"},
+      {name: "桒村 駿輔", image: "", roll: "", detail: "「」"},
+      {name: "小室 大輝", image: "", roll: "", detail: "「」"},
+      {name: "小森 春幸", image: "", roll: "", detail: "「」"},
+      {name: "斉藤 悠太", image: "", roll: "", detail: "「」"},
+      {name: "田代 佳也", image: "", roll: "", detail: "「」"},
+      {name: "平野 澪央", image: "", roll: "", detail: "「」"},
     ])
     const membersOBOG = reactive<{name: string, detail: string}[]>([
         {name: "篠﨑 玲士", detail: "スマートフォンを用いて物理現象を理解させる3Dアプリケーションに関する研究"},
