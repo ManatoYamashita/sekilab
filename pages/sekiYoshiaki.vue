@@ -10,18 +10,6 @@
                     大学院環境情報学研究科 環境情報学専攻 教授<br>
                     デザイン・データ科学部 学部長</small>
                 </p>
-                <!-- <div class="prof-flex">
-                    <div class="prof-flex-content">
-                        <nuxt-img format="webp" src="/images/seki.webp" alt="seki-yoshiaki" />
-                    </div>
-                    <div class="prof-flex-content message fup">
-                        <h3>「社会活動を効率的に推進する情報共有と情報資産を守るセキュリティを探求しよう」</h3>
-                        <p>現在、人類はコンピュータネットワークをインフラとした大きな転機、すなわち、産業型社会からサイバー社会へ急激にシフトしています。
-                            この転機において、情報セキュリティは、現実の社会の安全・安心の実現を目指し、人や社会との接点をより広く、深くしつつある過程にあり、これからさらに重要性が高まる領域です。
-                            研究室では、指導教員の企業での実務経験から、やり抜く力、プレゼンテーション・コミュニケーション能力、マネジメント能力を高め、社会に貢献できる人材を輩出したいと考えています。
-                        </p>
-                    </div>
-                </div> -->
                 <professorHeadComponent />
             </div>
             <div id="history">
@@ -90,14 +78,15 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: black;
-        color: #fff;
+        background-color: whitesmoke;
+        color: black;
         padding: 3rem;
     }
     .roll {
         line-height: 1.3;
         text-align: center;
         padding-bottom: 4rem;
+        color: #000;
     }
     .prof-flex {
         display: flex;

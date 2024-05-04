@@ -2,7 +2,14 @@
 
 <script setup lang="ts">
   import type { Blog } from "~/types/blog";
-  const title = 'ブログ一覧'
+  const items = [
+        {
+            title: 'ブログ一覧',
+            subtitle: 'Blogs page',
+            paragraph: '関研究室の活動をブログ形式で紹介します。',
+            image: '/images/cover.webp'
+        }
+    ]
   const { data } = await useMicroCMSGetList<Blog>({
     endpoint: "blog",
   });
@@ -10,7 +17,7 @@
 
 <template>
   <div id="main">
-    <header-component :title="title" />
+    <header-component v-for="item in items" :key="item.title" :title="item.title" :subtitle="item.subtitle" :paragraph="item.paragraph" :image="item.image" />
     <article>
       <ul class="blogs fup" v-if="data?.contents">
         <li v-for="blog in data?.contents" :key="blog.id" class="blog-data">
