@@ -46,7 +46,7 @@
                     </p>
                 </div>
                 <div class="old-site footer-right">
-                    <a class="fancy" href="#">
+                    <a class="fancy" :href="archivesUrl">
                         <span class="top-key"></span>
                         <span class="text">旧サイトアーカイブ(2014-2022)</span>
                         <span class="bottom-key-1"></span>
@@ -65,7 +65,8 @@
     export default {
         data() {
             return {
-                year: year
+                year: year,
+                archivesUrl: process.env.ARCHIVES,
             }
         }
     }

@@ -24,7 +24,7 @@
         </div>
         <div id="past">
             <h2 class="past-title fup">過去の活動はこちら</h2>
-            <Button to="#" >2014~2022年の活動</Button>
+            <Button url=archivesUrl >2014~2022年の活動</Button>
         </div>
     </div>
 </template>
@@ -58,7 +58,8 @@
                       paragraph: '関研究室では様々な活動を行います。このページでは1年のスケジュールのモデルと活動報告をblog形式でお届けします。',
                       image: '/images/gakuseisitu.webp'
                   }
-              ]
+              ],
+              archivesUrl: process.env.ARCHIVES
           };
       }
   }
