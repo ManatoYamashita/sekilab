@@ -1,7 +1,7 @@
 <template>
     <div class="main">
         <header-component v-for="item in items" :key="item.title" :title="item.title" :subtitle="item.subtitle" :paragraph="item.paragraph" :image="item.image" />
-        <div class="other-1">
+        <!-- <div class="other-1">
             <h1><strong>『セキュリティメタデザイン研究室』</strong>&nbsp;について</h1>
             <div class="images">
                 <nuxt-img format="webp" src="/images/secumetadesign.webp" alt="security-meta-design-lab" />
@@ -18,7 +18,7 @@
                 そこで、本研究室では、利用者自身が各種セキュリティ脅威を認識できる情報共有システムの構築に向けて、先端技術に注目して取り組みます。
             </p>
             <a class="fup" href="https://tcu-labo.com/labo" target="_blank" rel="noopener noreferrer">詳しくはこちら（外部サイト）</a>
-        </div>
+        </div> -->
         <hr>
         <div class="other-2">
             <h2>その他のコンテンツ</h2>
