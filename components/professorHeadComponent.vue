@@ -18,7 +18,7 @@
                     </div>
                     <div class="mr-grid summary-row">
                         <div class="col2">
-                            <h5>「社会活動を効率的に推進する情報共有と情報資産を守るセキュリティを探求しよう」</h5>
+                            <h2>「社会活動を効率的に推進する情報共有と情報資産を守るセキュリティを探求しよう」</h2>
                         </div>
                     </div>
                     <div class="mr-grid">
@@ -47,9 +47,9 @@
 
 .cellphone-container {
     height: auto;
-    background-color: #1e1b26;
+    background-color: whitesmoke;
     margin: 60px auto 0 auto;
-    box-shadow: 5px 5px 115px -14px black;
+    box-shadow: 5px 5px 115px -14px gray;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
 }
@@ -70,7 +70,8 @@
 
     -webkit-mask-image: -webkit-gradient(linear, right top, left top,
         color-stop(0.00, rgba(0, 0, 0, 0)),
-        color-stop(1.00, rgba(0, 0, 0, 1)));
+        color-stop(1.00, rgba(0, 0, 0, 1))
+    );
 }
 .professor-img img {
     height: 100%;
@@ -79,39 +80,33 @@
 .text-professor-cont {
     padding: 1rem;
     text-align: justify;
-    background-color: #1e1b26;
+    background-color: whitesmoke;
 }
 
 .summary-row {
-    margin-top: 12px;
+    margin-top: .7rem;
 }
 
 /* Typography */
-h1, h2, h3, h4, h5 {
+h1, h2{
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: #333;
+    font-weight: bold;
     margin: 0px;
 }
 
 h1 {
-    font-size: 36px;
-    font-weight: 400;
+    font-size: 2.3rem;
 }
 
-h3 {
-    font-size: 14px;
-    font-weight: 400;
-}
-
-h5 {
-    font-size: 12px;
-    font-weight: 400;
+h2 {
+    font-size: 1.3rem;
 }
 
 .professor-gen li {
     font-family: 'Open+Sans', sans-serif;
-    font-size: 12px;
-    color: #bcbcbc; /* Darkened accent color by 40% */
+    font-size: 1rem;
+    color: #606060; /* Darkened accent color by 40% */
     width: auto;
     display: block;
     float: left;
@@ -121,19 +116,19 @@ h5 {
 
 .professor-details, .professor-description, .professor-actors {
     font-family: 'Open+Sans', sans-serif;
-    font-size: 12px;
+    font-size: 1rem;
     text-align: justify;
     line-height: 1.3;
 }
 
 .professor-details {
     font-weight: 300;
-    color: #d6d6d6; /* Darkened accent color by 20% */
+    color: #484848; /* Darkened accent color by 20% */
 }
 
 .professor-description {
     font-weight: 400;
-    color: #cccccc; /* Darkened accent color by 30% */
+    color: #757575; /* Darkened accent color by 30% */
 }
 
 /* Grid System */
@@ -170,13 +165,16 @@ h5 {
 }
 
 @media screen and (max-width: 650px) {
-    .professor {
-        flex-direction: column;
+    .container {
+        scale: .8;
     }
     .cellphone-container {
         width: 75%;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
+    }
+    .professor {
+        flex-direction: column;
     }
     .professor-img {
         width: 100%;

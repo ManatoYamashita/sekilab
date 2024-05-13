@@ -75,17 +75,19 @@
     }
     .prof-1 {
         width: 100%;
+        height: 100%;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         background-color: whitesmoke;
         color: black;
-        padding: 3rem;
+        padding: 1rem;
+        padding-bottom: 3rem;
     }
     .roll {
         line-height: 1.3;
         text-align: center;
-        padding-bottom: 4rem;
         color: #000;
     }
     .prof-flex {
@@ -102,9 +104,8 @@
     h2 {
         font-family: "Noto Sans JP", sans-serif, "Helvetica", monospace;
         font-weight: bold;
-        font-size: 2.5rem;
-        padding-top: 5rem;
-        padding-bottom: 2rem;
+        font-size: 2rem;
+        padding: 1.5rem;
         text-align: center;
     }
     h3 {
@@ -116,7 +117,6 @@
         font-size: 120%;
     }
     p {
-        padding: 1rem;
         font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
         color: rgb(214, 214, 214);
         text-align: justify;
