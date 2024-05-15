@@ -24,12 +24,13 @@
         </div>
         <div id="past">
             <h2 class="past-title fup">過去の活動はこちら</h2>
-            <Button url=archivesUrl >2014~2022年の活動</Button>
+            <Button :url=archivesUrl >2014~2022年の活動</Button>
         </div>
     </div>
 </template>
 
 <script>
+  import { useRuntimeConfig } from '#app';
   useHead({
     script: [
       {
@@ -49,9 +50,11 @@
   });
 
   export default {
-      data() {
-          return {
-              items: [
+    setup() {
+      const config = useRuntimeConfig();
+      return { 
+        archivesUrl: config.public.ARCHIVES,
+        items: [
                   {
                       title: '活動報告',
                       subtitle: 'Activity page',
@@ -59,10 +62,9 @@
                       image: '/images/gakuseisitu.webp'
                   }
               ],
-              archivesUrl: process.env.ARCHIVES
-          };
-      }
-  }
+      };
+    }
+  };
 </script>
 
 <style scoped>

@@ -2,6 +2,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      BASE_URL: process.env.BASE_URL,
+      ARCHIVES: process.env.ARCHIVES,
+    }
+  },
   devtools: {
     enabled: false,
   },
@@ -67,3 +73,9 @@ export default defineNuxtConfig({
   },
   
 })
+
+// nuxt-microcms-module からは3つのGET関数が提供されます。
+
+// useMicroCMSGetList
+// useMicroCMSGetListDetail
+// useMicroCMSGetObject
