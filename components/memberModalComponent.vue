@@ -22,7 +22,8 @@
   
   <style scoped>
     .modal {
-      display: block; /* Hidden by default */
+      display: flex; /* Hidden by default */
+      justify-content: center;
       position: fixed; /* Stay in place */
       z-index: 1; /* Sit on top */
       left: 0;
@@ -36,11 +37,12 @@
     
     .modal-content {
       background-color: #fefefe;
-      margin: 15% auto; /* 15% from the top and centered */
+      margin: auto; /* 15% from the top and centered */
       padding: 20px;
       border: 1px solid #888;
       border-radius: 8px;
       width: 40%;
+      height: auto;
       transition: all .3s;
 
     }
@@ -57,5 +59,12 @@
       color: black;
       text-decoration: none;
       cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .modal-content {
+        width: 80%;
+        margin: auto;
+      }
     }
   </style>

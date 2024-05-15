@@ -2,6 +2,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      BASE_URL: process.env.BASE_URL,
+      ARCHIVES: process.env.ARCHIVES,
+    }
+  },
   devtools: {
     enabled: false,
   },
@@ -24,10 +30,10 @@ export default defineNuxtConfig({
           { name: 'twitter:card', content: 'summary_large_image' },
           { property: 'og:title', content: 'Tokyo City University SEKI Lab. -Information Security' },
           { property: 'og:description', content: 'a Website SEKI Lab. at TCU, for Information Security.' },
-          { property: 'og:image', content: '/ogp.png' },
+          { property: 'og:image', content: 'https://comm.tcu.ac.jp/seki_lab/ogp.png' },
           { property: 'og:type', content: 'website' },
           { property: 'og:site_name', content: '東京都市大学 関研究室 Information Security' },
-          { property: 'og:url', content: 'https://comm.tcu.ac.jp/seki_lab' },
+          { property: 'og:url', content: process.env.BASE_URL },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -51,10 +57,10 @@ export default defineNuxtConfig({
     "nuxt-schema-org",
   ],
   site: {
-    url: "https://comm.tcu.ac.jp/seki_lab",
+    url: process.env.BASE_URL,
     name: "Tokyo City University SEKI Lab. -Information Security",
     description: "a Website SEKI Lab. at TCU, for Information Security.",
-    baseUrl: "https://comm.tcu.ac.jp/seki_lab",
+    baseUrl: process.env.BASE_URL,
   },
   microCMS: {
     serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN,
@@ -67,3 +73,9 @@ export default defineNuxtConfig({
   },
   
 })
+
+// nuxt-microcms-module からは3つのGET関数が提供されます。
+
+// useMicroCMSGetList
+// useMicroCMSGetListDetail
+// useMicroCMSGetObject

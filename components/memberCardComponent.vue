@@ -29,7 +29,7 @@
 
     <ModalComponent :isVisible="showModal" @update:isVisible="showModal = $event">
         <!-- モーダル内に表示したい内容 -->
-        <div>
+        <div class="modalcontent">
             <h2>{{ name }}</h2>
             <img 
                 :src="imageSrc" 
@@ -127,7 +127,6 @@ const setImageToDefault = (event: Event) => {
         width: 100%;
         height: 100%;
         object-fit: cover;
-
     }
 
     .card__image_modal {

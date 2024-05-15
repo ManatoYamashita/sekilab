@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <header-component :title="data" />
+        <header-component v-for="item in items" :key="item.title" :title="item.title" :subtitle="item.subtitle" :paragraph="item.paragraph" :image="item.image" />
         <div class="prof">
             <professor-component />
         </div>
@@ -59,6 +59,15 @@
 </template>
 
 <script setup lang="ts">
+    const items = [
+        {
+            title: 'メンバー紹介',
+            subtitle: 'Members page',
+            paragraph: '関先生を含めた関研究室のメンバーと研究内容を紹介します。',
+            image: '/images/members2024.webp'
+        }
+    ]
+
     import HeaderComponent from '~/components/headerComponent.vue'
     import ProfessorComponent from '~/components/professorComponent.vue'
     import { reactive } from 'vue'
@@ -67,7 +76,7 @@
 
     // 画像ファイルのインポート
     import aiyoshizawaImg from '/images/mems/pre/aiyoshizawa.jpg'
-    import kishiImg from '@/public/images/mems/2021/kishi.webp'
+    import kishiImg from '/images/mems/2021/kishi.webp'
     import yamashitaImg from '/images/mems/2021/yamashita.webp'
     import konishikawaImg from '/images/mems/2021/konishikawa.webp'
     import kobayashiShoeiImg from '/images/mems/2021/kobayashi-shoei.webp'
@@ -83,8 +92,6 @@
     import kajiyaImg from '/images/mems/2021/kajiya.webp'
     import togashiImg from '/images/mems/2021/togashi.webp'
 
-    const data = 'メンバー紹介'
-
     const membersM2 = reactive([
         {name: "相吉澤 奏", image: aiyoshizawaImg, roll: "環境", detail: "「共分散構造分析の設計手法に関する研究」"},
     ]);
@@ -94,35 +101,33 @@
     ])
 
     const membersU4 = reactive([
-        {name: "岸 佑奈", image: kishiImg, roll: "ゼミ長", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-        {name: "山下 真和都", image: yamashitaImg, roll: "広報", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-        {name: "小西川 龍希", image: konishikawaImg, roll: "イベント", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-        {name: "小林 祥瑛", image: kobayashiShoeiImg, roll: "イベント", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-        {name: "新實 一心", image: niimiImg, roll: "イベント", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-        {name: "小林 将大", image: kobayashiShoutaImg, roll: "環境", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-        {name: "渡邊 悠人", image: watanabeImg, roll: "環境", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-        {name: "赤間 弦", image: akamaImg, roll: "広報", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-        {name: "助川 優香", image: sukegawaImg, roll: "懇親", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-        {name: "若山 樹", image: wakayamaImg, roll: "懇親", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-        {name: "五十嵐 星哉", image: igarashiImg, roll: "合宿", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-        {name: "深町 公貴", image: fukamachiImg, roll: "合宿", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-        {name: "行友 裕哉", image: yukitomoImg, roll: "合宿", detail: "「期間限定販売法における転売防止手法に関する研究」"},
-        {name: "加治屋 直希", image: kajiyaImg, roll: "未定", detail: "「未定」"},
-        {name: "富樫 駿也", image: togashiImg, roll: "未定", detail: "「未定」"},
+        {name: "岸 佑奈", image: kishiImg, roll: "ゼミ長", detail: "「AI生成イラストの判断と特徴抽出の検討」(事例研究)"},
+        {name: "山下 真和都", image: yamashitaImg, roll: "広報", detail: "「Passkey認証技術の仕様調査」(事例研究)"},
+        {name: "赤間 弦", image: akamaImg, roll: "広報", detail: "「オンラインショッピングにおけるクレジットカードの不正利用に関する調査」(事例研究)"},
+        {name: "小西川 龍希", image: konishikawaImg, roll: "イベント", detail: "「違法海賊版サイトの対策に関する調査」(事例研究)"},
+        {name: "小林 祥瑛", image: kobayashiShoeiImg, roll: "イベント", detail: "「トラッシングに関する調査」(事例研究)"},
+        {name: "新實 一心", image: niimiImg, roll: "イベント", detail: "「Google の検索エンジンアルゴリズムに関する調査」(事例研究)"},
+        {name: "小林 将大", image: kobayashiShoutaImg, roll: "環境", detail: "「なりすましアクセスポイントの特徴分析に関する調査」(事例研究)"},
+        {name: "渡邊 悠人", image: watanabeImg, roll: "環境", detail: "「ポート開放システムに関する調査」(事例研究)"},
+        {name: "助川 優香", image: sukegawaImg, roll: "懇親", detail: "「フィッシングメールに関する調査」(事例研究)"},
+        {name: "若山 樹", image: wakayamaImg, roll: "懇親", detail: "「アンチチートソフトに関する検討」(事例研究)"},
+        {name: "五十嵐 星哉", image: igarashiImg, roll: "合宿", detail: "「オンラインショッピングにおけるクレジットカードの不正利用に関する調査」(事例研究)"},
+        {name: "深町 公貴", image: fukamachiImg, roll: "合宿", detail: "「生成AIが作成した文章の判定に関する調査」(事例研究)"},
+        {name: "行友 裕哉", image: yukitomoImg, roll: "合宿", detail: "「クラウド型データベースにおけるセキュリティ施策の調査」(事例研究)"},
+        {name: "加治屋 直希", image: kajiyaImg, roll: "", detail: "「」"},
+        {name: "富樫 駿也", image: togashiImg, roll: "", detail: "「」"},
     ]);
     const membersU3 = reactive<{name: string, image: string, roll: string, detail: string}[]>([
-        {name: "not yet assigned", image: "", roll: "", detail: ""},
-
-      {name: "石井 春陽", image: "./assets/mems/m01.webp", roll: "未定", detail: "未定"},
-      {name: "稲村 悠", image: "./assets/mems/m01.webp", roll: "未定", detail: "未定"},
-      {name: "居山 日々木", image: "./assets/mems/m01.webp", roll: "未定", detail: "「未定」"},
-      {name: "大野 真楓", image: "./assets/mems/m01.webp", roll: "未定", detail: "「未定」"},
-      {name: "桒村 駿輔", image: "./assets/mems/m01.webp", roll: "ゼミ長", detail: "「未定」"},
-      {name: "小室 大輝", image: "./assets/mems/m01.webp", roll: "未定", detail: "「未定」"},
-      {name: "小森 春幸", image: "./assets/mems/m01.webp", roll: "ゼミ長", detail: "「未定」"},
-      {name: "斉藤 悠太", image: "./assets/mems/m01.webp", roll: "未定", detail: "「未定」"},
-      {name: "田代 佳也", image: "./assets/mems/m01.webp", roll: "ゼミ長", detail: "「未定」"},
-      {name: "平野 澪央", image: "./assets/mems/m01.webp", roll: "未定", detail: "「未定」"},
+      {name: "石井 春陽", image: "", roll: "", detail: ""},
+      {name: "稲村 悠", image: "", roll: "", detail: ""},
+      {name: "居山 日々木", image: "", roll: "", detail: "「」"},
+      {name: "大野 真楓", image: "", roll: "", detail: "「」"},
+      {name: "桒村 駿輔", image: "", roll: "", detail: "「」"},
+      {name: "小室 大輝", image: "", roll: "", detail: "「」"},
+      {name: "小森 春幸", image: "", roll: "", detail: "「」"},
+      {name: "斉藤 悠太", image: "", roll: "", detail: "「」"},
+      {name: "田代 佳也", image: "", roll: "", detail: "「」"},
+      {name: "平野 澪央", image: "", roll: "", detail: "「」"},
     ])
     const membersOBOG = reactive<{name: string, detail: string}[]>([
         {name: "篠﨑 玲士", detail: "スマートフォンを用いて物理現象を理解させる3Dアプリケーションに関する研究"},
@@ -135,6 +140,7 @@
         {name: "根本 美歩", detail: "研究室オンライン紹介の運営機能に関する研究"},
         {name: "高山 祐輔", detail: "サッカーにおけるスタッツデータ分析に関する研究"},
         {name: "木村 彩乃", detail: "音声認識における駄洒落の誤認識に関する研究"},
+        {name: "吉澤 龍斗", detail: "二段階認証を利用した電子投票システムに関する研究"},
 
         {name: "相澤 智輝", detail: "SNSにおけるコンテンツ売買のリスクアセスメント"},
         {name: "浅川 智之", detail: "聖地巡礼に着目した地域情報システムに関する研究"},
@@ -153,6 +159,8 @@
         {name: "内田 圭輔", detail: "ライダー視点映像から個人特定を防ぐモザイク処理に関する研究"},
         {name: "大谷 海斗", detail: "飲食店におけるテーブル会計システムに関する研究"},
         {name: "大山 駿", detail: "eラーニングへの適用を考慮したゲーム実況の画面構成に関する研究"},
+        {name: "奥田 一雅", detail: "感圧センサを用いた郵便物有無の検知に関する研究"},
+        {name: "岡本 翔吾", detail: "e ラーニングへの適用を考慮したゲーム実況の画面構成に関する研究"},
         {name: "小野嶋 優", detail: "スマートフォンで撮影した指紋の識別可能距離に関する研究"},
         {name: "加藤 永士", detail: "感圧センサを用いた着席検知に関する研究"},
         {name: "加藤 慶太郎", detail: "ゼミナール活動における発表資料作成支援システムに関する研究"},
@@ -161,9 +169,9 @@
         {name: "神谷 亮吾", detail: "活動量計による起床時刻を用いた個人認証に関する研究"},
         {name: "鴨 珠貴", detail: "リレーアタックに対するスマートキーの通信距離に関する研究"},
         {name: "川上 修平", detail: "イラスト制作における色彩感情に基づいた色選択に関する研究"},
-        {name: "菊地 拓翔", detail: "オンラインクレジット決済における消費者の購買モデルに関する研究"},
-        {name: "岸本 将", detail: "容画像検査装置におけるGrad-Camを用いた検査領域決定に関する研究"},
+        {name: "川手 理枝", detail: "家庭における情報セキュリティリスク評価に関する研究"},
         {name: "神部 俊太", detail: "ランニングアプリRunkeeperにおける標高データ取得方法に関する研究"},
+        {name: "岸本 将", detail: "容画像検査装置におけるGrad-Camを用いた検査領域決定に関する研究"},
         {name: "菊地 拓翔", detail: "オンラインクレジット決済における消費者の購買モデルに関する研究"},
         {name: "木村 竜也", detail: "iPhoneを用いた睡眠分析に関する研究"},
         {name: "窪園 聡一郎", detail: "オフライン対応型避難支援システムに関するリスクアセスメント"},
@@ -173,6 +181,10 @@
         {name: "小泉 陸人", detail: "Bluetooth通信を用いて匿名性を活かす求人アプリに関する研究"},
         {name: "香坂 卓海", detail: "Twitterを活用した位置情報共有システムに関する研究"},
         {name: "小嶋 海斗", detail: "赤外線センサを利用した品出し確認システムに関する研究"},
+        {name: "佐藤 圭", detail: "Twitter を用いた未来予測データの取得手法に関する研究"},
+        {name: "佐藤 弘崇", detail: "シューティングゲームにおけるフレームレート向上に関する研究"},
+        {name: "佐藤 優花", detail: "スマートスピーカーの盗聴リスクに関する研究"},
+        {name: "佐野 源太", detail: "赤外線センサを利用した品出し確認システムに関する研究"},
         {name: "澤 信吾", detail: "Webテストを用いた情報セキュリティリテラシー測定手法の研究"},
         {name: "鈴木 開斗", detail: "Instagramを活用した情報セキュリティ行動意識向上促す適切な写真選定に関する研究"},
         {name: "鈴木 陽佳", detail: "災害時に自動切り替え可能な帰宅困難者支援システムに関する研究"},
@@ -228,7 +240,10 @@
     .main {
         width: 100%;
         height: 100%;
-        background-color: black;
+        background-color: whitesmoke;
+    }
+    .prof {
+        margin-top: 20vh;
     }
     .mems-cards {
         margin: 0 auto;

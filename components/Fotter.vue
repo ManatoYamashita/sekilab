@@ -6,15 +6,6 @@
         <footer>
             <h2>Contact us</h2>
             <div class="footer-flex">
-                <!-- <div class="footer-left">
-                    <h3>SNS</h3>
-                    <ul>
-                        <li>Instagram</li>
-                        <li>X</li>
-                        <li>Facebook</li>
-                        <li>linkedIn</li>
-                    </ul>
-                </div> -->
                 <div class="footer-middle">
                     <h3>関研究室 <small>Information Security lab.</small></h3>
                     <p>
@@ -55,7 +46,7 @@
                     </p>
                 </div>
                 <div class="old-site footer-right">
-                    <a class="fancy" href="#">
+                    <a class="fancy" :href="archivesUrl">
                         <span class="top-key"></span>
                         <span class="text">旧サイトアーカイブ(2014-2022)</span>
                         <span class="bottom-key-1"></span>
@@ -74,7 +65,8 @@
     export default {
         data() {
             return {
-                year: year
+                year: year,
+                archivesUrl: process.env.ARCHIVES,
             }
         }
     }
@@ -106,7 +98,7 @@
         bottom: 0;
         height: 70vh;
         width: 100%;
-        background-color: var(--seki-main-color);
+        background-color: black;
         color: white;
         padding: 1.5rem;
     }
@@ -327,7 +319,8 @@
             font-size: x-small;
         }
         #copy {
-            font-size: xx-small;
+            font-size: .5rem;
+            padding: .5rem 0;
         }
         .fancy {
             padding: .5em 1em;

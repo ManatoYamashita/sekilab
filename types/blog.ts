@@ -2,10 +2,20 @@
 
 import type { MicroCMSImage } from "microcms-js-sdk";
 
-export type Blog = {
+export interface Blog {
+  id: string;
   title: string;
-  thumbnail: MicroCMSImage;
-  // contents: string;
-  content: string;
-  eyecatch: MicroCMSImage;
+  thumbnail: {
+    url: string;
+    width?: number;
+    height?: number;
   };
+  content: string;
+  eyecatch: {
+    url: string;
+    width?: number;
+    height?: number;
+  };
+  publishedAt?: string;
+  createdAt?: string;
+}
