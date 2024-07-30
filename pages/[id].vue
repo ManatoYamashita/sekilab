@@ -6,7 +6,7 @@
       <h1>
         {{ data.title }}
       </h1>
-      <nuxt-img
+      <img
         id="thumbnail"
         :src="data.thumbnail?.url"
         :width="data.eyecatch?.width"
@@ -23,7 +23,7 @@
       </div>
       <div id="content" v-html="data.content"></div>
       <div class="btn">
-        <Button url="/">戻る</Button>
+        <Button url="">戻る</Button>
       </div>
       <br>
       </main>

@@ -2,10 +2,10 @@
     <div class="proffessor__data">
       <div class="proffessor__poster">
         <span class="proffessor__poster--fill slidein">
-            <nuxt-img format="webp" src="/images/cover.webp" alt="yc" />
+            <img format="webp" src="/images/cover.webp" alt="yc" />
         </span>
         <span class="proffessor__poster--featured fup">
-            <nuxt-img format="webp" src="/images/seki.webp" alt="seki-yoshiaki" />
+            <img format="webp" src="/images/seki.webp" alt="seki-yoshiaki" />
         </span>
       </div>
       <div class="proffessor_content">
@@ -20,7 +20,7 @@
           <p><strong>学位称号: </strong>博士（情報科学 東北大学） 2001年5月10日</p>
           <p><strong>学位論文題目: </strong>利用者誘導機能を用いた情報共有システムに関する研究</p>
         </div>
-        <Button url="/sekiYoshiaki">もっと見る</Button>
+        <Button url="/sekiYoshiaki" aria-label="関良明教授の詳細ページへ">関良明教授についてもっと詳しく見る</Button>
       </div>
     </div>
 </template>

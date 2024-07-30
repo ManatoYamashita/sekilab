@@ -2,7 +2,7 @@
     <div class="section__container header__container">
         <div class="image-container">
             <slot name="image">
-                <nuxt-img class="img" :src="image" alt="cover" />
+                <NuxtImg class="img" :src=image alt="cover" />
             </slot>
             <div class="header__content">
                 <h1 class="fup">{{ title }}</h1>
@@ -32,7 +32,7 @@
       },
       image: {
         type: String,
-        default: '/public/images/cover.webp'
+        default: 'public/images/cover.webp'
       }
     }
   }

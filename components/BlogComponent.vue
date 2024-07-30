@@ -11,7 +11,7 @@
 <template>
     <div class="blog-wrap">
         <div class="blog-left sin">
-            <nuxt-img format="webp" src="/images/tcu_yc.webp" alt="TCU Yokohama Campus" class="fup" />
+            <img format="webp" src="/images/tcu_yc.webp" alt="TCU Yokohama Campus" class="fup" />
         </div>
         
         <article class="blog-right">

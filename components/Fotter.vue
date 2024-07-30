@@ -1,7 +1,7 @@
 <template>
     <div class="wrap">
         <div class="footer-back">
-            <nuxt-img format="webp" src="/images/cover.webp" alt="background" class="footer-cover" />
+            <img format="webp" src="/images/cover.webp" alt="background" class="footer-cover" />
         </div>
         <footer>
             <h2>Contact us</h2>
@@ -9,7 +9,7 @@
                 <div class="footer-middle">
                     <h3>関研究室 <small>Information Security lab.</small></h3>
                     <p>
-                        <a href="https://www.tcu.ac.jp/campuslife/introduction/yokohamacampus/">
+                        <a href="https://www.tcu.ac.jp/campuslife/introduction/yokohamacampus">
                         <span>東京都市大学 横浜キャンパス3号館7階 3701号室</span>
                         </a>
                         <ul class="info">
@@ -29,7 +29,7 @@
                 <div class="footer-right sitemap">
                     <h3>Sitemap</h3>
                     <ul>
-                        <li><nuxt-link to="/">ー Home</nuxt-link></li>
+                        <li><nuxt-link to="">ー Home</nuxt-link></li>
                         <li><nuxt-link to="/about">ー About</nuxt-link></li>
                         <li><nuxt-link to="/member">ー Member</nuxt-link></li>
                         <li><nuxt-link to="/other">ー Other</nuxt-link></li>
@@ -40,9 +40,9 @@
                 <div class="univ footer-left">
                     <h4><a href="https://www.tcu.ac.jp">東京都市大学</a></h4>
                     <p>
-                        <a href="https://www.comm.tcu.ac.jp/gseis/department/index.html" target="_blank">大学院環境情報学研究科 環境情報学専攻</a><br>
-                        <a href="https://informatics.tcu.ac.jp/faculty/system/" target="_blank">メディア情報学部 情報システム学科</a><br>
-                        <a href="https://www.comm.tcu.ac.jp/ddprom/" target="_blank">デザイン・データ科学部 デザイン・データ科学科</a>
+                        <a href="/gseis" target="_blank">大学院環境情報学研究科 環境情報学専攻</a><br>
+                        <a href="https://informatics.tcu.ac.jp/faculty/system" target="_blank">メディア情報学部 情報システム学科</a><br>
+                        <a href="/ddprom" target="_blank">デザイン・データ科学部 デザイン・データ科学科</a>
                     </p>
                 </div>
                 <div class="old-site footer-right">
@@ -54,7 +54,7 @@
                     </a>
                 </div>
             </div>
-            <span id="copy">&copy; 2023 - {{ year }} 東京都市大学 関研究室 All right reserved | Constracted by <a href="https://manapuraza.com" target="_blank">Manato Yamashita</a></span>
+            <span id="copy">&copy; 2023 - {{ year }} 東京都市大学 関研究室 All right reserved | Constracted by <nuxt-link to="https://manapuraza.com" target="_blank">Manato Yamashita</nuxt-link></span>
         </footer>
     </div>
 </template>

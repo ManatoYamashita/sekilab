@@ -1,6 +1,13 @@
 <template>
     <div class="main">
-        <header-component v-for="item in items" :key="item.title" :title="item.title" :subtitle="item.subtitle" :paragraph="item.paragraph" :image="item.image" />
+        <header-component 
+            v-for="item in items" 
+            :key="item.title" 
+            :title="item.title" 
+            :subtitle="item.subtitle" 
+            :paragraph="item.paragraph" 
+            :image="item.image" 
+        />
         <div class="abouts">
             
             <professor-component />
@@ -46,6 +53,7 @@
 </template>
 
 <script>
+
     export default {
         data() {
             return {
@@ -54,7 +62,7 @@
                         title: '『安全につながる』 情報共有を目指して',
                         subtitle: '研究室概要 - about page',
                         paragraph: 'コンピュータ・ネットワークの多様な発展、拡大とそれに伴う各種脅威の顕在化など、情報通信環境は変化し続けています。私達関研究室は、「情報共有サービス」と「情報セキュリティ」を密接に結びつけ、セキュリティを考慮した情報共有システムの構築を目指し日々研究に取り組んでいます。',
-                        image: '/images/security_image.webp'
+                        image: '/images/security_image.webp',
                     }
                 ]
             };
