@@ -1,6 +1,6 @@
 # SekiLab-2023
 
-[デプロイ（vercel）](https://sekilab.vercel.app)
+[デプロイ（vercel）](https://www.comm.tcu.ac.jp/seki-ken)
 
 ![ogp](https://github.com/ManatoYamashita/sekilab/assets/95745485/7021afc1-7c29-4b5e-a555-6d0f8710e3b8)
 
