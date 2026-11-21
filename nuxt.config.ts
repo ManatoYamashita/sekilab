@@ -71,6 +71,15 @@ export default defineNuxtConfig({
     description: "a Website SEKI Lab. at TCU, for Information Security.",
     baseUrl: process.env.NUXT_BASE_URL,
   },
+  // サイトはサブパス（app.baseURL）配下で配信されるため robots.txt を生成しない。
+  // robots.txt はドメイン直下でしか有効にならず、@nuxt/robots もサブパスでの生成を拒否する。
+  robots: {
+    robotsTxt: false,
+  },
+  // OG 画像の動的生成は使っていない（og:image は静的な ogp.png を指定している）。
+  ogImage: {
+    enabled: false,
+  },
   microCMS: {
     serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN,
     apiKey: process.env.MICROCMS_API_KEY,
