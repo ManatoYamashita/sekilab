@@ -31,6 +31,7 @@
         align-items: center;
         margin: 0 auto;
         width: 100%;
+        min-height: 100vh;
         height: 100%;
         padding: 0 1.5rem;
         background-color: #fff;

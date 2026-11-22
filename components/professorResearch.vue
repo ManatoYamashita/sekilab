@@ -10,12 +10,12 @@
                   <div class="content">
                       <div class="research">
                           <h4 class="res-title"><a href="https://researchmap.jp/Yoshiaki_Seki/published_papers/22788336" target="_blank">A Method for Smartphone Theft Prevention when the Owner Dozes off</a></h4>
-                          <p class="res-author"><strong>Yoshiaki Seki</strong>, Kouhei Nagata,</p>
+                          <p class="res-author">Kouhei Nagata, <strong>Yoshiaki Seki</strong></p>
                           <p class="res-detail">IEICE Transactions on Information and Systems E102-D(9) 2019年9月（査読あり）（筆頭著者）</p>
                       </div>
                       <div class="research">
                           <h4 class="res-title"><a href="https://researchmap.jp/Yoshiaki_Seki/published_papers/22788332" target="_blank">友人関係が情報セキュリティ行動に与える影響 －大学生のパスワード共有調査</a></h4>
-                          <p class="res-author"><strong>関 良明</strong>, 熊谷 匠純, 菊地 拓翔, 澤 信吾, 加藤 菜美絵</p>
+                          <p class="res-author">熊谷 匠純, 菊地 拓翔, 澤 信吾, 加藤 菜美絵, <strong>関 良明</strong></p>
                           <p class="res-detail">電子情報通信学会論文誌 D J101-D(10) 1438-1442 2018年10月（査読あり）（筆頭著者）</p>
                       </div>
                       <div class="research">
@@ -25,12 +25,12 @@
                       </div>
                       <div class="research">
                           <h4 class="res-title"><a href="https://researchmap.jp/Yoshiaki_Seki/published_papers/22788317" target="_blank">個人ユーザ向けHTTPS暗号危殆化確認サービスの受容性評価</a></h4>
-                          <p class="res-author"><strong>関 良明</strong>, 高野 誠士, 諏訪 博彦</p>
+                          <p class="res-author">高野 誠士, <strong>関 良明</strong>, 諏訪 博彦</p>
                           <p class="res-detail">電子情報通信学会論文誌 D J97-D(5) 975-983 2014年5月（査読有り）（責任著者）</p>
                       </div>
                       <div class="research">
                           <h4 class="res-title"><a href="https://researchmap.jp/Yoshiaki_Seki/published_papers/8717846" target="_blank">情報セキュリティ行動をツイートする情報共有手法の提案と受信者の情報接触行動の考察</a></h4>
-                          <p class="res-author"><strong>関 良明</strong>, 原 賢, 三浦 大樹, 諏訪 博彦</p>
+                          <p class="res-author">原 賢, 三浦 大樹, <strong>関 良明</strong>, 諏訪 博彦</p>
                           <p class="res-detail">情報処理学会論文誌 55(1) 210-220 2014年1月15日（査読有り）（筆頭著者）</p>
                       </div>
                       <div class="research">
@@ -49,17 +49,17 @@
                   <div class="content">
                       <div class="research">
                           <h4 class="res-title"><a href="https://researchmap.jp/Yoshiaki_Seki/misc/35608999" target="_blank">腕時計型デバイスを用いたユーザ認証維持手法の提案 : 加速度センサの活用 (技術と社会・倫理) </a></h4>
-                          <p class="res-author"><strong>関 良明</strong>, 松下 海央, 永田 航平</p>
+                          <p class="res-author">松下 海央, 永田 航平, <strong>関 良明</strong></p>
                           <p class="res-detail">電子情報通信学会技術研究報告 = IEICE technical report : 信学技報 117(286) 13-18 2017年11月9日</p>
                       </div>
                       <div class="research">
                           <h4 class="res-title"><a href="https://researchmap.jp/Yoshiaki_Seki/misc/35608980" target="_blank">大学生におけるパスワード管理の意識調査 : 友人関係を考慮した質問紙設計 (技術と社会・倫理) </a></h4>
-                          <p class="res-author"><strong>関 良明</strong>, 熊谷 匠純, 菊地 拓翔, 澤 信吾, 加藤 菜美絵</p>
+                          <p class="res-author">熊谷 匠純, 菊地 拓翔, 澤 信吾, 加藤 菜美絵, <strong>関 良明</strong></p>
                           <p class="res-detail">電子情報通信学会技術研究報告 = IEICE technical report : 信学技報 117(286) 7-12 2017年11月9日</p>
                       </div>
                       <div class="research">
                           <h4 class="res-title"><a href="https://researchmap.jp/Yoshiaki_Seki/misc/37281601" target="_blank">OAuth認証を利用するSNSにおける認可のリスク (情報セキュリティ) </a></h4>
-                          <p class="res-author"><strong>関 良明</strong>, 吉田 達司</p>
+                          <p class="res-author">吉田 達司, <strong>関 良明</strong></p>
                           <p class="res-detail">電子情報通信学会技術研究報告 = IEICE technical report : 信学技報 116(289) 57-62 2016年11月7日</p>
                       </div>
                       <div class="research">
@@ -83,12 +83,12 @@
                   <div class="content">
                       <div class="research">
                           <h4 class="res-title"><a href="https://researchmap.jp/Yoshiaki_Seki/books_etc/12521870" target="_blank">ネットワークセキュリティ</a></h4>
-                          <p class="res-author"><strong>関 良明</strong>, 河辺 義信, 西垣 正勝, 岡崎 直宣, 岡崎 美蘭, 本郷 節之, 岡田 安功, 高橋 修</p>
+                          <p class="res-author">高橋 修(監修), <strong>関 良明</strong>, 河辺 義信, 西垣 正勝, 岡崎 直宣, 岡崎 美蘭, 本郷 節之, 岡田 安功</p>
                           <p class="res-detail">共立出版 2017年 (ISBN: 9784320123564)</p>
                       </div>
                       <div class="research">
                           <h4 class="res-title"><a href="https://researchmap.jp/Yoshiaki_Seki/books_etc/12521869" target="_blank">はじめての情報通信技術と情報セキュリティ</a></h4>
-                          <p class="res-author"><strong>関 良明</strong>, 諏訪 敬祐（共著）</p>
+                          <p class="res-author">諏訪 敬祐, <strong>関 良明</strong></p>
                           <p class="res-detail">丸善出版 2015年2月 (ISBN: 4621089099)</p>
                       </div>
                       <div class="more">
@@ -102,17 +102,17 @@
                   <div class="content">
                       <div class="research">
                           <h4 class="res-title"><a href="https://researchmap.jp/Yoshiaki_Seki/presentations/21751026" target="_blank">ネットワークログイン用パスワード保管手法の提案－スクリーンショットの外部記憶領域保存－</a></h4>
-                          <p class="res-author"><strong>関 良明</strong>, 土屋 純</p>
+                          <p class="res-author">土屋 純, <strong>関 良明</strong></p>
                           <p class="res-detail">電子情報通信学会技術研究報告</p>
                       </div>
                       <div class="research">
                           <h4 class="res-title"><a href="https://researchmap.jp/Yoshiaki_Seki/presentations/21751021" target="_blank">クレジット決済の阻害要因を明らかにする質問紙設計</a></h4>
-                          <p class="res-author"><strong>関 良明</strong>, 菊地 拓翔, 澤 信吾</p>
+                          <p class="res-author">菊地 拓翔, 澤 信吾, <strong>関 良明</strong></p>
                           <p class="res-detail">2018年電子情報通信学会基礎・境界ソサイエティ/NOLTAソサイエティ大会</p>
                       </div>
                       <div class="research">
                           <h4 class="res-title"><a href="https://researchmap.jp/Yoshiaki_Seki/presentations/21751021" target="_blank">Risk Assessment for PrivacyProtection of Information Literacy Beginners in Big Data Era</a></h4>
-                          <p class="res-author"></p>
+                          <p class="res-author">Shigeaki Tanimoto, Shun Totsuka, Motoi Iwashita, <strong>Yoshiaki Seki</strong></p>
                           <p class="res-detail">The 20th International Conference on Network-Based InformationSystems (NBiS-2017), Advances in Network-Based InformationSystems, The 11 International Workshop on Advanced Distributedand Parallel Network Applications (ADPNA-2017) 2017年8月24日</p>
                       </div>
                       <div class="more">

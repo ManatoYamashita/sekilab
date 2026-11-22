@@ -1,5 +1,3 @@
-/* main.css */
-/* プロジェクト全体の設定 */
 :root {
     --seki-main-color: #42539B;
     --seki-text-color: #101010;
@@ -54,13 +52,19 @@ a:hover::after {
 
 .fup {
     opacity: 0;
-    transform: translateY(10rem);
+    transform: translateY(2rem);
     transition: opacity 1s, transform 1s;
-    animation-delay: .5s;
+    animation-delay: 1s;
+}
+.sin {
+    transform: translateX(-100%);
+    transition: transform 1s;
+    animation-delay: 1s;
 }
 
 .element-visible {
     opacity: 1;
+    transform: translateX(0);
     transform: translateY(0);
 }
 

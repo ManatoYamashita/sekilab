@@ -2,20 +2,20 @@
     <div id="menu">
         <div id="menu-inner">
             <div id="navArea" ref="nav">
-                <nuxt-link to="/" id="logo-pc"><nuxt-img format="webp" src="/images/logo.webp" alt="logo" /></nuxt-link>
+                <nuxt-link to="" id="logo-pc"><img format="webp" src="/images/logo-black.webp" alt="logo" /></nuxt-link>
                 <nav>
                     <div class="inner">
-                        <nuxt-link to="/" class="log-sp">
-                            <nuxt-img format="webp" class="logo-sp" src="/images/logo-black.webp" alt="logo" />
+                        <nuxt-link to="" class="log-sp">
+                            <img format="webp" class="logo-sp" src="/images/logo-black.webp" alt="logo" />
                         </nuxt-link>
                         <ul id="menu-content" @click="toggle">
                             <li class="first-content nav-li">
-                                <nuxt-link to="/">Home</nuxt-link>
+                                <nuxt-link to="">Home</nuxt-link>
                             </li>
                             <li class="first-content nav-li">
                                 <nuxt-link to="/about">About</nuxt-link>
                                 <ul class="second-content">
-                                    <li class="nav-li"><nuxt-link to="/sekiYoshiaki">Proffesor</nuxt-link></li>
+                                    <li class="nav-li"><nuxt-link to="/sekiYoshiaki">Professor</nuxt-link></li>
                                     <li class="nav-li"><nuxt-link to="/activity">Activity</nuxt-link></li>            
                                 </ul>
                             </li>

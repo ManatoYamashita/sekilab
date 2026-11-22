@@ -100,7 +100,7 @@ useHead({
     min-width: 100%;
   }
   video::-webkit-media-controls {
-  display: none;
+    display: none;
   }
 
   video::-moz-fullscreen-media-controls {
@@ -146,18 +146,19 @@ useHead({
   }
   section {
     min-height: 100vh;
-    height: 100vh;
+    height: 200vh;
     display: grid;
     place-items: center;
     position: relative;
     width: 100vw;
     display: block;
-    /* view-timeline-name: --section; */
+    view-timeline-name: --section;
   }
 .section_content {
   min-height: 100vh;
-  /* position: sticky; */
-  position: relative;
+  position: sticky;
+  /* position: relative; */
+  background-color: #f6f6f6;
   top: 0;
   display: grid;
   place-items: center;
@@ -167,7 +168,7 @@ useHead({
 }
 h1#scroll-head {
   display: grid;
-  /* font-size: clamp(2rem, 7vw + 2rem, 4rem); */
+  font-size: clamp(2rem, 7vw + 2rem, 4rem);
   font-size: 2rem;
   text-align: center;
   line-height: 1;
@@ -179,30 +180,30 @@ h1#scroll-head {
   padding: 2rem 3rem 3.5rem 3rem;
   background-color: #f6f6f6;
 }
-/* @keyframes activate {
+@keyframes activate {
   0% { --active: 0; }
   100% { --active: 1; }
-} */
+}
 h1#scroll-head span:first-of-type {
   display: inline-block;
   color: dimgray;
   font-size: 0.35em;
   padding: 2rem;
   display: inline-block;
-  /* animation: fade-away both linear;
-  animation-timeline: --section; */
-  /* animation-range: entry-crossing 50% exit 50%; */
+  animation: fade-away both linear;
+  animation-timeline: --section;
+  animation-range: entry-crossing 50% exit 50%;
 }
 h1#scroll-head span:last-of-type {
   display: inline-block;
-  /* animation: scale-up both cubic-bezier(.1,.7,.9,1.3), fade-away both linear; */
-  /* animation-timeline: --section; */
-  /* animation-range: entry-crossing 60% exit 70%, exit 10% exit 50%;  */
+  animation: scale-up both cubic-bezier(.1,.7,.9,1.3), fade-away both linear;
+  animation-timeline: --section;
+  animation-range: entry-crossing 60% exit 70%, exit 10% exit 50%; 
 }
 span strong {
   color: var(--seki-main-color);
 }
-/* @keyframes scale-up {
+@keyframes scale-up {
   to {
     scale: 1.5;
   }
@@ -218,7 +219,7 @@ span strong {
   100% {
     opacity: 0;
   }
-} */
+}
 #content {
   z-index: 0;
 }
@@ -271,15 +272,34 @@ span strong {
   }
   section {
     height: 100vh;
+    opacity: 1;
+    position: relative;
+    view-timeline: none;
   }
   h1#scroll-head {
     padding: 3rem .5rem 5rem .5rem;
+    font-size: 1.5rem;
   }
   #scroll-head span:first-of-type {
     font-size: 50%;
   }
   #scroll-head span {
     font-size: 60%;
+  }
+
+  h1#scroll-head span:first-of-type {
+    animation: none;
+  }
+  h1#scroll-head span:last-of-type {
+    animation: none;
+  }
+
+  .element-visible #scroll-head {
+    max-width: 100%;
+    transform: scale(1);
+    font-size: 2rem;
+    animation: scale 1s forwards;
+    animation-delay: 1s;
   }
 }
 </style>

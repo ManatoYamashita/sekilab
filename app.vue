@@ -78,15 +78,22 @@
     window.removeEventListener('scroll', onScroll);
   };
 
-  // スクロールイベント時に実行される関数
-  const onScroll = () => {
-    const elements = document.querySelectorAll('.fup');
-    elements.forEach((element: Element) => {
-      if (checkVisible(element as HTMLElement)) {
-        (element as HTMLElement).classList.add('element-visible');
-      }
-    });
-  };
+// スクロールイベント時に実行される関数
+const onScroll = () => {
+  const elements = document.querySelectorAll('.fup, .sin');
+  elements.forEach((element: Element) => {
+    if (checkVisible(element as HTMLElement)) {
+      (element as HTMLElement).classList.add('element-visible');
+    }
+  });
+
+  const proffesorConponent = document.querySelectorAll('.slidein');
+  proffesorConponent.forEach((element) => {
+    if (checkVisible(element as HTMLElement)) {
+      element.classList.remove('slidein');
+    }
+  });
+};
 
   onMounted(() => {
     addScrollListener();

@@ -10,8 +10,8 @@
 
 <template>
     <div class="blog-wrap">
-        <div class="blog-left">
-            <nuxt-img format="webp" src="/images/tcu_yc.webp" alt="TCU Yokohama Campus" class="fup" />
+        <div class="blog-left sin">
+            <img format="webp" src="/images/tcu_yc.webp" alt="TCU Yokohama Campus" class="fup" />
         </div>
         
         <article class="blog-right">
@@ -70,7 +70,23 @@
     ul.blogs {
         list-style: none;
         padding: 0 0 2rem 0;
+        margin-bottom: 2rem;
         z-index: 0;
+        height: 40vh;
+        overflow-y: scroll;
+        scrollbar-width: 10px;
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1; 
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #888; 
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555; 
+            }
     }
     li.blog-data {
         font-size: 1rem;
@@ -99,10 +115,16 @@
         }
         .blog-left, .blog-right {
             width: 100%;
-            height: 50%;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+        }
+        .blog-left {
+            height: 40%;
+        }
+        .blog-right {
+            height: 60%;
+            padding: 0;
         }
         article.blog-right {
             margin: 0 auto;
@@ -120,9 +142,8 @@
             margin-bottom: 2rem;
         }
         ul.blogs {
-            list-style: none;
+            height: 25vh;
             padding: 0 0 2rem 0;
-            z-index: 0;
         }
         li.blog-data {
             font-size: .7rem;
